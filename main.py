@@ -7,7 +7,7 @@ import os
 import datetime
 # import schedule 
 
-date = f'data{datetime.datetime.now().strftime('%d.%m.%Y')}'
+date = f'data{datetime.datetime.now().strftime("%d.%m.%Y")}'
 # date = 'data07.17.25'
 
 bot_id = os.getenv('TELEGRAM_BOT_TOKEN')
