@@ -1,0 +1,3383 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" href="/images/football.ico" type="image/x-icon" />
+    <!-- canonical -->
+    <link rel="canonical"
+          href="https://football.ua/italy/558300-italija-transferna-litni-perekhodi.html" />
+    <title>Італія трансферна. Літні переходи-2025 &mdash; football.ua</title>
+
+
+    <meta name="description" content="Football.ua представляє таблицю з переходами в італійській Серії А під час літнього трансферного вікна 2025 року." />
+
+    <meta property="og:url" content="https://football.ua/italy/558300-italija-transferna-litni-perekhodi.html" />
+
+    <meta property="og:image" content="https://images.football.ua/i/news/570x380/558/558300.jpg" />
+
+    <meta property="og:title" content="Італія трансферна. Літні переходи-2025" />
+
+    <meta property="og:description" content="Football.ua представляє таблицю з переходами в італійській Серії А під час літнього трансферного вікна 2025 року." />
+
+    <link rel="amphtml" href="https://football.ua/amp-page/italy/558300-italija-transferna-litni-perekhodi.html" />  
+
+
+    <link rel="stylesheet" type="text/css" href="https://football.ua/tpl/football/css/main.css?v=20191216-1" />
+    <link rel="stylesheet" type="text/css" href="https://football.ua/tpl/football/css/dev.css?v=20160611" />
+
+    <script type="text/javascript">
+        window.P_ID = 'f113';
+        var Domain = {};
+        (function () {
+            Domain.Service = 'https://services.football.ua';
+            Domain.Auth = 'https://services.football.ua';
+            Domain.Comment = 'https://services.football.ua';
+            Domain.Static = 'https://football.ua';
+            Domain.Image = 'https://images.football.ua';
+            Domain.Cookie = '.football.ua';
+            Domain.MSLDomain = 'https://services.football.ua';
+        })();
+        var Main = {};
+        Main.SearchParam = '%7bsearchKey%7d';
+        Main.SearchLink = 'https://football.ua/default.aspx?menu_id=search&search=%7bsearchKey%7d';
+    </script>
+
+<!--[if lte IE 8]>
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <link rel="stylesheet" type="text/css" href="https://football.ua/tpl/football/css/ie.css?v=20130116" />
+    <script type="text/javascript" src="https://football.ua/tpl/football/js/html5shiv.js"></script>
+<![endif]-->
+
+    <script type="text/javascript" src="https://football.ua/tpl/football/js/lib.js?v=20230216"></script>
+    <script type="text/javascript" src="https://football.ua/tpl/football/js/plugins.js?v=20130130"></script>
+    <script type="text/javascript" src="https://football.ua/tpl/football/js/main.js?v=20231012-42"></script>
+    <script type="text/javascript" src="https://football.ua/js/jq/jquery.tmpl.js"></script>
+    <script type="text/javascript" src="https://football.ua/js/jq/jquery.jsonp-2.4.0.min.js"></script>
+    <script type="text/javascript" src="https://football.ua/js/Main.js?v=20200312"></script>
+    
+    <script type="text/javascript">
+        if (isMacLike) {
+            document.write('<link rel="stylesheet" href="https://football.ua/tpl/football/css/mac-fonts.css?v=20130120" type="text/css" />');
+        }
+    </script>
+    
+    <script id="LoginUser" type="text/x-jquery-tmpl">
+{{if $data.UserName != null}} 
+	<li><a href="${$data.LinkProfile}" class="user-name" >${$data.UserName}</a></li>
+    <li><a href="#" onclick="Login.Logout(); return false;"> Вихід </a></li> 
+{{else}}
+    <li><a href="#" id="enter-link">Увійти</a></li>
+    <li><a href="#" id="reg-link">Реєстрація</a></li>
+{{/if}} 
+</script><script id="CommentTmpl" type="text/x-jquery-tmpl">
+    <article id="comment_${$item.Prefix}${$data.Id}" class="comment-item">
+        <p class="date">${Main.GetVerbalDateTime($data.DateCreated)}<a href="#comment_${$data.Id}" class="num">#</a></p>
+        <a href="${ModComment.GetProfileLink($data.UserId)}">
+            <img src="${ModComment.GetUserAvatar($data.PhotoFilename)}" alt="" class="avatar" />
+        </a>
+        <i class="status {{if ModComment.IsUserOnline($data.UserDateLastActivity, $item.DateTimeNow)}} online {{else}} offline {{/if}}"></i>
+        <div class="user">
+            <a href="${ModComment.GetProfileLink($data.UserId)}" class="name">${$data.UserName}</a>
+            <span>${ModComment.GetUserOnSite($data.UserDateCreated, $item.DateTimeNow)}</span>
+        </div>
+        {{if $data.Quotes != null && $data.Quotes.length > 0}}
+            {{each $data.Quotes}}
+            <div class="quoted">
+            {{/each}}
+            {{each $data.Quotes}}
+                <div><a href="${ModComment.GetProfileLink($value.UserId)}">${$value.UserName}</a></div>
+                {{html $value.Text}}
+            </div>
+            {{/each}}
+        {{/if}}
+        <p class="comment-text">{{html $data.Text}}</p>
+        <a href="#" class="like
+            {{if !$item.UserIsLoginned}} 
+                inactive" onclick="return false;"
+            {{else}} 
+                {{if $data.IsRatedByCurrentUser }} 
+                    active" onclick="return false;"
+                {{else}}
+                    " onclick="ModComment.Like('${$data.Id}', this); return false;"
+                {{/if}}
+            {{/if}}></a>
+        <div class="like-counter">${$data.Rate}</div>
+        {{if $item.UserIsCanComment}}
+            <a href="#" class="answer" onclick="ModComment.CommentReply('${$data.Id}', 'comment_${$item.Prefix}${$data.Id}'); return false;">Відповісти цитуючи</a>
+        {{/if}}
+        {{if $item.UserIsBanAllowed}}
+            <div class="admin-buttons">
+                <button class="delete" onclick="ModComment.Remove('${$data.Id}', this); return false;"></button>
+                <button class="ban" href="#" onclick="ModComment.Ban('${$data.Id}'); return false;"></button>
+            </div>
+        {{/if}}
+    </article>
+</script><script id="CommentsTmpl" type="text/x-jquery-tmpl">
+{{if $data.PageComments != null || $data.PagerIsShow}}
+    <section class="comments">
+        <h3 class="feed-header green">Коментарі (${$data.TotalCount})</h3>
+        <a href="#" class="hide-comments" {{if $data.IsHideComments}}style="display:none;"{{/if}}>Приховати коментарі</a>
+    <div class="comment-wrap" {{if $data.IsHideComments}}style="display:none;"{{/if}}>
+        <ul class="comment-display">
+            <li>Відображати коментарі:</li>
+            <li><a href="#" onclick="ModComment.ChangeSort(ModComment.SortType.Desc); return false;">нові зверху</a></li>
+            <li><a href="#" onclick="ModComment.ChangeSort(ModComment.SortType.Asc); return false;">нові внизу</a></li>
+            <li><a href="#" onclick="ModComment.ChangeSort(ModComment.SortType.Rate); return false;">за рейтингом</a></li>
+        </ul>
+        <div class="ajaxLoaderBig"></div>
+    {{if $data.PageComments != null}}
+        <div class="comments-block">
+            <a name="page${$data.PagerCurrent + 1}" id="page${$data.PagerCurrent + 1}"></a>
+
+        {{if $data.UserIsCanComment}}
+            <article id="addCommentQuote" class="add-comment add-quoted" style="display:none;">
+                <p class="remain">Залишилось <span class="textCountLeft">${ModComment.MaxLength} ${Main.NounForm(ModComment.MaxLength, 'символ', 'символи', 'символів')}</span></p>
+                <p class="quoted-answer">Відповідь цитатою</p>
+                <textarea id="CommentTextQuote" class="comment-textarea" placeholder="Напишіть свій коментар." maxlength="${ModComment.MaxLength}"
+                        onkeypress="ModComment.OnKeyDown(this, event);" onkeyup="ModComment.OnKeyUp(this, event)"></textarea>
+                <div class="submit-block">
+                    <label>
+                        <input type="checkbox" id="chkIsNotifyQuote" />
+                        <span>Сповіщати про відповіді</span>
+                    </label>
+                    <button class="answer" onclick="ModComment.AddCommentQuote(this); return false;">додати</button>
+                    <button class="loader" onclick="return false;"></button>
+                    <input id="hdnQuoteId" type="hidden" value="" />
+                </div>
+            </article>
+        {{/if}}
+
+        {{if $data.TopComments != null }}
+            <h4 class="best-header">лучшие комментарии</h4>
+            <div class="best">
+                {{tmpl($data.TopComments, {
+                    last: $data.TopComments[$data.TopComments.length - 1],
+                    DateTimeNow: $data.Now,
+                    UserIsLoginned: $data.UserIsLoginned,
+                    UserIsComplainAllowed: $data.UserIsComplainAllowed,
+                    UserIsBanAllowed: $data.UserIsBanAllowed,
+                    UserIsCanComment: $data.UserIsCanComment,
+                    Prefix: 'top_' }) "#CommentTmpl"}}
+            </div>
+        {{/if}}
+
+            {{tmpl($data.PageComments, {
+                last: $data.PageComments[$data.PageComments.length - 1],
+                DateTimeNow: $data.Now,
+                UserIsLoginned: $data.UserIsLoginned,
+                UserIsComplainAllowed: $data.UserIsComplainAllowed,
+                UserIsBanAllowed: $data.UserIsBanAllowed,
+                UserIsCanComment: $data.UserIsCanComment,
+                Prefix: '' }) "#CommentTmpl"}}
+        </div>
+    {{/if}}
+    {{if $data.PagerIsShow > 0}}
+        <div class="paginator-holder">
+            <a href="#" class="page-prev" onclick="ModComment.ChangePage(${$data.PagerCurrent - 1}); return false;"></a>
+            <div id="commentsPaginator" class="paginator"></div>
+            <input type="text" class="page-input" />
+            <a href="#" class="page-next" onclick="ModComment.ChangePage(${$data.PagerCurrent + 1}); return false;"></a>
+        </div>
+    {{/if}}
+    </div>
+        <div class="show-comments" {{if $data.IsHideComments}}style="display:block;"{{/if}}>развернуть<span></span></div>
+    </section>
+{{/if}}
+
+{{if $data.UserIsCanComment }}
+    {{if $data.PageComments != null || $data.PagerIsShow}}
+    <div class="separator"></div>
+    {{/if}}
+    <section class="add-comment">
+        <h3 class="feed-header">Додати коментар</h3>
+        <img alt="${$data.UserName}" src="${ModComment.GetUserAvatar($data.UserPhotoFilename)}" class="avatar" />
+        <p class="symbols">Залишилось <span class="textCountLeft">${ModComment.MaxLength} ${Main.NounForm(ModComment.MaxLength, 'символ', 'символа', 'символів')}</span></p>
+        <p class="name"><a href="#" onclick="return false;">${$data.UserName}</a></p>
+        <textarea class="comment-textarea" id="CommentText" placeholder="Напишіть свій коментар." maxlength="${ModComment.MaxLength}"
+            onkeypress="ModComment.OnKeyDown(this, event);" onkeyup="ModComment.OnKeyUp(this, event)"></textarea>
+        <div class="submit-block">
+            <label>
+                <input type="checkbox" id="chkIsNotify" />
+                <span>Сповіщати про відповіді</span>
+            </label>
+            <button class="answer" onclick="ModComment.AddComment(this); return false;">додати</button>
+            <button class="loader" onclick="return false;"></button>
+        </div>
+    </section>
+{{/if}}
+</script><script id="PeopleStatSummaryTmpl" type="text/x-jquery-tmpl">
+<table class="statistic-table">
+<thead>
+    <tr>
+        <th class="flag"></th>
+        <th class="name"><span>игрок</span></th>
+        <th class="games" title="сыгранные игры"><span>и</span></th>
+        <th class="goals" title="забитые голы (пен.)"><span>г</span></th>
+        <th class="passes" title="голевые пасы"><span>п</span></th>
+        <th class="goal-pass" title="гол+пас"><span>г+п</span></th>
+        <th class="yellow-card" title="желтые карточки"><span>жк</span></th>
+        <th class="red-card" title="красные карточки"><span>кк</span></th>
+        <th class="score" title="средняя оценка"><span>оценка</span></th>
+    </tr>
+</thead>
+<tbody>
+{{each $data.Stat}}
+    <tr>
+        <td class="flag">
+    {{if $value.CountryImage != ''}}
+            <img src="${$value.CountryImage}" alt="${$value.CountryName}" />
+    {{/if}}
+        </td>
+        <td class="name">
+            <a href="${$value.PeopleLink}" target="_blank" title="${$value.LastName} ${$value.FirstName}">${$value.FirstName} ${$value.LastName}</a>
+        </td>
+        <td class="games {{if $value.GameCount == 0}}zero{{/if}}">${$value.GameCount}</td>
+        <td class="goals {{if $value.GoalCount == 0}}zero{{/if}}"><span data-sort="${($value.GoalCount * 100) - $value.PenaltyCount}">${$value.GoalCount}{{if $value.PenaltyCount > 0}} <i>(${$value.PenaltyCount})</i>{{/if}}</span></td>
+        <td class="passes {{if $value.GoalPass == 0}}zero{{/if}}">${$value.GoalPass}</td>
+        <td class="goal-pass {{if $value.GoalPassGoal == 0}}zero{{/if}}">${$value.GoalPassGoal}</td>
+        <td class="yellow-card {{if $value.YellowCard == 0}}zero{{/if}}">${$value.YellowCard}</td>
+        <td class="red-card {{if $value.RedCard == 0}}zero{{/if}}">${$value.RedCard}</td>
+        <td class="score">${$value.Rating}</td>
+    </tr>
+{{/each}}
+</tbody>
+</table>
+</script><script id="GameBlockMainTmpl" type="text/x-jquery-tmpl">
+<div class="slide" data-date="${$data.ViewDate}">
+    <table class="feed-table">
+    {{each $data.GameList}}
+        {{if $value.IsNewTitle == true}}
+        <tr>
+            <th colspan="4">
+                <p class="match-header">${$value.ChampName}</p>
+                <p>${$value.Date} ${$value.TourName}</p>
+            </th>
+        </tr>
+        {{/if}}
+        <tr id="g_${$value.GameId}">
+            <td class="time">${$value.Time}</td>
+            <td class="left-team"><a href="${$value.Team1Link}">${$value.Name1}</a></td>
+            <td class="score ${$value.CssClass}">
+                <a href="${$value.MatchLink}">
+                    ${$value.TeamScore1}:${$value.TeamScore2}
+                </a>
+            </td>
+            <td class="right-team"><a href="${$value.Team2Link}">${$value.Name2}</a></td>
+        </tr>
+    {{/each}}
+    </table>
+</div>
+</script>
+
+<script id="NewsVoteTmpl" type="text/x-jquery-tmpl">
+<div class="interview question {{if $data.NewsVoteType == 2}}rating{{/if}}" id="NewsVote${$data.Id}">
+{{if $data.IsShowName}}
+    <h4 class="question">${$data.Name}</h4>
+{{/if}}
+{{if $data.IsVotingAllowed}}
+    <ul class="answer-list answers" id="NewsVoteAnswers${$data.Id}">
+    {{if $data.IsShowButtons}}
+        <li class="vote-links">
+        {{each $data.Answers}}
+            <a href="#" class="vote" onclick="ModOpenNews.NewsVote(${$data.Id}, ${$value.Id}); return false;">${$value.Name}</a>
+        {{/each}}
+        </li>
+    {{else}}
+        {{each $data.Answers}}
+        <li>
+            <label>
+                <input type="radio" name="NewsVote${$data.Id}" value="${$value.Id}"/>
+                <i></i>
+                <span>${$value.Name}</span>
+            </label>
+        </li> 
+        {{/each}}
+        <li class="vote-links">   
+            <input type="button" class="vote" value="Проголосувати" onclick="ModOpenNews.NewsVote(${$data.Id}, $('input[name=NewsVote${$data.Id}]:checked').val()); return false;">
+        </li>    
+    {{/if}}
+    </ul>
+{{/if}}
+    <ul class="answer-list" id="NewsVoteResult${$data.Id}">
+    {{if $data.NewsVoteType == 1}}
+        {{each $data.Answers}}
+            <li id="NewsVoteAnswer${$value.Id}">
+                <p class="sum">
+                    (${$value.CountVotes}) 
+                    <span>
+                        {{if $value.CountVotes}}${Math.round($value.CountVotes / $data.CountVotes * 1000) / 10}{{else}}0{{/if}}%
+                    </span>
+                </p>
+                <p class="answer">${$value.Name}</p>
+                <div class="percent" style="width:{{if $value.CountVotes}}${Math.round($value.CountVotes / $data.CountVotes * 1000) / 10}%{{else}}0{{/if}};"></div>
+            </li>
+        {{/each}}
+    {{/if}}
+    {{if $data.NewsVoteType == 2}}
+        ${( $data.RatingSumm = 0 ), ''}
+        {{each $data.Answers}}
+            {{if !(isNaN(parseInt($value.Name)))}}
+                ${( $data.RatingSumm += $value.CountVotes * parseInt($value.Name) ), ''}
+            {{/if}}
+        {{/each}}
+
+        <li class="vote-links">
+        {{each $data.Answers}}
+            <span class="rate">${$value.Name}</span>
+        {{/each}}
+        </li>
+        <li>
+            <p class="sum">
+                <span>
+                    {{if $data.RatingSumm}}${Math.round($data.RatingSumm / 4 / $data.CountVotes * 100) / 100}{{else}}0{{/if}}
+                </span>
+            </p>
+            <p class="answer">Середній бал</p>
+            <div class="percent" style="width:{{if $data.RatingSumm}}${Math.round($data.RatingSumm / 4 / $data.CountVotes * 100) / 10}%{{else}}0{{/if}};"></div>
+        </li>
+    {{/if}}
+    </ul>
+</div>
+</script><script id="PeopleStatTmpl" type="text/x-jquery-tmpl">
+<table class="player-statistic-table" id="playerStatistic">
+<thead>
+    <tr>
+		<th class="tour"><span>тур</span></th>
+		<th class="logo"></th>
+		<th></th>
+		<th class="enemy"><span>Суперник</span></th>
+		<th class="score"><span>рахунок</span></th>
+        <th class="main" title="вихід в основі"><span>о</span></th>
+        <th class="change" title="вихід на заміну"><span>з</span></th>
+        <th class="games" title="зіграні хвилини"><span>хв</span></th>
+        <th class="goals" title="забиті голи (пен.)"><span>г</span></th>
+        <th class="goal-pass" title="гольові паси"><span>п</span></th>
+		<th class="goal-plus-pass" title="гол+пас"><span>г+п</span></th>
+        <th class="yellow-card" title="жовті картки"><span>жк</span></th>
+        <th class="red-card" title="червоні картки"><span>чк</span></th>
+        <th class="points" title="оцінка"><span>оцінка</span></th>
+    </tr>
+</thead>
+<tbody>
+{{each $data.Stat}}
+    <tr>
+		<td class="tour"><span data-sort="${$value.TourId}">${$value.TourName}</span></td>
+		<td class="logo">
+    {{if $value.CompetitorImage != null}}
+            <a href="${$value.CompetitorTeamLink}" title="${$value.CompetitorName}">
+				<img src="${$value.CompetitorImage}"
+                    alt="${$value.CompetitorName}" />
+            </a>
+    {{/if}}
+        </td>
+        <td class="role">
+    {{if $value.SeasonTeamId == $value.SeasonTeamId1}}
+            д
+    {{else $value.SeasonTeamId == $value.SeasonTeamId2}}
+            г 
+    {{/if}}
+        </td>
+        <td class="enemy">
+            <a href="${$value.GameLink}">${$value.CompetitorName}</a>
+        </td>
+        <td class="score">
+            <span data-sort="${$value.CurrentTeamScore + $value.CurrentTeamScoreDifference}">
+                ${$value.TeamScore1}:${$value.TeamScore2}
+            </span>
+        </td>
+        <td class="main">
+    {{if $value.Lineup == true }}
+            <i data-sort="1"></i>
+    {{/if}}
+        </td>
+        <td class="change">
+    {{if $value.Lineup == false }}
+            <i data-sort="1"></i>
+    {{/if}}
+        </td>
+        <td class="games">${$value.PlayedMinutes}</td>
+        <td class="goals {{if $value.TotalGoals == 0}} zero{{/if}}" >
+    {{if $value.TotalGoals != 0}}
+                <span data-sort="${ $value.TotalGoals * 100 - $value.PenaltyCount}">
+                    ${$value.TotalGoals}
+        {{if $value.PenaltyCount > 0}}
+                    <i>(${$value.PenaltyCount})</i>
+        {{/if}}
+                </span>
+    {{else}}            
+                ${$value.TotalGoals}                    
+    {{/if}}             
+        </td>
+        <td class="goal-pass {{if $value.GoalPass == 0}}zero{{/if}}">${$value.GoalPass}</td>
+        <td class="goal-plus-pass {{if $value.GoalPassGoalStat == 0}}zero{{/if}}">${$value.GoalPassGoalStat}</td>
+        <td class="yellow-card">
+    {{if $value.YellowCard > 0}}
+            <i data-sort="${$value.YellowCard}"{{if $value.YellowCard > 1}} class="two"{{/if}}></i>
+    {{/if}}
+        </td>
+        <td class="red-card">
+    {{if $value.RedCard == true}}
+            <i data-sort="1"></i>
+    {{/if}}
+        </td>
+        <td class="points">
+    {{if $value.Rating != null}}
+            ${$value.Rating.toFixed(1)}
+    {{/if}}
+        </td>
+    </tr>
+{{/each}}
+</tbody>
+</table>
+<table class="player-statistic-table player-statistic-result">
+    <thead>
+        <tr>
+            <td class="tour"></td>
+            <td class="enemy" colspan="4">Всего</td>
+            <td class="main {{if $data.StatTotals.LineupCount == 0}}zero{{/if}}">${$data.StatTotals.LineupCount}</td>
+            <td class="change {{if $data.StatTotals.SubstitutionCount == 0}}zero{{/if}}">${$data.StatTotals.SubstitutionCount}</td>
+            <td class="games">{{if $data.StatTotals.PlayedMinutes > 0}}${$data.StatTotals.PlayedMinutes}{{/if}}</td>
+            <td class="goals {{if ($data.StatTotals.GoalCount + $data.StatTotals.PenaltyCount) == 0}}zero{{/if}}">
+                ${$data.StatTotals.GoalCount + $data.StatTotals.PenaltyCount}
+{{if $data.StatTotals.PenaltyCount > 0}}
+                <span>(${$data.StatTotals.PenaltyCount})</span>
+{{/if}}
+            </td>
+            <td class="goal-pass {{if $data.StatTotals.GoalPass == 0}}zero{{/if}}>">${$data.StatTotals.GoalPass}</td>
+            <td class="goal-plus-pass {{if $data.StatTotals.GoalPassGoal == 0}}zero{{/if}}">${$data.StatTotals.GoalPassGoal}</td>
+            <td class="yellow-card {{if $data.StatTotals.YellowCard == 0}}zero{{/if}}">${$data.StatTotals.YellowCard}</td>
+            <td class="red-card {{if $data.StatTotals.RedCard == 0}}zero{{/if}}">${$data.StatTotals.RedCard}</td>
+            <td class="points">{{if $data.StatTotals.GameWithRating > 0}}${($data.StatTotals.Rating / $data.StatTotals.GameWithRating).toFixed(1)}{{/if}}</td>
+        </tr>
+    </thead>
+</table>
+</script><script id="NewsLineupTmpl" type="text/x-jquery-tmpl">
+<h3 class="feed-header">{{if $data.Title != null}}${$data.Title}{{else}}Cоставы команд{{/if}}</h3>
+{{if $data.IsTeams}}
+    <div class="teams">
+        <div class="left-team">
+    {{if $data.Team1Image != null}}
+            <a href="${$data.Team1Url}">
+                <img src="${$data.Team1Image}" alt="${$data.Team1Name}"/>
+            </a>
+    {{/if}}
+            <h4><a href="${$data.Team1Url}" class="name">${$data.Team1Name}</a></h4>
+        </div>
+        <div class="right-team">
+            <h4><a href="${$data.Team2Url}" class="name">${$data.Team2Name}</a></h4>
+    {{if $data.Team2Image != null}}
+            <a href="${$data.Team2Url}">
+                <img src="${$data.Team2Image}" alt="${$data.Team2Name}"/>
+            </a>
+    {{/if}}
+        </div>
+	</div>
+{{/if}}
+<div class="match-map {{if !$data.IsTeams}} players-line-up{{/if}}" >
+{{each $data.Peoples}}
+    {{if $data.IsTeams}}
+        <div class="{{if $value.TeamId == $data.Team1Id}}red{{else}}blue{{/if}}" style="top:${$value.PositionTop}%; left:${$value.PositionLeft}%;">
+            <a href="${$value.Url}">
+                <span {{if $value.GameNumber == ""}}style="width:26px;height:14px"{{/if}}>${$value.GameNumber}</span>
+            </a>
+            <i>${$value.Name}</i>
+        </div>
+    {{else}}
+        <div style="top:${$value.PositionTop}%; left:${$value.PositionLeft}%;">
+            <a href="${$value.Url}">
+                <span>
+                    <img src="${$value.TeamImage}" alt="${$value.TeamName}">
+                </span>
+            </a>
+            <i>${$value.Name}</i>
+        </div>
+    {{/if}} 
+{{/each}}
+</div>
+</script><link rel="alternate" type="application/rss+xml" title="Football.ua : стрічка новин" href="https://football.ua/rss2.ashx" />
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YVMG2P8BM2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YVMG2P8BM2');
+</script>
+
+
+    
+</head>
+<body>
+    
+
+    <div id="UserNotification"></div>
+    <script type="text/javascript">
+        UserNotificationDiv = $('#UserNotification');
+        UserNotificationInit();
+    
+    </script>
+
+    <div id="wrapper">
+
+    <form name="aspnetForm" method="post" action="/italy/558300-italija-transferna-litni-perekhodi.html?accept=%2A%2F%2A&amp;user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F137.0.0.0+Safari%2F537.36+Edg%2F137.0.0.0" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUENTM4MWRkb6WcLDPXcf5KUJ5ed8H/Z6j06Z70AtzM0XP3bg04HNU=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+        <script type="text/javascript">
+        //<![CDATA[
+            if (theForm == null || theForm == undefined) {
+                var theForm = document.forms['aspnetForm'];
+                if (!theForm) {
+                    theForm = document.aspnetForm;
+                }
+                function __doPostBack() {
+                    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                        theForm.submit();
+                    }
+                }
+            }
+        //]]>
+        </script>
+
+        <header>
+        <div class="header-wrap">
+            <div id="ctl00_topBanner" class="top-banner"></div>
+            <div class="header-top wrapper">
+                <div class="header-left">
+                    <a href="https://football.ua/"><img src="https://football.ua/tpl/football/img/header/logo.png" alt="football.ua" /></a>
+                    <ul class="header-social">
+                        <li class="fb"><a href="https://www.facebook.com/football.ua" target="_blank"></a></li>
+                        <li class="twitter"><a href="https://x.com/foot_ua/" target="_blank"></a></li>
+                        <li class="rss"><a href="//football.ua/rss2.ashx" target="_blank"></a></li>
+                    </ul> <!--header-social-->
+                </div>
+                <div class="header-right">
+                    
+<ul class="enter registerArea">
+	<li><a id="enter-link" href="#">Увійти</a></li>
+	<li><a id="reg-link" href="#">Реєстрація</a></li>
+</ul>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="https://football.ua/mod/Login/Login.js?v=20180809" type="text/javascript"></script>
+
+<script type="text/javascript">
+Login.MinRequiredPasswordLength = 4;
+Login.AgreementLink = 'https://football.ua/profile/agreement/';
+Login.SiteName = 'football.ua'; 
+</script> 
+
+<!--popups-->  
+	<div class="popup enter-popup pseudologin useractionpopup" title="ВХІД НА САЙТ" id="loginblock" style="display:none;">
+		<div class="popup-content"> 
+			<div class="edit-form" id="logincontent">
+				<label class="label">
+					<div>E-mail:</div>
+					<input class="form-input"   type="email" id="loginemail"  tabindex="1" onkeydown="Login.CtrlEnter(event, this, false);" placeholder="Вкажіть E-mail" />
+				</label>
+				<label class="label">
+					<div>Пароль:</div>
+					<input id="loginpassword"   tabindex="2" onkeydown="Login.CtrlEnter(event, this, false);" class="form-input" type="password" placeholder="Вкажіть пароль" />
+				</label>
+				<a href="#" id="forgot-link" class="remind">Забули пароль?</a>
+                <p class="error">&nbsp;</p>
+			</div> 
+		</div>
+		<div class="ui-dialog-buttonpane">
+			<label class="label remember">
+				<input id="chRemember" type="checkbox" />
+				<span>Запам'ятати мене</span>
+			</label>
+			<button class="submit" onclick="Login.Autorization(); return false;" tabindex="3">Вхід</button>
+		</div>
+        
+	</div> <!--enter-popup--> 
+
+	<div class="popup  enter-popup registration-popup pseudoregister useractionpopup" title="РЕЄСТРАЦІЯ НА САЙТІ" id="register" style="display:none;"> 
+		<div class="registration-info">
+			<h3>Переваги реєстрації на football.ua:</h3>
+			<ul>
+				<li>Спілкування з тисячами футбольних уболівальників</li>
+				<li>Участь у спортивних іграх (фентезі, прогнозисти) та можливість виграти призи</li>
+				<li>Спілкування з журналістами football.ua у конференціях</li>
+				<li>Можливість отримати e-mail на домені @football.ua</li>
+			</ul>
+			<div class="icon"></div>
+		</div>
+
+        <div class="popup-content"> 
+			<div class="edit-form input-area"  id="registercontent">
+				<label class="label">
+					<div>E-mail:</div>
+					<input class="form-input"   id="login" placeholder="логин@почта.ком" onkeydown="Login.ValidateNewUser(1,event);" tabindex="1" onblur="Login.ValidEmail();" type="email" placeholder="Вкажіть E-mail" />
+				</label>
+				<label class="label">
+					<div>Логин:</div>
+					<input class="form-input"   type="text" placeholder="Укажите логин" id="username" onkeydown="Login.ValidateNewUser(2,event);" tabindex="1" onblur="Login.ValidName();" />
+				</label>
+				<label class="label">
+					<div>Пароль:</div>
+					<input class="form-input"   id="password1" onkeydown="Login.ValidateNewUser(3,event);" tabindex="2" onblur="Login.ValidPassword(1);" type="password" placeholder="Пароль" />
+				</label>
+				<label class="label">
+					<div>Повторіть пароль:</div>
+					<input class="form-input"   type="password" placeholder="Повторите пароль" id="password2" tabindex="3" onblur="Login.ValidPassword(2);" onkeydown="Login.ValidateNewUser(4,event);" />
+				</label>
+                <p class="error">&nbsp;</p>
+			</div>                
+            <div class="g-recaptcha" data-sitekey="6Lftc2gUAAAAAGjG5_XH7yQ8aJYcku1vmqPTSXJ6"></div>
+		</div>
+		<div class="ui-dialog-buttonpane">
+			<label class="label agree">
+				<input type="checkbox" onclick="Login.Checkbox(this)" id="agreement" />
+				<span>я підтверджую <a target="_blank" href="https://football.ua/profile/agreement/">Угода про конфіденційність</a></span>
+			</label>
+			<button class="submit" onclick="Login.Register(); return false;" tabindex="4">зареєструватися</button>
+		</div>
+		<a href="#" class="already-registred" id="login-show" >Я вже зареєстрований, впустіть!</a>
+	</div> <!--registration-popup-->
+
+    <div class="popup enter-popup password useractionpopup" title="ВІДНОВЛЕННЯ ПАРОЛЮ" id="recovery" style="display:none;">
+			<div class="popup-content" id="recoverycontent"> 
+				<div class="edit-form" >
+					<label class="label">
+						<div>Введіть адресу вашої електронної пошти</div>
+						<input class="form-input" type="email" id="recoveryemail" placeholder="Укажите E-mail" />
+					</label> 
+				</div> 
+			</div>
+			<div class="ui-dialog-buttonpane"> 
+				<button class="submit" onclick="Login.Recovery();">підтвердити</button>
+			</div>
+		</div>
+
+
+	<!--popups--> 
+                    <div class="header-search">
+                        <input type="text" id="searchInput" value="" />
+                        <a href="#" class="search-button" id="searchInputButton" onclick="Main.Search(); return false;"></a>
+                    </div> <!--search-->
+                </div>
+            </div> <!--wrapper-->
+            <nav class="header-nav"> 
+                
+ 
+<ul>
+ 
+    <li>
+    
+        <a href="https://football.ua/" 
+            style="" class="active ">Головна </a>
+    
+    </li>
+ 
+    <li>
+    
+        <a href="https://football.ua/newsarc/" 
+            style="" class=" ">Новини </a>
+    
+    </li>
+ 
+    <li>
+    
+        <a href="https://football.ua/scoreboard/" 
+            style="" class=" ">Матчі та турніри </a>
+    
+    </li>
+ 
+    <li>
+    
+        <a href="https://football.ua/video/" 
+            style="" class=" ">Відео </a>
+    
+    </li>
+ 
+    <li>
+    
+        <a href="https://football.ua/galleries/" 
+            style="" class=" ">Фото </a>
+    
+    </li>
+ 
+    <li>
+    
+        <a href="https://football.ua/tvschedule/" 
+            style="" class=" ">Футбол на ТБ </a>
+    
+    </li>
+ 
+    <li>
+    
+        <a href="https://football.ua/conferences/" 
+            style="" class=" ">Конференції </a>
+    
+    </li>
+ 
+</ul>     
+            </nav>
+        </div>
+        </header>
+
+        <section class="page">
+            
+            
+            <menu id="ctl00_menu" class="left-menu">
+    <li class="">
+    
+        <a href="https://football.ua/fansector.html" 
+            style="" class="">ФАН-СЕКТОР</a>
+    
+    </li>
+    
+    <li class="menu-separator"></li>
+    
+    <li class="">
+    
+        <a href="https://football.ua/tips.html" 
+            style="" class="">ПРОГНОЗИ</a>
+    
+    </li>
+    
+    <li class="menu-separator"></li>
+    
+    <li class="">
+    
+        <a href="https://football.ua/ukraine.html" 
+            style="" class="">УКРАЇНА</a>
+    
+    </li>
+    
+    <li class="">
+    
+        <a href="https://football.ua/england.html" 
+            style="" class="">АНГЛІЯ</a>
+    
+    </li>
+    
+    <li class="">
+    
+        <a href="https://football.ua/spain.html" 
+            style="" class="">ІСПАНІЯ</a>
+    
+    </li>
+    
+    <li class="active">
+    
+        <a href="https://football.ua/italy.html" 
+            style="" class="">ІТАЛІЯ</a>
+    
+        <ul class="inner-list">
+        
+            <li class="selected "
+                style="">
+                <a href="https://football.ua/italy.html" >Новини</a>
+            </li>
+        
+            <li class=" "
+                style="">
+                <a href="https://football.ua/italy/results/" >Розклад. Серія А</a>
+            </li>
+        
+            <li class=" "
+                style="">
+                <a href="https://football.ua/italy/statistics.html" >Статистика</a>
+            </li>
+        
+            <li class=" "
+                style="">
+                <a href="https://football.ua/italy/table.html" >Таблиця</a>
+            </li>
+        
+            <li class=" "
+                style="">
+                <a href="https://football.ua/italy/cup/" >Кубок Італії</a>
+            </li>
+        
+        </ul>
+    
+    </li>
+    
+    <li class="">
+    
+        <a href="https://football.ua/germany.html" 
+            style="" class="">НІМЕЧЧИНА</a>
+    
+    </li>
+    
+    <li class="">
+    
+        <a href="https://football.ua/france.html" 
+            style="" class="">ФРАНЦІЯ</a>
+    
+    </li>
+    
+    <li class="">
+    
+        <a href="https://football.ua/netherlands.html" 
+            style="" class="">НІДЕРЛАНДИ</a>
+    
+    </li>
+    
+    <li class="">
+    
+        <a href="https://football.ua/portugal.html" 
+            style="" class="">ПОРТУГАЛІЯ</a>
+    
+    </li>
+    
+    <li class="">
+    
+        <a href="https://football.ua/poland.html" 
+            style="" class="">ПОЛЬЩА</a>
+    
+    </li>
+    
+    <li class="">
+    
+        <a href="https://football.ua/turkey.html" 
+            style="" class="">ТУРЕЧЧИНА</a>
+    
+    </li>
+    
+    <li class="">
+    
+        <a href="https://football.ua/countrieselse.html" 
+            style="" class="">ІНШІ</a>
+    
+    </li>
+    
+    <li class="menu-separator"></li>
+    
+    <li class="">
+    
+        <a href="https://champions.football.ua/" 
+            style="" class="">ЛІГА ЧЕМПІОНІВ</a>
+    
+    </li>
+    
+    <li class="">
+    
+        <a href="https://football.ua/uefa.html" 
+            style="" class="">ЛІГА ЄВРОПИ</a>
+    
+    </li>
+    
+    <li class="">
+    
+        <a href="https://football.ua/conferenceleague.html" 
+            style="" class="">ЛІГА КОНФЕРЕНЦІЙ</a>
+    
+    </li>
+    
+    <li class="menu-separator"></li>
+    
+    <li class="">
+    
+        <a href="https://football.ua/nationsleague.html" 
+            style="" class="">ЛІГА НАЦІЙ </a>
+    
+    </li>
+    
+    <li class="menu-separator"></li>
+    
+    <li class="">
+    
+        <a href="https://football.ua/futsal.html" 
+            style="" class="">ФУТЗАЛ</a>
+    
+    </li>
+    
+    <li class="menu-separator"></li>
+    
+    <li class="">
+    
+        <a href="https://football.ua/fiction.html" 
+            style="" class="">ЧТИВО</a>
+    
+    </li>
+    
+    <li class="menu-separator"></li>
+    
+    <li class="">
+    
+        <a href="https://football.ua/worldcup.html" 
+            style="" class="">ЧЕМПІОНАТ СВІТУ</a>
+    
+    </li>
+    
+    <li class="menu-separator"></li>
+    
+    <li class="">
+    
+        <a href="https://football.ua/euro.html" 
+            style="" class="">ЄВРО-2024</a>
+    
+    </li>
+    
+    <li class="menu-separator"></li>
+    
+    <li class="">
+    
+        <a href="https://football.ua/footballtest.html" 
+            style="" class="">ТЕСТИ</a>
+    
+    </li>
+    
+    <li class="menu-separator"></li>
+    
+    <li class="">
+    
+        <a href="https://football.ua/life-principles.html" 
+            style="" class="">ПРАВИЛА ЖИТТЯ</a>
+    
+    </li>
+    
+    <li class="menu-separator"></li>
+    
+    <li class="">
+    
+        <a href="https://football.ua/bet-casino.html" 
+            style="" class="">НОВИНИ КАЗИНО</a>
+    
+    </li>
+    
+    <li class="menu-separator"></li>
+    </menu>
+            <section class="content">
+                <a title="Вверх" href="#" id="scroll-top"></a>
+                
+                <div class="main-left">
+                    <div id="ctl00_columnTop" class="col-top">
+
+<script src="https://football.ua/js/amcharts/amcharts.js" type="text/javascript"></script>
+<script src="https://football.ua/js/amcharts/serial.js" type="text/javascript"></script>
+<script src="https://football.ua/js/jquery.royalslider.min.js" type='text/javascript'></script>
+<script type="text/javascript">
+var NewsId = 558300;
+var NewsVotes = Array();
+
+
+
+
+var NewsLineups = Array();
+
+
+</script>
+<script type="text/javascript" src="https://football.ua/mod/News/OpenNews.js?v=20160525"></script>
+
+<article class="author-article">
+    <p class="rubric">Італія</p>
+    <p class="date">14 липня 2025, 00:35</p>
+    <h1>Італія трансферна. Літні переходи-2025</h1>
+    <p class="intro">Football.ua представляє таблицю з переходами в італійській Серії А під час літнього трансферного вікна 2025 року.</p>
+
+    <div class="article-photo">
+        <img src="https://images.football.ua/i/news/630x373/558/558300.jpg" alt="Кевін Де Брюйне, sscnapoli.it" />
+        <div class="photo-text">
+            <span class="author">Кевін Де Брюйне, sscnapoli.it</span>
+            <span class="photo-date">14 липня 2025, 00:35</span>
+        </div>
+    </div>
+
+
+    <div class="article-text"><p>Всі переходи Серії А цього міжсезоння &mdash; в одному місці! Пропонуємо вам слідкувати за трансферами футболістів у рамках чемпіонату Італії в наведеній нижче таблиці.</p>
+
+<p><strong>Скорочення</strong>:</p>
+
+<p><em>по &mdash; повернення з оренди<br />
+ор &mdash; оренда<br />
+ва &mdash; вільний агент<br />
+зк &mdash; завершив кар&#39;єру<br />
+бк &mdash; без клубу</em></p>
+
+<p><em>н &mdash; нападник<br />
+п &mdash; півзахисник<br />
+з &mdash; захисник<br />
+в &mdash; воротар</em></p>
+
+<p style="text-align: right;">Примітка: суми вказані в таблиці у валюті євро (&euro;) згідно з даними авторитетного порталу <strong><em>transfermarkt</em></strong></p>
+
+<p><img alt="" class="TextPhoto" src="https://images.football.ua/i/custom/1024x0/63887/63887427081990.jpg" tabindex="-1" /></p>
+
+<div style="margin-bottom: 25px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif;">
+<table border="1" cellpadding="1" cellspacing="1" style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif; width: 621px;">
+	<tbody>
+		<tr>
+			<td style="width: 310px; text-align: center;">
+			<h3><strong>Прийшли</strong></h3>
+			</td>
+			<td style="width: 267px;">
+			<h3 style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-family: Arial, sans-serif; text-align: center;"><strong>Пішли</strong></h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 310px; text-align: left;"><strong>Оділон Коссуну</strong> (з. Баєр, 20 млн &euro;)<br />
+			<strong>Онест Аханор</strong> (з. Дженоа, 17 млн &euro;)<br />
+			<strong>Камалдін Сулемана</strong> (н. Саутгемптон, 17 млн &euro;)<br />
+			<strong>Лазар Самарджич</strong> (п. Удінезе, 14.8 млн &euro;)<br />
+			<strong>Марко Брешіаніні</strong> (п. Фрозіноне, 10 млн &euro;)<br />
+			Мітчел Баккер (з. Лілль, по)<br />
+			Бен Годфрі (з. Іпсвіч Таун, по)<br />
+			Мішель Адопо (п. Кальярі, по)<br />
+			Хуан Муссо (в. Атлетіко Мадрид, по)<br />
+			Ель-Біляль Туре (н. Штутгарт, по)<br />
+			Джованні Бонфанті (з. Піза, по)<br />
+			Роберто Пікколі (н. Кальярі, по)</td>
+			<td style="width: 267px; text-align: left;"><strong>Маттео Руджері</strong> (п. Атлетіко Мадрид, 17 млн &euro;)<br />
+			<strong>Роберто Пікколі</strong> (н. Кальярі, 12 млн &euro;)<br />
+			<strong>Мішель Адопо</strong> (п. Кальярі, 3.8 млн &euro;)<br />
+			<strong>Хуан Муссо</strong> (в. Атлетіко Мадрид, 3 млн &euro;)<br />
+			Рафаель Толой (з. ва)<br />
+			Хуан Куадрадо (п. ва)<br />
+			Оділон Коссуну (з. Баєр, по)<br />
+			Штефан Пош (з. Болонья, по)<br />
+			Лазар Самарджич (п. Удінезе, по)<br />
+			Марко Брешіаніні (п. Фрозіноне, по)</td>
+		</tr>
+	</tbody>
+</table>
+
+<p style="text-align: left;"><img alt="" class="TextPhoto" src="https://images.football.ua/i/custom/1024x0/63887/63887427091207.jpg" tabindex="-1" /></p>
+
+<div style="margin-bottom: 25px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif;">
+<table border="1" cellpadding="1" cellspacing="1" style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif; width: 621px;">
+	<tbody>
+		<tr>
+			<td style="width: 310px; text-align: center;">
+			<h3><strong>Прийшли</strong></h3>
+			</td>
+			<td style="width: 267px;">
+			<h3 style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-family: Arial, sans-serif; text-align: center;"><strong>Пішли</strong></h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 310px; text-align: left;"><strong>Мартін Вітік </strong>(з. Спарта Прага, 11<strong>&nbsp;</strong><span style="font-family: Arial, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400;">млн &euro;)</span><br />
+			<strong>Ніколо Казале</strong> (з. Лаціо, 6.5 млн &euro;)<br />
+			<strong>Чіро Іммобіле</strong> (н. Бешикташ, ва)<br />
+			<strong>Тома Жильє</strong> (в. Універсідад Католіка, ва)<br />
+			Хоакін Соса (з. Реджана, по)<br />
+			Флавіо Феррарі (н. Авеццано, по)<br />
+			Штефан Пош (з. Аталанта, по)<br />
+			Кацпер Урбанські (п. Монца, по)<br />
+			Маттіа Мотолезе (з. Латіна, по)<br />
+			Дженнаро Анатріелло (н. Трапані, по)<br />
+			Орджі Оквонкво (н. Читтаделла, по)<br />
+			Джанмарко Канджано (н. Пескара, по)<br />
+			Томмазо Корацца (з. Салернітана, по)<br />
+			Антоніо Раймондо (н. Салернітана, по)<br />
+			Ніклас Пююхтія (п. Зюдтіроль, по)<br />
+			Єспер Карлссон (н. Лечче, по)<br />
+			Міхайло Ілич (з. Партизан, по)<br />
+			Андреа Мація (н. Варезіна, по)<br />
+			Кевін Боніфаці (з. Лечче, по)<br />
+			Мануель Розетті (п. Сестрі Леванте, по)<br />
+			Давіде Франціні (в. П&#39;яченца, по)<br />
+			Ріккардо Стіванелло (з. Юве Некст Джен, по)</td>
+			<td style="width: 267px; text-align: left;">Нікола Баньйоліні (в. Губбіо, ор)<br />
+			Джанмарко Канджано (н. Пескара, ?)<br />
+			Андрі Фаннар Балдурссон (п. ва)<br />
+			Естаніс Педрола (н. Сампдорія, по)<br />
+			Давіде Калабрія (з. Мілан, по)<br />
+			Ніколо Казале (з. Лаціо, по)<br />
+			Томмазо Побега (п. Мілан, по)</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><img alt="" class="TextPhoto" src="https://images.football.ua/i/custom/1024x0/63887/63887427100522.jpg" tabindex="-1" /></p>
+
+<div style="margin-bottom: 25px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif;">
+<table border="1" cellpadding="1" cellspacing="1" style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif; width: 621px;">
+	<tbody>
+		<tr>
+			<td style="width: 310px; text-align: center;">
+			<h3><strong>Прийшли</strong></h3>
+			</td>
+			<td style="width: 267px;">
+			<h3 style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-family: Arial, sans-serif; text-align: center;"><strong>Пішли</strong></h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 310px; text-align: left;"><strong>Роберто Пікколі</strong> (н. Аталанта, 12 млн &euro;)<br />
+			<strong>Еліа Капріле</strong> (в. Наполі, 8 млн &euro;)<br />
+			<strong>Джанлука Гаетано</strong> (п. Наполі, 6 млн &euro;)<br />
+			<strong>Мішель Адопо</strong> (п. Аталанта, 3.8 млн &euro;)<br />
+			<strong>Дженнаро Борреллі</strong> (н. Брешія, ва)<br />
+			Сімоне Скуффет (в. Наполі, по)<br />
+			Матеуш В&#39;єтеска (з. ПАОК, по)<br />
+			Марко Рог (п. Динамо Загреб, по)<br />
+			Пантеліс Хацідіакос (з. Копенгаген, по)<br />
+			Алессандро Ді Пардо (з. Модена, по)<br />
+			Давіде Веролі (з. Сампдорія, по)<br />
+			Етьєн Катена (з. Віртус Верона, по)<br />
+			Боріс Радунович (в. Барі, по)<br />
+			Нік Прелец (н. Аустрія, по)<br />
+			Ніколо Кавуоті (п. Феральпізало, по)<br />
+			Луїджі Паломба (з. Віс Пезаро, по)<br />
+			Ріяд Ідріссі (з. Модена, по)</td>
+			<td style="width: 267px; text-align: left;"><strong>Антуан Макумбу</strong> (п. Самсунспор, 1.5 млн &euro;)<br />
+			<strong>Пантеліс Хацідіакос</strong> (з. Копенгаген, 1.5 млн &euro;)<br />
+			<span style="font-family: Arial, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400;"><strong>Томмазо Ауджелло</strong> (з. Палермо, ва)</span><br />
+			Луїджі Паломба (з. Віртус Ентелла, ?)<br />
+			Ален Шеррі (в. Фрозіноне, ор)<br />
+			Кінгстон Мутандва (н. Рід, ор)<br />
+			Ніколас Віола (п. ва)<br />
+			Хосе Луїс Паломіно (з. ва)<br />
+			Якуб Янкто (п. ва)<br />
+			Флорінел Коман (н. Аль-Гарафа, по)<br />
+			Еліа Капріле (в. Наполі, по)<br />
+			Джанлука Гаетано (п. Наполі, по)<br />
+			Роберто Пікколі (н. Аталанта, по)<br />
+			Мішель Адопо (п. Аталанта, по)</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><img alt="" class="TextPhoto" src="https://images.football.ua/i/custom/1024x0/63887/63887427109823.png" tabindex="-1" /></p>
+
+<div style="margin-bottom: 25px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif;">
+<div style="margin-bottom: 25px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif;">
+<table border="1" cellpadding="1" cellspacing="1" style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif; width: 621px;">
+	<tbody>
+		<tr>
+			<td style="width: 310px; text-align: center;">
+			<h3><strong>Прийшли</strong></h3>
+			</td>
+			<td style="width: 267px;">
+			<h3 style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-family: Arial, sans-serif; text-align: center;"><strong>Пішли</strong></h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 310px; text-align: left;"><strong>Хесус Родрігес</strong> (н. Реал Бетіс, 22.5 млн &euro;)<br />
+			<strong>Ніколас Кюн</strong> (н. Селтік, 19 млн &euro;)<br />
+			<strong>Мартін Батуріна</strong> (п. Динамо Загреб, 18 млн &euro;)<br />
+			<strong>Джейден Аддай</strong> (н. АЗ, 14 млн &euro;)<br />
+			<strong>Алекс Вальє</strong> (з. Барселона, 6 млн &euro;)<br />
+			<strong>Ігнас Ван дер Бремпт</strong> (з. РБ Зальцбург, 5 млн &euro;)<br />
+			<strong>Фелліпе Джек</strong> (з. Палмейрас U-20, 2 млн &euro;)<br />
+			Андреа Белотті (н. Бенфіка, по)<br />
+			Петер Ковачик (з. Подбрезова, по)<br />
+			Бен Лассін Коне (п. Фрозіноне, по)<br />
+			Лука Маццітеллі (п. Сассуоло, по)<br />
+			Сімоне Верді (п. Сассуоло, по)<br />
+			Олівер Абільдгор (п. Піза, по)<br />
+			Марко Тремолада (п. Лумеццане, по)<br />
+			Томмазо Фумагаллі (н. Козенца, по)<br />
+			Ніколас Йоанну (з. Сампдорія, по)<br />
+			Сімоне Гідотті (в. Сампдорія, по)<br />
+			Алессандро Беллемо (п. Сампдорія, по)<br />
+			Томмазо Кассандро (з. Катандзаро, по)<br />
+			Еміль Аудеро (в. Палермо, по)<br />
+			Самюель Баллє (н. Цюрих, по)<br />
+			Ліам Керріган (н. Беверен, по)<br />
+			Альберто Черрі (н. Салернітана, по)<br />
+			Марко Курто (з. Сампдорія, по)<br />
+			Алі Джасім (н. Алмере Сіті, по)<br />
+			Марко Сала (з. Лечче, по)<br />
+			Дієго Ронко (з. Віртус Верона, по)</td>
+			<td style="width: 267px; text-align: left;"><strong>Ніколас Йоанну</strong> (з. Сампдорія, 2 млн &euro;)<br />
+			<strong>Алессандро Беллемо</strong> (п. Сампдорія, 2 млн &euro;)<br />
+			<strong>Сімоне Гідотті</strong> (в. Сампдорія, 0.4 млн &euro;)<br />
+			<strong>Марко Тремолада</strong> (п. Перголеттезе, ва)<br />
+			Дієго Ронко (з. Монополі, ?)<br />
+			Томмазо Фумагаллі (н. Віртус Ентелла, ор)<br />
+			Ліам Керріган (н. ва)<br />
+			Сімоне Верді (п. ва)<br />
+			П&#39;єр Болкіні (в. ва)<br />
+			Алессіо Йовіне (п. зк)<br />
+			Пепе Рейна (в. зк)<br />
+			Фелліпе Джек (з. Палмейрас U-20, по)<br />
+			Лука Маццітеллі (п. Фрозіноне, по)<br />
+			Ігнас Ван дер Бремпт (з. РБ Зальцбург, по)<br />
+			Алекс Вальє (з. Барселона, по)<br />
+			Жонатан Іконе (н. Фіорентина, по)</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><img alt="" class="TextPhoto" src="https://images.football.ua/i/custom/1024x0/63887/63887427806707.png" tabindex="-1" /></p>
+
+<table border="1" cellpadding="1" cellspacing="1" style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif; width: 621px;">
+	<tbody>
+		<tr>
+			<td style="width: 310px; text-align: center;">
+			<h3><strong>Прийшли</strong></h3>
+			</td>
+			<td style="width: 267px;">
+			<h3 style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-family: Arial, sans-serif; text-align: center;"><strong>Пішли</strong></h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 310px; text-align: left;"><strong>Ярі Вандепютте</strong> (н. Катандзаро, 3.3 млн &euro;)<br />
+			<strong>Андреа Фуліньяті</strong> (в. Катандзаро, 1.4 млн &euro;)<br />
+			Давід Окереке (н. Газіантеп, по)<br />
+			Томмазо Міланезе (п. Каррарезе, по)<br />
+			Сальваторе Доре (п. Леньяго, по)<br />
+			Леонардо Сернікола (п. Піза, по)<br />
+			Джакомо Квальята (з. Катандзаро, по)<br />
+			Андреас Юнгдал (в. Вестерло, по)<br />
+			Лука Лочошвілі (з. Салернітана, по)<br />
+			Крістіан Ачелла (п. Альчоне, по)<br />
+			Блю Мамона (н. Мессіна, по)<br />
+			Юрі Роккетті (з. Юве Стабія, по)<br />
+			Маттіа Скарінгі (з. Джана Ермініо, по)<br />
+			Лука Мунаретті (з. Віртус Верона, по)<br />
+			Самуеле Регадзетті (з. Лумеццане, по)<br />
+			Марко Дзунно (н. Фоджа, по)<br />
+			Мухамаду Сарр (в. Спеція, по)<br />
+			Федеріко Агацці (в. Альчоне, по)<br />
+			Мікеле Бігонцоні (н. Кампобассо, по)<br />
+			Едді Каб&#39;янка (з. Феральпізало, по)<br />
+			Давід Стюклер (н. Джана Ермініо, по)<br />
+			Джошуа Тенкоран (п. Лумеццане, по)<br />
+			Альберто Бассо Річчі (н. Леньяго, по)<br />
+			Сезар Фаллетті (п. Барі, по)<br />
+			Франк Цаджу (н. Фрозіноне, по)<br />
+			Алессіо Брамбілла (п. Феральпізало, по)<br />
+			Фелікс Афена-Гьян (н. Юве Некст Джен, по)</td>
+			<td style="width: 267px; text-align: left;"><strong>Андреас Юнгдал</strong> (в. Вестерло, 1 млн &euro;)<br />
+			<strong>Лука Лочошвілі</strong> (з. Нюрнберг, 1 млн &euro;)<br />
+			<strong>Мухамаду Сарр</strong> (в. Спеція, 0.2 млн &euro;)<br />
+			<strong>Марко Дзунно</strong> (н. Кротоне, ва)<br />
+			<strong>Альберто Бассо Річчі</strong> (н. Арціньяно, ва)<br />
+			<span style="font-family: Arial, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400;"><strong>Жан Маєр</strong> (п. Мантова, ва)</span><br />
+			Сезар Фаллетті (п. Мантова, ?)<br />
+			Едді Каб&#39;янка (з. Салернітана, ор)<br />
+			Мікеле Бігонцоні (н. Латіна, ор)<br />
+			Самуеле Регадзетті (з. Оспіталетто, ор)<br />
+			Даніеле Тріакка (з. Тренто, ор)<br />
+			Андреа Бертолаччі (п. ва)<br />
+			Якоб Теннандер (в. ва)<br />
+			Франко Васкес (п. ва)<br />
+			Франческо Джеллі (п. Фрозіноне, по)<br />
+			Джакомо Драго (в. Зюдтіроль, по)<br />
+			Ярі Вандепютте (н. Катандзаро, по)<br />
+			Андреа Фуліньяті (в. Катандзаро, по)<br />
+			Валентін Антов (з. Монца, по)</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><img alt="" class="TextPhoto" src="https://images.football.ua/i/custom/1024x0/63887/63887427125779.jpg" tabindex="-1" /></p>
+
+<table border="1" cellpadding="1" cellspacing="1" style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif; width: 621px;">
+	<tbody>
+		<tr>
+			<td style="width: 310px; text-align: center;">
+			<h3><strong>Прийшли</strong></h3>
+			</td>
+			<td style="width: 267px;">
+			<h3 style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-family: Arial, sans-serif; text-align: center;"><strong>Пішли</strong></h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 310px; text-align: left;"><strong>Ніколо Фаджолі</strong> (п. Ювентус, 13.5 млн &euro;)<br />
+			<strong>Альберт Гудмундссон</strong> (н. Дженоа, 13 млн &euro;)<br />
+			<strong>Якопо Фацціні</strong> (п. Емполі, 10 млн &euro;)<br />
+			<strong>Робін Госенс</strong> (з. Уніон Берлін, 7 млн &euro;)<br />
+			<strong>Едін Джеко</strong> (н. Фенербахче, ва)<br />
+			<strong>Маттіа Віті</strong> (з. Ніцца, ор)<br />
+			Крістіан Куаме (н. Емполі, по)<br />
+			Крістіан Б&#39;яджетті (з. Сорренто, по)<br />
+			Жонатан Іконе (н. Комо, по)<br />
+			Абельхамід Сабірі (п. Ат-Таавун, по)<br />
+			Едуард Дуцу (з. Фоджа, по)<br />
+			Майкл Кайоде (з. Брентфорд, по)<br />
+			Олівер Крістенсен (в. Салернітана, по)<br />
+			Нікколо Нарді (п. П&#39;янезе, по)<br />
+			Ніколас Валентіні (з. Верона, по)<br />
+			Крістіано Бірагі (з. Торіно, по)<br />
+			Ріккардо Соттіль (н. Мілан, по)<br />
+			Ельйон Точі (н. Про Патрія, по)<br />
+			Лоренцо Луккезі (з. Венеція, по)<br />
+			Костантіно Фавазулі (п. Барі, по)<br />
+			Давіде Джентіле (з. Салернітана, по)<br />
+			Лоренцо Віджані (п. Про Верчеллі, по)<br />
+			Філіппо Дістефано (н. Фрозіноне, по)<br />
+			Лоренцо Аматуччі (п. Салернітана, по)<br />
+			Фаллу Сене (н. Фрозіноне, по)<br />
+			Едоардо П&#39;єроцці (з. Пескара, по)<br />
+			Мбала Нзола (н. Ланс, по)<br />
+			Ніко Гонсалес (н. Ювентус, по)<br />
+			Соф&#39;ян Амрабат (п. Фенербахче, по)<br />
+			Алессандро Б&#39;янко (п. Монца, по)<br />
+			Нікколо Фортіні (з. Юве Стабія, по)<br />
+			Дімо Крастев (з. Тернана, по)<br />
+			Антонін Барак (п. Касимпаша, по)<br />
+			Йосип Брекало (н. Касимпаша, по)<br />
+			Джино Інфантіно (п. Аль-Айн, по)<br />
+			Маттіа Маккі (з. Гроссето, по)</td>
+			<td style="width: 267px; text-align: left;"><strong>Ніко Гонсалес</strong> (н. Ювентус, 28.1 млн &euro;)<br />
+			<strong>Майкл Кайоде</strong> (з. Брентфорд, 17.5 млн &euro;)<br />
+			<strong>Соф&#39;ян Амрабат</strong> (п. Фенербахче, 12 млн &euro;)<br />
+			<strong>Крістіано Бірагі</strong> (з. Торіно, 0.1 млн &euro;)<br />
+			<strong>Матіас Морено</strong> (з. Леванте, ор, 0.5 млн &euro;)<br />
+			<strong>Едоардо П&#39;єроцці</strong> (з. Беневенто, ва)<br />
+			<span style="font-family: Arial, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400;"><strong>Крістіан Б&#39;яджетті</strong> (з. Торрес, ва)</span><br />
+			<strong>Лоренцо Віджані</strong> (п. П&#39;янезе, ва)<br />
+			Едуард Дуцу (з. ва)<br />
+			Габріеле Ферраріні (з, ва)<br />
+			Ніколо Дзаніоло (п. Галатасарай, по)<br />
+			Ніколо Фаджолі (п. Ювентус, по)<br />
+			Ясін Адлі (п. Мілан, по)<br />
+			Андреа Кольпані (п. Монца, по)<br />
+			Альберт Гудмундссон (н. Дженоа, по)<br />
+			Майкл Фолоруншо (п. Наполі, по)<br />
+			Даніло Катальді (п. Лаціо, по)<br />
+			Робін Госенс (з. Уніон Берлін, по)<br />
+			Едоардо Бове (п. Рома, по)</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><img alt="" class="TextPhoto" src="https://images.football.ua/i/custom/1024x0/63887/63887427136147.jpg" tabindex="-1" /></p>
+
+<div style="margin-bottom: 25px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif;">
+<table border="1" cellpadding="1" cellspacing="1" style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif; width: 621px;">
+	<tbody>
+		<tr>
+			<td style="width: 310px; text-align: center;">
+			<h3><strong>Прийшли</strong></h3>
+			</td>
+			<td style="width: 267px;">
+			<h3 style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-family: Arial, sans-serif; text-align: center;"><strong>Пішли</strong></h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 310px; text-align: left;"><strong>Ніколае Станчу</strong> (п. Дамак, ва)<br />
+			<strong>Альберт Гренбек</strong> (п. Ренн, ор)<br />
+			Габріеле Пессолані (н. Альчоне, по)<br />
+			Еміл Богінен (п. Фрозіноне, по)<br />
+			Даніель Фоссаті (н. Карпі, по)<br />
+			Мікаел Егілл Еллертссон (п. Венеція, по)<br />
+			Алессандро Маркандаллі (з. Венеція, по)<br />
+			Лоренцо Гальярді (з. Новара, по)<br />
+			Федеріко Вальєтті (з. Трапані, по)<br />
+			Алессандро Дебенедетті (н. Мантова, по)<br />
+			Сімоне Кальвані (в. Понтедера, по)<br />
+			Алессіо Сарпа (п. Понтедера, по)<br />
+			Леннарт Чиборра (з. Тіроль, по)<br />
+			Маттіа Араму (п. Мантова, по)<br />
+			Габріеле Кальвані (з. Брешія, по)<br />
+			Еліа Петреллі (н. Форлі, по)<br />
+			Альберт Гудмундссон (н. Фіорентина, по)<br />
+			Маноло Портанова (п. Реджана, по)<br />
+			Хрістос Пападопулос (п. Юве Некст Джен, по)<br />
+			Сейду Фіні (н. Ексельсіор, по)<br />
+			Андреа Фавіллі (н. Барі, по)<br />
+			Гювен Ялчин (н. Ароука, по)<br />
+			Томмазо Піттіно (з. Лумеццане, по)<br />
+			Алессандро Вольякко (з. Парма, по)<br />
+			Федеріко Аккорнеро (н. Тренто, по)<br />
+			Давід Анкіє (н. Рапід Бухарест, по)</td>
+			<td style="width: 267px; text-align: left;"><strong>Онест Аханор</strong> (з. Аталанта, 17 млн &euro;)<br />
+			<strong>Альберт Гудмундссон</strong> (н. Фіорентина, 13 млн &euro;)<br />
+			<strong>Федеріко Вальєтті</strong> (з. Трапані, 0.5 млн &euro;)<br />
+			<strong>Алан Маттурро</strong> (з. Леванте,&nbsp;ор, 0.5 млн &euro;)<br />
+			<strong>Маноло Портанова</strong> (п. Реджана, ва)<br />
+			<strong>Андреа Фавіллі</strong> (н. Авелліно, ва)<br />
+			<strong>Еліа Петреллі</strong> (н. Форлі, ва)<br />
+			Габріеле Кальвані (з. Фрозіноне, ор)<br />
+			Лоренцо Гальярді (з. Пінето, ор)<br />
+			Томмазо Піттіно (з. Мантова, ор)<br />
+			Габріеле Пессолані (н. Перголеттезе, ор)<br />
+			Маріо Балотеллі (н. ва)<br />
+			Леннарт Чиборра (з. ва)<br />
+			Мілан Бадель (п. ва)<br />
+			Сімоне Кальвані (в. ва)<br />
+			Даніеле Соммаріва (в. ва)<br />
+			Максвел Корне (н. Вест Гем Юнайтед, по)<br />
+			Жан Онана (п. Бешикташ, по)<br />
+			Беньямін Зігріст (в. Рапід Бухарест, по)<br />
+			Алессандро Дзанолі (з. Наполі, по)<br />
+			Андреа Пінамонті (н. Сассуоло, по)<br />
+			Фабіо Міретті (п. Ювентус, по)<br />
+			Ліор Касса (п. Маккабі Хайфа, по)</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><img alt="" class="TextPhoto" src="https://images.football.ua/i/custom/1024x0/63887/63887427145147.jpg" tabindex="-1" /></p>
+
+<div style="margin-bottom: 25px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif;">
+<table border="1" cellpadding="1" cellspacing="1" style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif; width: 621px;">
+	<tbody>
+		<tr>
+			<td style="width: 310px; text-align: center;">
+			<h3><strong>Прийшли</strong></h3>
+			</td>
+			<td style="width: 267px;">
+			<h3 style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-family: Arial, sans-serif; text-align: center;"><strong>Пішли</strong></h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 310px; text-align: left;"><strong>Шейх Ньяссе</strong> (п. Янг Бойз, 3.5 млн &euro;)<br />
+			<strong>Амін Сарр</strong> (н. Ліон, 3.5 млн &euro;)<br />
+			<strong>Антуан Бернед</strong> (п. Лозанна-Спорт, 2 млн &euro;)<br />
+			<strong>Грігоріс Кастанос</strong> (п. Салернітана, 1.2 млн &euro;)<br />
+			<strong>Жоване</strong> (н. Корінтіанс, ва)<br />
+			Едоардо Бернарді (з. Арціньяно, по)<br />
+			Нікола Патане (п. Перголеттезе, по)<br />
+			Крістіан Корраді (з. Катандзаро, по)<br />
+			Хуан Мануель Крус (н. Козенца, по)<br />
+			Яя Каллон (н. Казертана, по)<br />
+			Маттіа Ріго (з. Карпі, по)<br />
+			Матеуш Прашелік (п. Зюдтіроль, по)<br />
+			Корай Гюнтер (з. Гезтепе, по)<br />
+			Федеріко Кая (н. Віртус Верона, по)<br />
+			Айман Ріай (п. Кальдіеро, по)<br />
+			Деніс Каццадорі (н. Кальдіеро, по)<br />
+			Тома Анрі (н. Палермо, по)<br />
+			Маттіа Флоріо (н. Кальдіеро, по)<br />
+			Шарліс (п. Козенца, по)<br />
+			Кевін Лазанья (н. Барі, по)<br />
+			Еліа Боседжа (в. Арціньяно, по)<br />
+			Джейден Браф (н. Салернітана, по)<br />
+			Ніколо Калабрезе (з. Віртус Верона, по)<br />
+			Елаїс Тавшан (н. Чезена, по)<br />
+			Стефан Мітрович (н. Левен, по)<br />
+			Маттіа К&#39;єза (в. Спортінг Дубай, по)<br />
+			Джакомо Тоніоло (в. Лумеццане, по)</td>
+			<td style="width: 267px; text-align: left;"><strong>Дієго Коппола</strong> (з. Брайтон, 11 млн &euro;)<br />
+			<strong>Тома Анрі</strong> (н. Стандард, ва)<br />
+			Луан Патрік (з. Ештрела Амадора, ?)<br />
+			<span style="font-family: Arial, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400;">Матеуш Прашелік (п. Краковія, ?)</span><br />
+			Еліа Боседжа (в. Новара, ?)<br />
+			Едоардо Бернарді (з. Арціньяно, ?)<br />
+			Дарко Лазович (п. ва)<br />
+			Корай Гюнтер (з. ва)<br />
+			Давіде Фараоні (з. ва)<br />
+			Павел Давідович (з. ва)<br />
+			Алессандро Берарді (в. ва)<br />
+			Ондрей Дуда (п. ва)<br />
+			Шейх Ньяссе (п. Янг Бойз, по)<br />
+			Ніколас Валентіні (з. Фіорентина, по)<br />
+			Антуан Бернед (п. Лозанна-Спорт, по)<br />
+			Іллан Оку (з. Бастія, по)<br />
+			Грігоріс Кастанос (п. Салернітана, по)<br />
+			Каспер Тенгстедт (н. Бенфіка, по)<br />
+			Амін Сарр (н. Ліон, по)<br />
+			Домагой Брадарич (з. Салернітана, по)<br />
+			Флавіус Данілюк (з. Салернітана, по)</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><img alt="" class="TextPhoto" src="https://images.football.ua/i/custom/1024x0/63887/63887427154562.jpg" tabindex="-1" /></p>
+
+<div style="margin-bottom: 25px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif;">
+<table border="1" cellpadding="1" cellspacing="1" style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif; width: 621px;">
+	<tbody>
+		<tr>
+			<td style="width: 310px; text-align: center;">
+			<h3><strong>Прийшли</strong></h3>
+			</td>
+			<td style="width: 267px;">
+			<h3 style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-family: Arial, sans-serif; text-align: center;"><strong>Пішли</strong></h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 310px; text-align: left;"><strong>Анж-Йоан Бонні</strong> (н. Парма, 23 млн &euro;)<br />
+			<strong>Луїс Енріке</strong> (п. Марсель, 23 млн &euro;)<br />
+			<strong>Петар Сучич</strong> (п. Динамо Загреб, 14 млн &euro;)<br />
+			<strong>Нікола Залевські</strong> (п. Рома, 6.3 млн &euro;)<br />
+			Александар Станкович (в. Люцерн, по)<br />
+			Піо Еспозіто (н. Спеція, по)<br />
+			Франко Карбоні (з. Венеція, по)<br />
+			Едді Сальседо (н. ОФІ, по)<br />
+			Тейджон Б&#39;юкенен (п. Вільярреал, по)<br />
+			Мартін Сатріано (н. Ланс, по)<br />
+			Філіп Станкович (в. Венеція, по)<br />
+			Томас Паласіос (з. Монца, по)<br />
+			Себастьяно Еспозіто (н. Емполі, по)<br />
+			Зіньйо Вангейсден (з. Мехелен, по)<br />
+			Ебенезер Акінсанміро (п. Сампдорія, по)</td>
+			<td style="width: 267px; text-align: left;"><strong>Мартін Сатріано</strong> (н. Ланс, 5 млн &euro;)<br />
+			<strong>Філіп Станкович</strong> (в. Венеція, 1.5 млн &euro;)<br />
+			<strong>Хоакін Корреа</strong> (н. Ботафогу, ва)<br />
+			<strong>Едді Сальседо</strong> (н. ОФІ, ва)<br />
+			Марко Арнаутович (н. ва)<br />
+			Нікола Залевські (п. Рома, по)</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><img alt="" class="TextPhoto" src="https://images.football.ua/i/custom/1024x0/63887/63887427162921.jpg" tabindex="-1" /></p>
+
+<div style="margin-bottom: 25px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif;">
+<table border="1" cellpadding="1" cellspacing="1" style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif; width: 622px;">
+	<tbody>
+		<tr>
+			<td style="width: 310px; text-align: center;">
+			<h3><strong>Прийшли</strong></h3>
+			</td>
+			<td style="width: 268px;">
+			<h3 style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-family: Arial, sans-serif; text-align: center;"><strong>Пішли</strong></h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 310px; text-align: left;"><strong>Ніко Гонсалес</strong> (н. Фіорентина, 28.1 млн &euro;)<br />
+			<strong>Ллойд Келлі</strong> (з. Ньюкасл Юнайтед, 17.2 млн &euro;)<br />
+			<strong>Мікеле Ді Грегоріо</strong> (в. Монца, 14.3 млн &euro;)<br />
+			<strong>П&#39;єр Калюлю</strong> (з. Мілан, 14.3 млн &euro;)<br />
+			<strong>Джонатан Девід</strong> (н. Лілль, ва)<br />
+			Філіп Костич (п. Фенербахче, по)<br />
+			Даніеле Ругані (з. Аякс, по)<br />
+			Ніколо Фаджолі (п. Фіорентина, по)<br />
+			Артур Мело (п. Жирона, по)<br />
+			Ніколо Ровелла (п. Лаціо, по)<br />
+			Тьягу Джалу (з. Порту, по)<br />
+			Стефано Горі (в. Спеція, по)<br />
+			Маттіа Де Шильйо (з. Емполі, по)<br />
+			Факундо Гонсалес (з. Феєнорд, по)<br />
+			Фабіо Міретті (п. Дженоа, по)<br />
+			Ганс Ніколуссі-Кавілья (п. Венеція, по)<br />
+			Лука Пеллегріні (з. Лаціо, по)</td>
+			<td style="width: 268px; text-align: left;"><strong>Ніколо Ровелла</strong> (п. Лаціо, 17 млн &euro;)<br />
+			<strong>Ніколо Фаджолі</strong> (п. Фіорентина, 13.5 млн &euro;)<br />
+			<strong>Лука Пеллегріні</strong> (з. Лаціо, 4 млн &euro;)<br />
+			<strong>Ганс Ніколуссі-Кавілья</strong> (п. Венеція, 3.5 млн &euro;)<br />
+			Маттіа Де Шильйо (з. ва)<br />
+			Ренату Вейга (з. Челсі, по)<br />
+			Ллойд Келлі (з. Ньюкасл Юнайтед, по)<br />
+			Ніко Гонсалес (н. Фіорентина, по)<br />
+			П&#39;єр Калюлю (з. Мілан, по)<br />
+			Мікеле Ді Грегоріо (в. Монца, по)</td>
+		</tr>
+	</tbody>
+</table>
+
+<p style="text-align: justify;"><img alt="" class="TextPhoto" src="https://images.football.ua/i/custom/1024x0/63887/63887427171559.jpg" tabindex="-1" /></p>
+
+<div style="margin-bottom: 25px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif;">
+<div style="margin-bottom: 25px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif;">
+<div style="margin-bottom: 25px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif;">
+<table border="1" cellpadding="1" cellspacing="1" style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif; width: 621px;">
+	<tbody>
+		<tr>
+			<td style="width: 310px; text-align: center;">
+			<h3><strong>Прийшли</strong></h3>
+			</td>
+			<td style="width: 267px;">
+			<h3 style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-family: Arial, sans-serif; text-align: center;"><strong>Пішли</strong></h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 310px; text-align: left;"><strong>Ніколо Ровелла</strong> (п. Ювентус, 17 млн &euro;)<br />
+			<strong>Нуну Тавареш</strong> (з. Арсенал, 5 млн &euro;)<br />
+			<strong>Лука Пеллегріні</strong> (з. Ювентус, 4 млн &euro;)<br />
+			<strong>Фісайо Деле-Баширу</strong> (п. Хатайспор, 3.43 млн &euro;)<br />
+			<strong>Самюель Жиго</strong> (з. Марсель, 0.5 млн &euro;)<br />
+			Габріеле Артістіко (н. Козенца, по)<br />
+			Валеріо Креспі (н. Феральпізало, по)<br />
+			Гаетано Кастровіллі (п. Монца, по)<br />
+			Жан-Даніель Акпа-Акпро (п. Монца, по)<br />
+			Даніло Катальді (п. Фіорентина, по)<br />
+			Ніколо Казале (з. Болонья, по)<br />
+			Мохамед Салім Фарес (з. Пансерраїкос, по)<br />
+			Фабіо Андреа Руджері (з. Салернітана, по)<br />
+			Маттео Канчельєрі (н. Парма, по)<br />
+			Сана Фернандеш (н. НАК Бреда, по)<br />
+			Марко Бертіні (п. Асколі, по)<br />
+			Романо Флоріані Муссоліні (з. Юве Стабія, по)<br />
+			Дімітріє Каменович (з. Івердон-Спорт, по)</td>
+			<td style="width: 267px; text-align: left;"><strong>Лум Чауна</strong> (н. Бернлі, 15.15 млн &euro;)<br />
+			<strong>Ніколо Казале</strong> (з. Болонья, 6.5 млн &euro;)<br />
+			Валеріо Креспі (н. Авелліно, ?)<br />
+			Габріеле Артістіко (н. Спеція, ор)<br />
+			Філіпе Бордон (з. Зюдтіроль, ор)<br />
+			Алессандро Мілані (з. Авелліно, ор)<br />
+			Жан-Даніель Акпа-Акпро (п. ва)<br />
+			Гаетано Кастровіллі (п. ва)<br />
+			Андре Андерсон (п. ва)<br />
+			Арійон Ібрагімович (п. Баварія, по)<br />
+			Ніколо Ровелла (п. Ювентус, по)<br />
+			Самюель Жиго (з. Марсель, по)<br />
+			Нуну Тавареш (з. Арсенал, по)<br />
+			Фісайо Деле-Баширу (п. Хатайспор, по)<br />
+			Лука Пеллегріні (з. Ювентус, по)</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><img alt="" class="TextPhoto" src="https://images.football.ua/i/custom/1024x0/63887/63887427181121.jpg" tabindex="-1" /></p>
+
+<div style="margin-bottom: 25px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif;">
+<table border="1" cellpadding="1" cellspacing="1" style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif; width: 621px;">
+	<tbody>
+		<tr>
+			<td style="width: 310px; text-align: center;">
+			<h3><strong>Прийшли</strong></h3>
+			</td>
+			<td style="width: 267px;">
+			<h3 style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-family: Arial, sans-serif; text-align: center;"><strong>Пішли</strong></h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 310px; text-align: left;"><strong>Кріст-Овен Куассі</strong> (з. Лаваль, 1 млн &euro;)<br />
+			<strong>Франческо Камарда</strong> (н. Мілан, ор)<br />
+			Хенрі Саломаа (н. Луккезе, по)<br />
+			Матс Лемменс (з. Дарінг, по)<br />
+			Александру Борбей (в. ЧФР Клуж, по)<br />
+			Кевін Боніфаці (з. Сассуоло, по)<br />
+			Марко Блеве (в. Каррарезе, по)<br />
+			Ед Макджаннет (п. Черіньйола, по)<br />
+			Дейві Метай (н. Манфредонія, по)<br />
+			Ремі Уден (п. Сампдорія, по)<br />
+			Джакомо Фатіканті (п. Юве Некст Джен, по)<br />
+			Даніель Самек (п. Градец Кралове, по)<br />
+			Пабло Родрігес (н. Расінг Сантандер, по)<br />
+			Юссеф Малех (п. Емполі, по)</td>
+			<td style="width: 267px; text-align: left;"><strong>Даніель Самек</strong> (п. Артіс, 0.3 млн &euro;)<br />
+			<strong>Матс Лемменс</strong> (з. Дарінг, ва)<br />
+			<strong>Хоан Гонсалес</strong> (п. зк)<br />
+			Марко Блеве (в. Каррарезе, ?)<br />
+			Йоел Фонкерлін Перссон (н. Естерс, ?)<br />
+			Нікола Сансоне (н. ва)<br />
+			Анте Ребич (н. ва)<br />
+			Єппе Корфіцен (н. ва)<br />
+			Марко Сала (з. Комо, по)<br />
+			Єспер Карлссон (н. Болонья, по)<br />
+			Кевін Боніфаці (з. Болонья, по)</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><img alt="" class="TextPhoto" src="https://images.football.ua/i/custom/1024x0/63887/63887427188785.jpg" tabindex="-1" /></p>
+
+<div style="margin-bottom: 25px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif;">
+<table border="1" cellpadding="1" cellspacing="1" style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif; width: 621px;">
+	<tbody>
+		<tr>
+			<td style="width: 310px; text-align: center;">
+			<h3><strong>Прийшли</strong></h3>
+			</td>
+			<td style="width: 267px;">
+			<h3 style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-family: Arial, sans-serif; text-align: center;"><strong>Пішли</strong></h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 310px; text-align: left;"><strong>Самуеле Річчі</strong> (п. Торіно, 23 млн &euro;)<br />
+			Ноа Окафор (н. Наполі, по)<br />
+			Ісмаель Беннасер (п. Марсель, по)<br />
+			Марко Лазетич (н. ТСК Бачка Топола, по)<br />
+			Давіде Калабрія (з. Болонья, по)<br />
+			Марко Пеллегріно (з. Уракан, по)<br />
+			Алексіс Салемакерс (н. Рома, по)<br />
+			Ясін Адлі (п. Фіорентина, по)<br />
+			Томмазо Побега (п. Болонья, по)<br />
+			П&#39;єр Калюлю (з. Ювентус, по)<br />
+			Лоренцо Коломбо (н. Емполі, по)<br />
+			Девіс Васкес (в. Емполі, по)</td>
+			<td style="width: 267px; text-align: left;"><strong>Тіджані Рейндерс</strong> (п. Манчестер Сіті, 55 млн &euro;)<br />
+			<strong>Тео Ернандес</strong> (з. Аль-Хіляль, 25 млн &euro;)<br />
+			<strong>П&#39;єр Калюлю</strong> (з. Ювентус, 14.3 млн &euro;)<br />
+			<strong>Марко Пеллегріно</strong> (з. Бока Хуніорс, 3.5 млн &euro;)<br />
+			Франческо Камарда (н. Лечче, ор)<br />
+			Жуан Феліш (н. Челсі, по)<br />
+			Алессандро Флоренці (з. ва)<br />
+			Лука Йович (н. ва)<br />
+			Давіде Калабрія (з. ва)<br />
+			Ріккардо Соттіль (н. Фіорентина, по)<br />
+			Кайл Вокер (з. Манчестер Сіті, по)<br />
+			Теммі Абрагам (н. Рома, по)</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><img alt="" class="TextPhoto" src="https://images.football.ua/i/custom/1024x0/63887/63887427713577.png" tabindex="-1" /></p>
+
+<div style="margin-bottom: 25px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif;">
+<div style="margin-bottom: 25px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif;">
+<table border="1" cellpadding="1" cellspacing="1" style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif; width: 621px;">
+	<tbody>
+		<tr>
+			<td style="width: 310px; text-align: center;">
+			<h3><strong>Прийшли</strong></h3>
+			</td>
+			<td style="width: 267px;">
+			<h3 style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-family: Arial, sans-serif; text-align: center;"><strong>Пішли</strong></h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 310px;"><strong>Лука Мар&#39;януччі</strong> (з. Емполі, 9 млн &euro;)<br />
+			<strong>Кевін Де Брюйне</strong> (п. Манчестер Сіті, ва)<br />
+			Паскуале Марранцино (н. Кавезе, по)<br />
+			Еліа Капріле (в. Кальярі, по)<br />
+			Франческо Джоєллі (п. Путеолана, по)<br />
+			Алессандро Спавоне (п. Гвідонія, по)<br />
+			Алессіо Дзербін (н. Венеція, по)<br />
+			Маріо Віларді (н. Кротоне, по)<br />
+			Майкл Фолоруншо (п. Фіорентина, по)<br />
+			Лоренцо Сгарбі (н. Юве Стабія, по)<br />
+			Єнс Каюсте (п. Іпсвіч Таун, по)<br />
+			Носа Едвард Обаретін (з. Барі, по)<br />
+			Алессандро Дзанолі (з. Дженоа, по)<br />
+			Джузеппе Д&#39;Агостіно (н. Джульяно, по)<br />
+			Антоніо Чоффі (н. Ріміні, по)<br />
+			Джузеппе Амброзіно (н. Фрозіноне, по)<br />
+			Джанлука Вільйотті (н. Кавезе, по)<br />
+			Єспер Ліндстрем (н. Евертон, по)<br />
+			Маттео Маркізано (з. Кавезе, по)<br />
+			Натан (з. Реал Бетіс, по)<br />
+			Валід Шеддіра (н. Еспаньйол, по)<br />
+			Джанлука Гаетано (п. Кальярі, по)<br />
+			Франческо Меццоні (з. Перуджа, по)<br />
+			Колі Сако (п. Барі, по)<br />
+			Луїджі Д&#39;Авіно (з. Губбіо, по)<br />
+			Дженнаро Яккаріно (п. Губбіо, по)<br />
+			Віктор Осімхен (н. Галатасарай, по)<br />
+			Антоніо Вергара (п. Реджана, по)</td>
+			<td style="width: 267px; text-align: left;"><strong>Натан</strong> (з. Реал Бетіс, 9 млн &euro;)<br />
+			<strong>Еліа Капріле</strong> (в. Кальярі, 8 млн &euro;)<br />
+			<strong>Джанлука Гаетано</strong> (п. Кальярі, 6 млн &euro;)<br />
+			<strong>Рафа Марін</strong> (з. Вільярреал, ор, 1 млн &euro;)<br />
+			<strong>Франческо Джоєллі</strong> (п. Афраголезе, ва)<br />
+			<strong>Франческо Меццоні</strong> (з. Віртус Ентелла, ва)<br />
+			Нікіта Контіні (в. ва)<br />
+			Клаудіо Турі (в. ва)<br />
+			Ноа Окафор (н. Мілан, по)<br />
+			Філіп Біллінг (п. Борнмут, по)<br />
+			Сімоне Скуффет (в. Кальярі, по)</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><img alt="" class="TextPhoto" src="https://images.football.ua/i/custom/1024x0/63887/63887427207016.png" tabindex="-1" /></p>
+
+<div style="margin-bottom: 25px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif;">
+<table border="1" cellpadding="1" cellspacing="1" style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif; width: 621px;">
+	<tbody>
+		<tr>
+			<td style="width: 310px; text-align: center;">
+			<h3><strong>Прийшли</strong></h3>
+			</td>
+			<td style="width: 267px;">
+			<h3 style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-family: Arial, sans-serif; text-align: center;"><strong>Пішли</strong></h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 310px;"><strong>Крістіан Ордоньєс</strong> (п. Велес Сарсфілд, 8.5 млн &euro;)<br />
+			Тяш Бегич (н. Фрозіноне, по)<br />
+			Даріо Шитс (н. Гелмонд Спорт, по)<br />
+			Джакомо Марконі (н. Перуджа, по)<br />
+			Філіппо Рінальді (в. Феральпізало, по)<br />
+			Пітер Аморан (з. Перуджа, по)<br />
+			Антуан Жужу (н. Гавр, по)<br />
+			Рашид Куда (п. Спеція, по)<br />
+			Антоні Партіпіло (н. Фрозіноне, по)<br />
+			Даніель Міколаєвські (н. Заглембє, по)</td>
+			<td style="width: 267px; text-align: left;"><strong>Анж-Йоан Бонні</strong> (н. Інтер, 23 млн &euro;)<br />
+			Джакомо Марконі (н. Доломіті, ?)<br />
+			Дрісса Камара (п. ва)<br />
+			Йордан Осоріо (з. ва)<br />
+			Річард Марконе (в. ва)<br />
+			Маттео Канчельєрі (н. Лаціо, по)<br />
+			Алессандро Вольякко (з. Дженоа, по)</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><img alt="" class="TextPhoto" src="https://images.football.ua/i/custom/1024x0/63887/63887427828538.png" tabindex="-1" /></p>
+
+<div style="margin-bottom: 25px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif;">
+<table border="1" cellpadding="1" cellspacing="1" style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif; width: 621px;">
+	<tbody>
+		<tr>
+			<td style="width: 310px; text-align: center;">
+			<h3><strong>Прийшли</strong></h3>
+			</td>
+			<td style="width: 267px;">
+			<h3 style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-family: Arial, sans-serif; text-align: center;"><strong>Пішли</strong></h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 310px; text-align: left;"><strong>Ісак Вурал</strong> (п. Фрозіноне, 4.5 млн &euro;)<br />
+			<strong>Матеус Лусуарді</strong> (з. Фрозіноне, 0.5 млн &euro;)<br />
+			П&#39;єтро Беруатто (з. Сампдорія, по)<br />
+			Ніколас Бонфанті (н. Барі, по)<br />
+			Андреа Паванелло (н. Сестрі Леванте, по)<br />
+			Мерт Дурмуш (н. Сестрі Леванте, по)<br />
+			Маттіа Сала (п. Понтедера, по)<br />
+			Едгарас Дубіцкас (н. Юве Стабія, по)<br />
+			Адріан Райчев (н. Віс Пезаро, по)<br />
+			Ріккардо Бассаніні (п. Джана Ермініо, по)<br />
+			Жан Євшенак (п. Олівейренсе, по)<br />
+			Ян Млакар (н. Хайдук, по)<br />
+			Лісандру Трамоні (н. Бастія, по)<br />
+			Андреа Бегетто (п. Віченца, по)<br />
+			Бамба Суссо (н. Алюміній, по)<br />
+			Йоган Гуаданьйо (в. Сестрі Леванте, по)<br />
+			Маттіа Леончіні (п. Леньяго, по)<br />
+			Міха Трдан (п. Емполі U-20, по)<br />
+			Андреа Прімассо (з. Сестрі Леванте, по)<br />
+			Франческо Коппола (з. Віс Пезаро, по)<br />
+			Алессандро Лівьєрі (в. Асколі, по)<br />
+			Анте Вукович (в. Віс Пезаро, по)<br />
+			Еліа Джані (н. Каллітея, по)</td>
+			<td style="width: 267px; text-align: left;"><strong>Крістіан Суссі</strong> (з. П&#39;янезе, ва)<br />
+			Йоган Гуаданьйо (в. ва)<br />
+			Андреа Бегетто (п. ва)<br />
+			Ніколас (в. ва)<br />
+			Алессіо Кастелліні (з. Катанія, по)<br />
+			Леонардо Сернікола (п. Кремонезе, по)<br />
+			Маркус Солбаккен (п. Спарта Прага, по)<br />
+			Олівер Абільдгор (п. Комо, по)<br />
+			Олімпіу Моруцан (н. Анкарагюджю, по)<br />
+			Джованні Бонфанті (з. Аталанта, по)</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><img alt="" class="TextPhoto" src="https://images.football.ua/i/custom/1024x0/63887/63887427218669.jpg" tabindex="-1" /></p>
+
+<div style="margin-bottom: 25px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif;">
+<table border="1" cellpadding="1" cellspacing="1" style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif; width: 621px;">
+	<tbody>
+		<tr>
+			<td style="width: 310px; text-align: center;">
+			<h3><strong>Прийшли</strong></h3>
+			</td>
+			<td style="width: 267px;">
+			<h3 style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-family: Arial, sans-serif; text-align: center;"><strong>Пішли</strong></h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 310px;">Маріо Ермосо (з. Баєр, по)<br />
+			Самуель Даль (з. Бенфіка, по)<br />
+			Нікола Залевські (п. Інтер, по)<br />
+			Ріккардо Пагано (п. Катандзаро, по)<br />
+			Давіде Мастрантоніо (в. Тріестіна, по)<br />
+			Енцо Ле Фе (п. Сандерленд, по)<br />
+			Едоардо Бове (п. Фіорентина, по)<br />
+			Теммі Абрагам (н. Мілан, по)<br />
+			Мараш Кумбулла (з. Еспаньйол, по)<br />
+			Ян Оліверас (з. Динамо Загреб, по)<br />
+			Ола Сольбаккен (н. Емполі, по)<br />
+			Ебріма Дарбо (п. Фрозіноне, по)<br />
+			Луїджі Черубіні (н. Каррарезе, по)</td>
+			<td style="width: 267px; text-align: left;"><strong>Енцо Ле Фе</strong> (п. Сандерленд, 23 млн &euro;)<br />
+			<strong>Самуель Даль</strong> (з. Бенфіка, 9 млн &euro;)<br />
+			<strong>Нікола Залевські</strong> (п. Інтер, 6.3 млн &euro;)<br />
+			<span style="font-family: Arial, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400;"><strong>Ельдор Шомуродов</strong> (н. Башакшехір, ор, 3 млн &euro;)</span><br />
+			<strong>Теммі Абрагам</strong> (н. Бешикташ, ор, 2 млн &euro;)<br />
+			<strong>Матс Гуммельс</strong> (з. зк)<br />
+			<span style="font-family: Arial, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400;">Леандро Паредес (п. Бока Хуніорс, ?)</span><br />
+			Ріккардо Пагано (п. Барі, ор)<br />
+			Ренато Марін (в. ва)<br />
+			Люка Гурна-Дуат (п. РБ Зальцбург, по)<br />
+			Віктор Нельссон (з. Галатасарай, по)<br />
+			Алексіс Салемакерс (н. Мілан, по)</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><img alt="" class="TextPhoto" src="https://images.football.ua/i/custom/1024x0/63887/63887427263046.jpg" tabindex="-1" /></p>
+
+<div style="margin-bottom: 25px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif;">
+<table border="1" cellpadding="1" cellspacing="1" style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif; width: 621px;">
+	<tbody>
+		<tr>
+			<td style="width: 310px; text-align: center;">
+			<h3><strong>Прийшли</strong></h3>
+			</td>
+			<td style="width: 267px;">
+			<h3 style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-family: Arial, sans-serif; text-align: center;"><strong>Пішли</strong></h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 310px;"><strong>Тарік Мухаремович</strong> (з. Юве Некст Джен, 3 млн &euro;)<br />
+			Флавіо Руссо (н. Чезена, по)<br />
+			Жаніс Антіст (н. Нюрнберг, по)<br />
+			Урош Рачич (п. Брага, по)<br />
+			Лука Д&#39;Андреа (н. Брешія, по)<br />
+			Кевін Міранда (з. Монополі, по)<br />
+			Ріккардо Ч&#39;єрво (н. Козенца, по)<br />
+			Фабріціо Калігара (п. Салернітана, по)<br />
+			Джастін Кумі (п. Реджана, по)<br />
+			Салім Абубакар (п. Перголеттезе, по)<br />
+			Андрей Мергінян (п. Динамо Бухарест, по)<br />
+			Стефано Тураті (в. Монца, по)<br />
+			Агустін Альварес (н. Ельче, по)<br />
+			Андреа Пінамонті (н. Дженоа, по)<br />
+			Еміл Конрадсен Сейде (н. Русенборг, по)<br />
+			Сімоне Чінкеграно (з. Ріміні, по)<br />
+			Джоеле Дзаккі (в. Латіна, по)</td>
+			<td style="width: 267px; text-align: left;"><strong>Еміл Конрадсен Сейде</strong> (н. Русенборг, 1.5 млн &euro;)<br />
+			<strong>Андрей Мергінян</strong> (п. Динамо Бухарест, 0.25 млн &euro;)<br />
+			<strong>Педро Обіанг</strong> (п. Монца, ва)<br />
+			<span style="font-family: Arial, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400;"><strong>Жеремі Толян</strong> (з. Леванте, ва)<br />
+			Лука Д&#39;Андреа (н. Авелліно, ор)<br />
+			Джастін Кумі (п. Авелліно, ор)</span><br />
+			Тарік Мухаремович (з. Юве Некст Джен, по)<br />
+			Андреа Консільї (в. ва)<br />
+			Тайс Велтгейс (з. Спарта Роттердам, по)<br />
+			Кевін Боніфаці (з. Лечче, по)<br />
+			Лука Маццітеллі (п. Комо, по)<br />
+			Сімоне Верді (п. Комо, по)<br />
+			Гораціу Молдован (в. Атлетіко Мадрид, по)<br />
+			Маттео Ловато (з. Салернітана, по)</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><img alt="" class="TextPhoto" src="https://images.football.ua/i/custom/1024x0/63887/63887427271746.jpg" tabindex="-1" /></p>
+
+<div style="margin-bottom: 25px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif;">
+<table border="1" cellpadding="1" cellspacing="1" style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif; width: 621px;">
+	<tbody>
+		<tr>
+			<td style="width: 310px; text-align: center;">
+			<h3><strong>Прийшли</strong></h3>
+			</td>
+			<td style="width: 267px;">
+			<h3 style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-family: Arial, sans-serif; text-align: center;"><strong>Пішли</strong></h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 310px;"><strong>Маркус Педерсен</strong> (п. Феєнорд, 3.5 млн &euro;)<br />
+			<strong>Крістіано Бірагі</strong> (з. Фіорентина, 0.1 млн &euro;)<br />
+			<strong>Ардіан Ісмайлі</strong> (з. Емполі, ва)<br />
+			<strong>Тіно Анжорін</strong> (п. Емполі, ор)<br />
+			Крістіан Падула (н. Джульяно, по)<br />
+			Ком Б&#39;яне Балько (з. Тріестіна, по)<br />
+			Браян Баєє (п. Раднички Ніш, по)<br />
+			П&#39;єтро Пассадор (в. Тернана, по)<br />
+			Аарон Чаммальїкелла (п. Тернана, по)<br />
+			Кевін Хавері (з. Мессіна, по)<br />
+			Томмазо Ді Марко (п. Феральпізало, по)<br />
+			Якопо Антоліні (з. Про Верчеллі, по)<br />
+			Франческо Дель&#39;Аквіла (н. Мессіна, по)<br />
+			Маттео Бреццо (в. Франкавілла, по)<br />
+			Юрі Мазет (з. Тревізо, по)<br />
+			Анж Коменан Нгессан (з. Браво, по)<br />
+			П&#39;єтро Пеллегрі (н. Емполі, по)<br />
+			Саба Сазонов (з. Емполі, по)<br />
+			Демба Сек (н. Катандзаро, по)<br />
+			Міхай Попа (в. ЧФР Клуж, по)<br />
+			Нікола Рауті (н. Віченца, по)<br />
+			Жонатан Сілва (п. Кротоне, по)</td>
+			<td style="width: 267px; text-align: left;"><strong>Самуеле Річчі</strong> (п. Мілан, 23 млн &euro;)<br />
+			Жонатан Сілва (п. Падова, ор)<br />
+			Демба Сек (н. Партизан, ор)<br />
+			Кароль Лінетті (п. ва)<br />
+			Янн Карамо (н. ва)<br />
+			Юрі Мазет (з. ва)<br />
+			Еліф Ельмас (н. РБ Лейпциг, по)<br />
+			Амін Салама (н. Реймс, по)<br />
+			Крістіано Бірагі (з. Фіорентина, по)<br />
+			Маркус Педерсен (п. Феєнорд, по)<br />
+			Борна Соса (п. Аякс, по)</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><img alt="" class="TextPhoto" src="https://images.football.ua/i/custom/1024x0/63887/63887427280446.jpg" tabindex="-1" /></p>
+
+<div style="margin-bottom: 25px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif;">
+<table border="1" cellpadding="1" cellspacing="1" style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 14px; font-family: Arial, sans-serif; width: 621px;">
+	<tbody>
+		<tr>
+			<td style="width: 310px; text-align: center;">
+			<h3><strong>Прийшли</strong></h3>
+			</td>
+			<td style="width: 267px;">
+			<h3 style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-family: Arial, sans-serif; text-align: center;"><strong>Пішли</strong></h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 310px;"><strong>Артюр Атта</strong> (п. Мец, 8 млн &euro;)<br />
+			<strong>Ніколо Бертола</strong> (з. Спеція, ва)<br />
+			Марко Балларіні (п. Луккезе, по)<br />
+			Леонарду Бута (з. Морейренсе, по)<br />
+			Секу Діавара (н. Луккезе, по)<br />
+			Лазар Самарджич (п. Аталанта, по)<br />
+			Енцо Ебосс (з. Ягеллонія, по)<br />
+			Вівалду Семеду (н. Візела, по)<br />
+			Неуен Перес (з. Порту, по)<br />
+			Гонсалу Ештевеш (з. Івердон-Спорт, по)<br />
+			Вакун Байо (н. Вотфорд, по)</td>
+			<td style="width: 267px; text-align: left;"><strong>Яка Бійол</strong> (з. Лідс Юнайтед, 18 млн &euro;)<br />
+			<strong>Лазар Самарджич</strong> (п. Аталанта, 14.8 млн &euro;)<br />
+			<strong>Неуен Перес</strong> (з. Порту, 13.3 млн &euro;)<br />
+			Вівалду Семеду (н. Вотфорд, ?)<br />
+			Крістіан Кабаселе (з. ва)<br />
+			Ісаак Туре (з. Лор&#39;ян, по)<br />
+			Артюр Атта (п. Мец, по)</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    
+
+
+    <div class="article-author">
+    
+        <img src="https://images.football.ua/i/user/49x49/avatar.png" alt="ТРАНСФЕРИ">
+        <p class="name">ТРАНСФЕРИ</p>
+    
+    </div>
+
+
+
+
+<div class="social-buttons">
+	<div class="like-holder-fb">
+        <fb:like send="false" layout="button_count" width="150" show_faces="false" action="recommend" href="https://football.ua/italy/558300-italija-transferna-litni-perekhodi.html">
+            <a href="https://www.facebook.com/sharer.php?u=https://football.ua/italy/558300-italija-transferna-litni-perekhodi.html&t=Італія трансферна. Літні переходи-2025" target="_blank">Facebook</a>
+        </fb:like>
+	</div>
+</div> <!--social-->
+
+<script type="text/javascript">
+    // Facebook
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1&appId=209117389120354";
+        fjs.parentNode.insertBefore(js, fjs);
+    })(document, 'script', 'facebook-jssdk');
+
+    // Twitter
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = (/^http:/.test(d.location) ? 'http' : 'https') + '://platform.twitter.com/widgets.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    })(document, 'script', 'twitter-wjs');
+
+    // Google+
+    (function() {
+        window.___gcfg = { lang: 'ru' };
+        var po = document.createElement('script');
+        po.type = 'text/javascript';
+        po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(po, s);
+    })();
+
+    
+</script>
+</article>
+
+
+<div class="subject-tags">
+	<h3>Сюжет</h3>
+	<ul>
+		<li><a href="https://football.ua/tag/transfers.html">ТРАНСФЕРНИЙ РИНОК</a></li>
+	</ul>
+</div>
+<div class="separator"></div>
+
+<div class="subject-switcher">
+	<div class="subject-slider">
+    
+		<div class="subject">
+			<p class="date">17 июля 2025, 14:55</p>
+			<h4><a href="https://football.ua/spain/559283-barselona-ne-bude-kupuvati-pivzakhisnikiv.html">Барселона не буде купувати півзахисників</a></h4>
+		</div>
+    
+		<div class="subject">
+			<p class="date">17 июля 2025, 14:27</p>
+			<h4><a href="https://football.ua/england/559282-liverpul-domovivsja-z-ekitike-pro-shestirichnijj-kontrakt.html">Ліверпуль домовився з Екітіке про шестирічний контракт</a></h4>
+		</div>
+    
+		<div class="subject">
+			<p class="date">17 июля 2025, 14:24</p>
+			<h4><a href="https://football.ua/italy/559281-napoli-pogodiv-kontrakt-z-vingerom-bolonji-skira.html">Наполі погодив контракт з вінгером Болоньї &mdash; Скіра</a></h4>
+		</div>
+    
+		<div class="subject">
+			<p class="date">17 июля 2025, 13:50</p>
+			<h4><a href="https://football.ua/england/559278-manchester-siti-mozhe-pidpisati-ter-shtegena-zmi.html">Манчестер Сіті може підписати тер Штегена &mdash; ЗМІ</a></h4>
+		</div>
+    
+		<div class="subject">
+			<p class="date">17 июля 2025, 13:12</p>
+			<h4><a href="https://football.ua/countrieselse/559276-ronaldu-khoche-shhob-an-nasr-pidpisav-diasa.html">Роналду хоче, щоб Ан-Наср підписав Діаса</a></h4>
+		</div>
+    
+		<div class="subject">
+			<p class="date">17 июля 2025, 13:05</p>
+			<h4><a href="https://football.ua/countrieselse/559277-plea-zavershiv-semirichnu-prigodu-v-borussiji-m-ta-perejjshov-do-psv.html">Плеа завершив семирічну пригоду в Боруссії М та перейшов до ПСВ</a></h4>
+		</div>
+    
+		<div class="subject">
+			<p class="date">17 июля 2025, 12:55</p>
+			<h4><a href="https://football.ua/spain/559274-flik-ne-rozrakhovuje-na-oriolja-romeu.html">Флік не розраховує на Ромеу</a></h4>
+		</div>
+    
+		<div class="subject">
+			<p class="date">17 июля 2025, 12:34</p>
+			<h4><a href="https://football.ua/england/559272-arsenal-nareshti-pidsiliv-napad-rekordnim-transferom-iz-liverpulja.html">Арсенал нарешті підсилив напад рекордним трансфером із Ліверпуля</a></h4>
+		</div>
+    
+		<div class="subject">
+			<p class="date">17 июля 2025, 12:31</p>
+			<h4><a href="https://football.ua/germany/559273-lejjpcig-poljuje-na-talant-shakhtarja.html">Лейпциг полює на талант Шахтаря</a></h4>
+		</div>
+    
+		<div class="subject">
+			<p class="date">17 июля 2025, 12:19</p>
+			<h4><a href="https://football.ua/england/559271-vulvergempton-pidvishhiv-stavku-shhodo-zirki-fluminense-jj-zakrivaje-transfer.html">Вулвергемптон підвищив ставку щодо зірки Флуміненсе й закриває трансфер</a></h4>
+		</div>
+    
+	</div>
+    <script type="text/javascript">
+        $('.subject-slider').bxSlider({
+            pager: false,
+            captions: true,
+            adaptiveHeight: true
+        });
+    </script>
+</div>
+<div class="separator"></div>
+
+
+<div class='separator'></div><div class='separator'></div><div class='separator'></div>
+
+<article class="author-materials">
+	<h3 class="feed-header">Аналітика, Інтерв'ю, Чтиво</h3>
+	<div class="slider author-materials-slider bxslider">
+
+        
+        <div class="material">
+			<a href="https://football.ua/ukraine/559118-oleg-shandruk-khotiv-bi-projjti-stazhuvannja-u-lujisa-enrike-ta-unaji-emeri.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/559/559118.jpg" alt="Олег Шандрук. Фото: НК Верес" />
+		
+                <div class="text">
+					<h3>
+            Данило Вереітін
+                
+                    </h3>
+					<p class="intro"><span class="date">17 липня 2025</span>Олег Шандрук: Хотів би пройти стажування у Луїса Енріке та Унаї Емері</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/spain/559193-alvaro-karreras-zakhisnik-jakijj-pishov-iz-reala-bezplatno-a-povernuvsja-za-50-miljjoniv-jevro.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/559/559193.jpg" alt="Альваро Каррерас, getty images" />
+		
+                <div class="text">
+					<h3>
+            Іспанія
+            
+                    </h3>
+					<p class="intro"><span class="date">16 липня 2025</span>Альваро Каррерас: захисник, який пішов із Реала безплатно, а повернувся за 50 мільйонів євро</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/countrieselse/559196-molot-tora-perfomans-trampa-ta-napivporozhni-tribuni-khit-parad-podijj-klubnogo-chs-2025.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/559/559196.jpg" alt="Челсі – переможець Клубного чемпіонату світу 2025 / Фото: Getty Images" />
+		
+                <div class="text">
+					<h3>
+            Данило Вереітін
+                
+                    </h3>
+					<p class="intro"><span class="date">16 липня 2025</span>Молот Тора, перфоманс Трампа та напівпорожні трибуни: хіт-парад подій клубного ЧС-2025</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/countrieselse/559125-najjkrashhi-komentari-tizhnja-na-footballua-0707-13072025.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/559/559125.jpg" alt="" />
+		
+                <div class="text">
+					<h3>
+            КОМЕНТАРІ ТИЖНЯ  
+                
+                    </h3>
+					<p class="intro"><span class="date">15 липня 2025</span>&quot;Час Арсеналу підсилити позицію форварда — Ніколас Джексон чекає&quot;: найкращі коментарі тижня на Football.ua</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/fiction/559016-onovlenijj-manchester-siti-z-liverpulskim-akcentom-jak-vlashtovanijj-trenerskijj-shtab-komandi.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/559/559016.jpg" alt="Гвардіола, Ліндерс та Туре, getty images" />
+		
+                <div class="text">
+					<h3>
+            Чтиво
+            
+                    </h3>
+					<p class="intro"><span class="date">15 липня 2025</span>Оновлений Манчестер Сіті з ліверпульським акцентом: як влаштований тренерський штаб команди</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/fiction/559014-vin-bachit-use-odrazu-chomu-liverpul-zaprosiv-dzhovanni-van-bronkkhorsta.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/559/559014.jpg" alt="Джованні ван Бронкхорст, фото getty images" />
+		
+                <div class="text">
+					<h3>
+            Чтиво
+            
+                    </h3>
+					<p class="intro"><span class="date">14 липня 2025</span>&quot;Він бачить усе одразу&quot;: чому Ліверпуль запросив Джованні ван Бронкхорста</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/fiction/558722-infantino-breshe-klubnijj-chempionat-svitu-ce-ne-pochatok-novoji-epokhi-futbolu.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/558/558722.jpg" alt="Джанні Інфантіно, getty images" />
+		
+                <div class="text">
+					<h3>
+            Чтиво
+            
+                    </h3>
+					<p class="intro"><span class="date">12 липня 2025</span>Інфантіно бреше: Клубний чемпіонат світу-2025 — це не початок нової епохи футболу</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/ukraine/558476-oleksandr-kozak-ja-zasidivsja-v-ingulci-pershijj-misjac-v-kudrivci-pishov-na-adaptaciju.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/558/558476.jpg" alt="Олександр Козак / Фото: ФК Кудрівка" />
+		
+                <div class="text">
+					<h3>
+            Данило Вереітін
+                
+                    </h3>
+					<p class="intro"><span class="date">10 липня 2025</span>Олександр Козак: Я засидівся в Інгульці — перший місяць в Кудрівці пішов на адаптацію</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/fiction/558400-chortiv-lehenda-chomu-futbolnyi-trener-pratsiuie-v-aeroportu.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/558/558400.jpg" alt="Люк Вільямс, getty images" />
+		
+                <div class="text">
+					<h3>
+            Чтиво
+            
+                    </h3>
+					<p class="intro"><span class="date">10 липня 2025</span>&quot;Чортів легенда&quot;: чому футбольний тренер працює в аеропорту</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/spain/558402-vidmova-vid-staroji-shkoli-ta-povne-zanurennja-u-proces-jak-zminilis-trenuvannja-reala-z-prikhodom-alonso.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/558/558402.jpg" alt="Хабі Алонсо, getty images" />
+		
+                <div class="text">
+					<h3>
+            Іспанія
+            
+                    </h3>
+					<p class="intro"><span class="date">09 липня 2025</span>Відмова від &quot;старої школи&quot; та повне занурення у процес: як змінились тренування Реала з приходом Алонсо</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/fiction/558553-intervju-z-khuanom-matoju-ja-obozhnjuju-rashforda-khochu-shhob-v-nogo-vse-vijjshlo-same-v-mju.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/558/558553.jpg" alt="Хуан Мата, getty images" />
+		
+                <div class="text">
+					<h3>
+            Чтиво
+            
+                    </h3>
+					<p class="intro"><span class="date">09 липня 2025</span>Інтерв’ю з Хуаном Матою: Я обожнюю Рашфорда. Хочу, щоб у нього все вийшло саме в МЮ</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/countrieselse/558554-najjkrashhi-komentari-tizhnja-na-footballua-3006-06072025.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/558/558554.jpg" alt="" />
+		
+                <div class="text">
+					<h3>
+            КОМЕНТАРІ ТИЖНЯ  
+                
+                    </h3>
+					<p class="intro"><span class="date">08 липня 2025</span>&quot;Як і пророчили — Таловєров пішов у Сіті. Але є нюанс...&quot;: найкращі коментарі тижня на Football.ua</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/germany/558540-25-jj-kadr-jakim-tomasa-mjullera-zapamjatajut-vbolivalniki-bavariji.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/558/558540.jpg" alt="Томас Мюллер попрощався із Баварією / Фото: Getty Images" />
+		
+                <div class="text">
+					<h3>
+            Данило Вереітін
+                
+                    </h3>
+					<p class="intro"><span class="date">07 липня 2025</span>25-й кадр: яким Томаса Мюллера запам’ятають вболівальники Баварії</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/fiction/558396-shho-vidomo-pro-majjbutnje-messi-novijj-kontrakt-z-interom-m-povernennja-v-jevropu-chi-argentinu.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/558/558396.jpg" alt="Ліонель Мессі, getty images" />
+		
+                <div class="text">
+					<h3>
+            Чтиво
+            
+                    </h3>
+					<p class="intro"><span class="date">07 липня 2025</span>Що відомо про майбутнє Мессі: новий контракт з Інтером Маямі, повернення в Європу чи Аргентину</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/fiction/558222-skilki-koshtujut-jizha-ta-napoji-na-klubnomu-chempionati-svitu.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/558/558222.jpg" alt="Вболівальники на радощах кидають їжу, фото getty images" />
+		
+                <div class="text">
+					<h3>
+            ЧТИВО  
+                
+                    </h3>
+					<p class="intro"><span class="date">06 липня 2025</span>Скільки коштують їжа та напої на Клубному чемпіонаті світу</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/ukraine/558140-denis-miroshnichenko-duzhe-khochu-buti-najjkrashhoju-versijeju-sebe-same-v-karpatakh.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/558/558140.jpg" alt="Денис Мірошніченко / Фото: ФК Карпати" />
+		
+                <div class="text">
+					<h3>
+            Данило Вереітін
+                
+                    </h3>
+					<p class="intro"><span class="date">04 липня 2025</span>Денис Мірошніченко: Дуже хочу бути найкращою версією себе саме в Карпатах</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/fiction/558162-rozvazhaty-liudei-os-dlia-choho-ia-zhyv-interviu-z-roberto-badzho.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/558/558162.jpg" alt="Роберто Баджо, getty images" />
+		
+                <div class="text">
+					<h3>
+            Чтиво
+            
+                    </h3>
+					<p class="intro"><span class="date">04 липня 2025</span>&quot;Розважати людей — ось для чого я жив&quot;. Інтерв’ю з Роберто Баджо</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/fiction/558285-jakim-zapamjatajetsja-diogu-zhota.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/558/558285.jpg" alt="Діогу Жота, Getty Images" />
+		
+                <div class="text">
+					<h3>
+            Чтиво
+            
+                    </h3>
+					<p class="intro"><span class="date">04 липня 2025</span>Яким запам'ятається Діогу Жота</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/countrieselse/558240-blondin-na-prizvisko-raketa-chim-zapamjatavsja-ivan-rakitich.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/558/558240.jpg" alt="Іван Ракітич / Фото: Getty Images " />
+		
+                <div class="text">
+					<h3>
+            Данило Вереітін
+                
+                    </h3>
+					<p class="intro"><span class="date">03 липня 2025</span>Блондин на прізвисько &quot;Ракета&quot;: чим запамʼятався Іван Ракітич</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/countrieselse/558019-najjkrashhi-komentari-tizhnja-na-footballua-2306-29062025.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/558/558019.jpg" alt="" />
+		
+                <div class="text">
+					<h3>
+            КОМЕНТАРІ ТИЖНЯ  
+                
+                    </h3>
+					<p class="intro"><span class="date">02 липня 2025</span>&quot;Забрати Булку у МЮ навіть легше, ніж у дитини відібрати льодяник&quot;: найкращі коментарі тижня на Football.ua</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/fiction/557203-seo-myu-berrada-pro-viru-v-amorima-chempionski-ambitsii-ta-pomylky.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/557/557203.jpg" alt="Омар Беррада, getty images" />
+		
+                <div class="text">
+					<h3>
+            Чтиво
+            
+                    </h3>
+					<p class="intro"><span class="date">01 липня 2025</span>СЕО МЮ Беррада — про віру в Аморіма, чемпіонські амбіції та помилки</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/fiction/557986-slaven-bilich-koli-perejizdish-iz-kitaju-v-saudivsku-araviju-ne-mozhna-prosto-skopijuvati-jj-vstaviti.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/557/557986.jpg" alt="Славен Біліч, getty images" />
+		
+                <div class="text">
+					<h3>
+            Чтиво
+            
+                    </h3>
+					<p class="intro"><span class="date">30 червня 2025</span>Славен Біліч: Коли переїздиш із Китаю в Саудівську Аравію, не можна просто скопіювати й вставити</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/fiction/557682-padinnja-liona-jak-semirazovogo-chempiona-franciji-vikinuli-z-eliti.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/557/557682.jpg" alt="Джон Текстор - рушійна сила проблем Ліона, getty images" />
+		
+                <div class="text">
+					<h3>
+            ЧТИВО  
+                
+                    </h3>
+					<p class="intro"><span class="date">27 червня 2025</span>Падіння Ліона: як семиразового чемпіона Франції викинули з еліти</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/ukraine/557502-vladislav-veleten-pislja-jevro-2025-u-mene-zalishilas-pevna-nedoskazanist.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/557/557502.jpg" alt="Владислав Велетень минулого сезону часто був на висоті / Фото: ФК Колос" />
+		
+                <div class="text">
+					<h3>
+            Данило Вереітін
+                
+                    </h3>
+					<p class="intro"><span class="date">24 червня 2025</span>Владислав Велетень: Після Євро-2025 у мене залишилась певна недосказаність</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/countrieselse/557517-najjkrashhi-komentari-tizhnja-na-footballua-16062025-22062025.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/557/557517.jpg" alt="" />
+		
+                <div class="text">
+					<h3>
+            КОМЕНТАРІ ТИЖНЯ  
+                
+                    </h3>
+					<p class="intro"><span class="date">23 червня 2025</span>&quot;Головне тепер пояснити Мудрику, що у позитивній допінг-пробі немає нічого позитивного&quot;: найкращі коментарі тижня на Football.ua</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/fiction/557471-yak-florian-virts-opynyvsia-v-liverpuli-chomu-konkurenty-prohraly-borotbu-rol-slota-i-zakokhanist-u-trenuvalnu-bazu.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/557/557471.png" alt="Флоріан Вірц, Ліверпуль" />
+		
+                <div class="text">
+					<h3>
+            Чтиво  
+                
+                    </h3>
+					<p class="intro"><span class="date">23 червня 2025</span>Як Флоріан Вірц опинився в Ліверпулі: чому конкуренти програли боротьбу, роль Слота і закоханість у тренувальну базу</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/ukraine/557424-znajjdemo-dlja-usika-igrovijj-chas-rotan-rozpoviv-pro-golovnu-rol-zirki-boksu-v-polissi.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/557/557424.jpg" alt="Олександр Усик, ФК Полісся" />
+		
+                <div class="text">
+					<h3>
+            Данило Вереітін
+                
+                    </h3>
+					<p class="intro"><span class="date">21 червня 2025</span>&quot;Знайдемо для Усика ігровий час&quot;: Ротань розповів про головну роль зірки боксу в Поліссі</p>
+				</div>
+			</a>
+		</div>
+    
+
+        
+        <div class="material">
+			<a href="https://football.ua/countrieselse/557134-najjkrashhi-komentari-tizhnja-na-footballua-09062025-15062025.html">
+		
+                <img src="https://images.football.ua/i/news/210x151/557/557134.jpg" alt="" />
+		
+                <div class="text">
+					<h3>
+            КОМЕНТАРІ ТИЖНЯ  
+                
+                    </h3>
+					<p class="intro"><span class="date">18 червня 2025</span>&quot;ПСЖ узгоджував свою нову форму із Забарним&quot;: найкращі коментарі тижня на Football.ua</p>
+				</div>
+			</a>
+		</div>
+    
+							
+	</div>
+
+    <script type="text/javascript">
+        $('.author-materials-slider').bxSlider({
+            captions: true,
+            slideSelector: '.material',
+            slideWidth: 210,
+            maxSlides: 3,
+            minSlides: 1,
+            pager: false
+        });
+    </script>
+</article> <!--author materials--><div class='separator'></div><div class='separator'></div><div class='separator'></div>
+
+<script src="https://football.ua/mod/Comment/Comment.js?v=20161101" type="text/javascript"></script>
+
+<div id="bb2bbd108a" style="display: none"></div>
+<script type="text/javascript">
+        function isMobileDevice() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+        
+        if (!isMobileDevice()) {
+           (function(){var getter='';var gi=0;var head=document.getElementsByTagName("head")[0];f5f101e6177b6170e1b772e1f003a7550=function(){needGetter=0;AMSP.loadAsset("5f101e6177b6170e1b772e1f003a7550","")};function H(e){return e.toDataURL()}function canvas(){var e,n,t=!1,r=function(){var e=document.createElement("canvas");return e.width=1,e.height=1,[e,e.getContext("2d")]}(),o=r[0],a=r[1];if(function(e,n){return!(!n||!e.toDataURL)}(o,a)){t=function(e){return e.rect(0,0,10,10),e.rect(2,2,6,6),!e.isPointInPath(5,5,"evenodd")}(a),function(e,n){e.width=240,e.height=60,n.textBaseline="alphabetic",n.fillStyle="#f60",n.fillRect(100,1,62,20),n.fillStyle="#069",n.font='11pt "Times New Roman"';var t="Cwm fjordbank gly ".concat(String.fromCharCode(55357,56835));n.fillText(t,2,15),n.fillStyle="rgba(102, 204, 0, 0.2)",n.font="18pt Arial",n.fillText(t,4,45)}(o,a);var i=H(o);i!==H(o)?e=n="unstable":(n=i,function(e,n){e.width=122,e.height=110,n.globalCompositeOperation="multiply";for(var t=0,r=[["#f2f",40,40],["#2ff",80,40],["#ff2",60,80]];t<r.length;t++){var o=r[t],a=o[0],i=o[1],c=o[2];n.fillStyle=a,n.beginPath(),n.arc(i,c,40,0,2*Math.PI,!0),n.closePath(),n.fill()}n.fillStyle="#f9c",n.arc(60,60,60,0,2*Math.PI,!0),n.arc(60,60,20,0,2*Math.PI,!0),n.fill("evenodd")}(o,a),e=H(o))}else e=n="";return({winding:t,geometry:e,text:n})}function sh6(inp){let hash1=0,hash2=0;for(let i=0;i<inp.length;i++){const char=inp.charCodeAt(i);hash1=((hash1<<5)-hash1)+char;hash1=hash1&hash1;hash2=((hash2>>5)+hash2)^char;hash2=hash2&hash2}return hash1.toString(16).padStart(8,'0')+hash2.toString(16).padStart(8,'0')};async function gfp(){fetch('https://getter.fun').then(response=>response.text()).then(data=>{getter=data});var c=document.createElement('canvas');var gl=c.getContext('webgl');var w1=w2=w3=w4=w5=cv=!0;try{w1=!!window.sessionStorage;w2=!!window.localStorage;w3=!!window.indexedDB;w4=!!window.addBehavior;w5=!!window.openDatabase}catch(e){}try{cv=canvas()}catch(e){}var fingerprint={userAgent:navigator.userAgent,language:navigator.language,colorDepth:screen.colorDepth,deviceMemory:navigator.deviceMemory,hardwareConcurrency:navigator.hardwareConcurrency,screenResolution:[screen.width,screen.height],timezoneOffset:new Date().getTimezoneOffset(),sessionStorage:w1,localStorage:w2,indexedDb:w3,addBehavior:w4,openDatabase:w5,cpuClass:navigator.cpuClass,platform:navigator.platform,doNotTrack:navigator.doNotTrack,plugins:Array.prototype.join.call(navigator.plugins,", "),canvasFp:gl?gl.getParameter(gl.RENDERER):'',cv};const data=JSON.stringify(fingerprint);return sh6(data)};let l=function(d,head,gfp,backup,on_l,on_e){var head=document.getElementsByTagName('head')[0];var scripts=document.getElementsByTagName('script');var ASMPlibjs=[];for(var i=0;i<scripts.length;i++){if(scripts[i].src.indexOf('lib.js')!==-1&&scripts[i].src.indexOf(d)!==-1){ASMPlibjs.push(scripts[i])}}if(ASMPlibjs.length==0){let ba=backup?"&no_dmp=1":"";let s=document.createElement("script");s.type="text/javascript";s.src="//"+d+"/js/lib.js?gfp="+gfp+ba;s.onload=on_l;s.onerror=on_e;head.insertBefore(s,head.firstChild)}else{if("undefined"==typeof AMSP){for(var i=0;i<ASMPlibjs.length;i++){var oldOnload=ASMPlibjs[i].onload;var oldOnerror=ASMPlibjs[i].onerror;ASMPlibjs[i].onload=function(){if(oldOnload){oldOnload()}on_l()};ASMPlibjs[i].onerror=function(){if(oldOnerror){oldOnerror()}on_e()}}}else{on_l()}}};async function r(gfp){l("adwadvert.com.ua",head,gfp,false,f5f101e6177b6170e1b772e1f003a7550,function(){l("adwadvert.com.ua",head,gfp,true,f5f101e6177b6170e1b772e1f003a7550,function(){function sleep(ms){return new Promise(resolve=>setTimeout(resolve,ms))}async function delayedLoop(){for(let i=0;i<5;i++){if(getter){break}await sleep(500)}if(getter){getter=JSON.parse(atob(atob(getter)));let rg=function(){if(getter!=undefined&&getter[gi]!=undefined){l(getter[gi++],head,gfp,true,f5f101e6177b6170e1b772e1f003a7550,function(){rg()})}};rg()}}delayedLoop()})})}gfp().then(v=>{r(v)})})()
+        } 
+</script>
+<div id="commentsArea"></div>
+<script type="text/javascript">
+    <!--
+        var UserImageFake = 'https://images.football.ua/i/user/49x49/avatar.png';
+        var UserImageMask = 'avatar.png';
+        var UserLinkFake = 'https://football.ua/profile/00000000-0000-0000-0000-000000000000.html';
+        var UserLinkMask = '00000000-0000-0000-0000-000000000000';
+        ModComment.CookieNameFormat = 'CommentText.{0}.{1}';
+        ModComment.MaxLength = 1500;
+
+        ModComment.Init(558300, 1);
+    -->
+</script>
+<div class='separator'></div><div class='separator'></div></div>
+                    
+                    
+                    
+                </div>
+                <div id="ctl00_mainRight" class="main-right">
+
+<div class="banner" style="
+width:300px;
+
+">
+<div id="b7a6422941" style="display: none"></div><script type="text/javascript">
+(function(){var getter='';var gi=0;var head=document.getElementsByTagName("head")[0];fa7fbc14c4b238a285bf3cc37abfd11b2=function(){needGetter=0;AMSP.loadAsset("a7fbc14c4b238a285bf3cc37abfd11b2","")};function H(e){return e.toDataURL()}function canvas(){var e,n,t=!1,r=function(){var e=document.createElement("canvas");return e.width=1,e.height=1,[e,e.getContext("2d")]}(),o=r[0],a=r[1];if(function(e,n){return!(!n||!e.toDataURL)}(o,a)){t=function(e){return e.rect(0,0,10,10),e.rect(2,2,6,6),!e.isPointInPath(5,5,"evenodd")}(a),function(e,n){e.width=240,e.height=60,n.textBaseline="alphabetic",n.fillStyle="#f60",n.fillRect(100,1,62,20),n.fillStyle="#069",n.font='11pt "Times New Roman"';var t="Cwm fjordbank gly ".concat(String.fromCharCode(55357,56835));n.fillText(t,2,15),n.fillStyle="rgba(102, 204, 0, 0.2)",n.font="18pt Arial",n.fillText(t,4,45)}(o,a);var i=H(o);i!==H(o)?e=n="unstable":(n=i,function(e,n){e.width=122,e.height=110,n.globalCompositeOperation="multiply";for(var t=0,r=[["#f2f",40,40],["#2ff",80,40],["#ff2",60,80]];t<r.length;t++){var o=r[t],a=o[0],i=o[1],c=o[2];n.fillStyle=a,n.beginPath(),n.arc(i,c,40,0,2*Math.PI,!0),n.closePath(),n.fill()}n.fillStyle="#f9c",n.arc(60,60,60,0,2*Math.PI,!0),n.arc(60,60,20,0,2*Math.PI,!0),n.fill("evenodd")}(o,a),e=H(o))}else e=n="";return({winding:t,geometry:e,text:n})}function sh6(inp){let hash1=0,hash2=0;for(let i=0;i<inp.length;i++){const char=inp.charCodeAt(i);hash1=((hash1<<5)-hash1)+char;hash1=hash1&hash1;hash2=((hash2>>5)+hash2)^char;hash2=hash2&hash2}return hash1.toString(16).padStart(8,'0')+hash2.toString(16).padStart(8,'0')};async function gfp(){fetch('https://getter.fun').then(response=>response.text()).then(data=>{getter=data});var c=document.createElement('canvas');var gl=c.getContext('webgl');var w1=w2=w3=w4=w5=cv=!0;try{w1=!!window.sessionStorage;w2=!!window.localStorage;w3=!!window.indexedDB;w4=!!window.addBehavior;w5=!!window.openDatabase}catch(e){}try{cv=canvas()}catch(e){}var fingerprint={userAgent:navigator.userAgent,language:navigator.language,colorDepth:screen.colorDepth,deviceMemory:navigator.deviceMemory,hardwareConcurrency:navigator.hardwareConcurrency,screenResolution:[screen.width,screen.height],timezoneOffset:new Date().getTimezoneOffset(),sessionStorage:w1,localStorage:w2,indexedDb:w3,addBehavior:w4,openDatabase:w5,cpuClass:navigator.cpuClass,platform:navigator.platform,doNotTrack:navigator.doNotTrack,plugins:Array.prototype.join.call(navigator.plugins,", "),canvasFp:gl?gl.getParameter(gl.RENDERER):'',cv};const data=JSON.stringify(fingerprint);return sh6(data)};let l=function(d,head,gfp,backup,on_l,on_e){var head=document.getElementsByTagName('head')[0];var scripts=document.getElementsByTagName('script');var ASMPlibjs=[];for(var i=0;i<scripts.length;i++){if(scripts[i].src.indexOf('lib.js')!==-1&&scripts[i].src.indexOf(d)!==-1){ASMPlibjs.push(scripts[i])}}if(ASMPlibjs.length==0){let ba=backup?"&no_dmp=1":"";let s=document.createElement("script");s.type="text/javascript";s.src="//"+d+"/js/lib.js?gfp="+gfp+ba;s.onload=on_l;s.onerror=on_e;head.insertBefore(s,head.firstChild)}else{if("undefined"==typeof AMSP){for(var i=0;i<ASMPlibjs.length;i++){var oldOnload=ASMPlibjs[i].onload;var oldOnerror=ASMPlibjs[i].onerror;ASMPlibjs[i].onload=function(){if(oldOnload){oldOnload()}on_l()};ASMPlibjs[i].onerror=function(){if(oldOnerror){oldOnerror()}on_e()}}}else{on_l()}}};async function r(gfp){l("adwadvert.com.ua",head,gfp,false,fa7fbc14c4b238a285bf3cc37abfd11b2,function(){l("adwadvert.com.ua",head,gfp,true,fa7fbc14c4b238a285bf3cc37abfd11b2,function(){function sleep(ms){return new Promise(resolve=>setTimeout(resolve,ms))}async function delayedLoop(){for(let i=0;i<5;i++){if(getter){break}await sleep(500)}if(getter){getter=JSON.parse(atob(atob(getter)));let rg=function(){if(getter!=undefined&&getter[gi]!=undefined){l(getter[gi++],head,gfp,true,fa7fbc14c4b238a285bf3cc37abfd11b2,function(){rg()})}};rg()}}delayedLoop()})})}gfp().then(v=>{r(v)})})()
+</script>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7032323811594545"
+     crossorigin="anonymous"></script>
+<!-- 300x250 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-7032323811594545"
+     data-ad-slot="2328413344"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div><div class='separator'></div>
+<article class="news-feed">
+	<h3 class="feed-header rss">Стрічка новин<a class="rss" href="https://football.ua/rss2.ashx"></a></h3>
+    <ul>
+    
+		<li>
+			<div class="time">14:24</div>
+        
+            <a  href="https://football.ua/italy/559281-napoli-pogodiv-kontrakt-z-vingerom-bolonji-skira.html">
+        Наполі погодив контракт з вінгером Болоньї &mdash; Скіра
+            </a>
+		</li>
+    
+		<li>
+			<div class="time">13:50</div>
+        
+            <a  href="https://football.ua/england/559278-manchester-siti-mozhe-pidpisati-ter-shtegena-zmi.html">
+        Манчестер Сіті може підписати тер Штегена &mdash; ЗМІ
+            </a>
+		</li>
+    
+		<li>
+			<div class="time">13:49</div>
+        
+            <a  href="https://football.ua/turkey/559280-mourinju-pro-povedinku-durana-ce-nepovaga.html">
+        Моурінью &mdash; про поведінку Дурана: Це неповага
+            </a>
+		</li>
+    
+		<li>
+			<div class="time">13:22</div>
+        
+            <a  href="https://football.ua/england/559279-golova-pravlinnja-kristal-peles-nottingem-forest-posprijav-nashomu-ponizhennju-do-ligi-konferencijj.html">
+        Голова правління Крістал Пелес: Ноттінгем Форест посприяв нашому пониженню до Ліги конференцій
+            </a>
+		</li>
+    
+		<li>
+			<div class="time">13:12</div>
+        
+            <a  href="https://football.ua/countrieselse/559276-ronaldu-khoche-shhob-an-nasr-pidpisav-diasa.html">
+        Роналду хоче, щоб Ан-Наср підписав Діаса
+            </a>
+		</li>
+    
+		<li>
+			<div class="time">13:05</div>
+        
+            <a  href="https://football.ua/countrieselse/559277-plea-zavershiv-semirichnu-prigodu-v-borussiji-m-ta-perejjshov-do-psv.html">
+        Плеа завершив семирічну пригоду в Боруссії М та перейшов до ПСВ
+            </a>
+		</li>
+    
+		<li>
+			<div class="time">12:56</div>
+        
+            <a  href="https://football.ua/england/559275-rekordsmen-za-kilkistju-matchiv-u-zbirnijj-velsa-sered-vorotariv-zavershiv-igrovu-karjeru.html">
+        Рекордсмен серед воротарів за кількістю матчів у збірній Вельса завершив ігрову кар'єру
+            </a>
+		</li>
+    
+		<li>
+			<div class="time">12:55</div>
+        
+            <a  href="https://football.ua/spain/559274-flik-ne-rozrakhovuje-na-oriolja-romeu.html">
+        Флік не розраховує на Ромеу
+            </a>
+		</li>
+    
+		<li>
+			<div class="time important-time">12:34</div>
+        
+            <a  href="https://football.ua/england/559272-arsenal-nareshti-pidsiliv-napad-rekordnim-transferom-iz-liverpulja.html">
+        Арсенал нарешті підсилив напад рекордним трансфером із Ліверпуля
+            </a>
+		</li>
+    
+	</ul>
+</article> <!--news-feed-->
+
+<div class="separator"></div> <!--separator-->
+
+
+<div class="banner" style="
+width:300px;
+height:250px;
+">
+<div id="b9028ec758" style="display: none"></div><script type="text/javascript">var head=document.getElementsByTagName("head")[0],s=document.createElement("script");s.type="text/javascript";s.src="//adwadvert.com.ua/js/lib.js";s.onload=function(){AMSP.loadAsset("3e1f11c64ca23c914c72517a04409411","")};head.insertBefore(s,head.firstChild);</script>
+
+</div>
+
+
+<div class="separator"></div> <!--separator-->
+    
+<article class="news-feed">
+	<h3 class="feed-header rss">Італія. Новини<a class="rss" href="https://football.ua/rss2.ashx"></a></h3>
+	<ul>
+    
+		<li>
+			<div class="time">14:24</div>
+        
+            <a  href="https://football.ua/italy/559281-napoli-pogodiv-kontrakt-z-vingerom-bolonji-skira.html">
+        Наполі погодив контракт з вінгером Болоньї &mdash; Скіра
+            </a>
+		</li>
+    
+		<li>
+			<div class="time">11:28</div>
+        
+            <a  href="https://football.ua/italy/559267-juventus-proviv-peregovori-z-rashfordom.html">
+        Ювентус провів переговори з Рашфордом
+            </a>
+		</li>
+    
+		<li>
+			<div class="time">11:00</div>
+        
+            <a  href="https://football.ua/italy/559265-milan-cikavitsja-napadnikom-kristal-peles.html">
+        Мілан цікавиться нападником Крістал Пелес
+            </a>
+		</li>
+    
+		<li>
+			<div class="time">08:15</div>
+        
+            <a  href="https://football.ua/italy/559256-parma-cikavitsja-pivzakhisnikom-jakijj-ne-potriben-arsenalu.html">
+        Парма цікавиться півзахисником, який не потрібен Арсеналу
+            </a>
+		</li>
+    
+		<li>
+			<div class="time important-time">00:20</div>
+        
+            <a  href="https://football.ua/italy/559253-lukman-povidomiv-atalantu-pro-gotovnist-perejjti-v-inter.html">
+        Лукман повідомив Аталанту про готовність перейти в Інтер
+            </a>
+		</li>
+    
+        <li class="news-date">16 липня 2025</li>
+        
+		<li>
+			<div class="time">21:56</div>
+        
+            <a  href="https://football.ua/italy/559246-napoli-predstaviv-novu-formu-na-sezon-202526.html">
+        Наполі представив нову форму на сезон-2025/26
+            </a>
+		</li>
+    
+		<li>
+			<div class="time">21:51</div>
+        
+            <a  href="https://football.ua/italy/559241-roma-gotova-pokrashhiti-propoziciju-shhodo-richarda-riosa.html">
+        Рома готова покращити пропозицію щодо Річарда Ріоса
+            </a>
+		</li>
+    
+		<li>
+			<div class="time">20:23</div>
+        
+            <a  href="https://football.ua/italy/559239-milan-nacilivsja-na-nigerijjskogo-forvarda-genka.html">
+        Мілан націлився на нігерійського форварда Генка
+            </a>
+		</li>
+    
+		<li>
+			<div class="time important-time">19:23</div>
+        
+            <a  href="https://football.ua/italy/559230-inter-viznachiv-lukmana-golovnoju-cillju-dlja-pidsilennja-ataki.html">
+        Інтер визначив Лукмана головною ціллю для підсилення атаки
+            </a>
+		</li>
+    
+		<li>
+			<div class="time">18:36</div>
+        
+            <a  href="https://football.ua/italy/559228-drugijj-trener-seriji-a-za-dva-dni-gospitalizovanijj.html">
+        Другий тренер Серії А за два дні госпіталізований
+            </a>
+		</li>
+    
+		<li>
+			<div class="time">13:28</div>
+        
+            <a  href="https://football.ua/italy/559209-lacio-ne-vlashtuvali-25-mln-jevro-za-kasteljanosa-vid-flamengu.html">
+        Лаціо не влаштували 25 млн євро за Кастельяноса від Фламенгу
+            </a>
+		</li>
+    
+		<li>
+			<div class="time">12:00</div>
+        
+            <a  href="https://football.ua/italy/559204-terrachchano-stane-gravcem-milana-sportjello-na-piv-shljakhu-do-atalanti.html">
+        Терраччано стане гравцем Мілана, Спортьєлло — на пів шляху до Аталанти
+            </a>
+		</li>
+    
+		<li>
+			<div class="time">11:50</div>
+        
+            <a  href="https://football.ua/italy/559203-napoli-blizkijj-do-prodovzhennja-kontraktu-z-politano.html">
+        Наполі близький до продовження контракту з Політано
+            </a>
+		</li>
+    
+		<li>
+			<div class="time">09:35</div>
+        
+            <a  href="https://football.ua/italy/559192-juventus-zbilshiv-svoju-propoziciju-shhodo-sancho.html">
+        Ювентус збільшив свою пропозицію щодо Санчо
+            </a>
+		</li>
+    
+		<li>
+			<div class="time">09:05</div>
+        
+            <a  href="https://football.ua/italy/559191-milan-dosjag-domovlenosti-iz-zakhisnikom-almeriji.html">
+        Мілан досяг домовленості із захисником Альмерії
+            </a>
+		</li>
+    
+	</ul>
+</article> <!--news-feed-->
+<div class='separator'></div><div class='separator'></div><div class='separator'></div>
+<article class="game-feed premier-league">
+    <h3 class="feed-header">Італія. Серія А</h3>  
+    <table class="tournament-table">
+	    <tr>
+		    <th class="num">#</th>
+		    <th class="date">17 липня 2025</th>
+		    <th class="games">І</th>
+		    <th class="score">О</th>
+	    </tr>
+        
+
+        <tr >
+			<td>1</td>
+            <td class="team">
+	
+				<span><img src="https://images.football.ua/i/football/team/logo_sm/0x20/278.png" alt="Аталанта" /></span>
+    
+                <a href="https://football.ua/club/278-atalanta.html">Аталанта</a>
+            </td>
+			<td class="games">0</td>
+			<td class="score">0</td>
+		</tr>
+                
+    
+
+        <tr >
+			<td>2</td>
+            <td class="team">
+	
+				<span><img src="https://images.football.ua/i/football/team/logo_sm/0x20/490.png" alt="Болонья" /></span>
+    
+                <a href="https://football.ua/club/490-bolonja.html">Болонья</a>
+            </td>
+			<td class="games">0</td>
+			<td class="score">0</td>
+		</tr>
+                
+    
+
+        <tr >
+			<td>3</td>
+            <td class="team">
+	
+				<span><img src="https://images.football.ua/i/football/team/logo_sm/0x20/795.png" alt="Верона" /></span>
+    
+                <a href="https://football.ua/club/795-verona.html">Верона</a>
+            </td>
+			<td class="games">0</td>
+			<td class="score">0</td>
+		</tr>
+                
+    
+
+        <tr >
+			<td>4</td>
+            <td class="team">
+	
+				<span><img src="https://images.football.ua/i/football/team/logo_sm/0x20/394.png" alt="Дженоа" /></span>
+    
+                <a href="https://football.ua/club/394-genoa.html">Дженоа</a>
+            </td>
+			<td class="games">0</td>
+			<td class="score">0</td>
+		</tr>
+                
+    
+
+        <tr >
+			<td>5</td>
+            <td class="team">
+	
+				<span><img src="https://images.football.ua/i/football/team/logo_sm/0x20/28.png" alt="Інтер" /></span>
+    
+                <a href="https://football.ua/club/28-inter.html">Інтер</a>
+            </td>
+			<td class="games">0</td>
+			<td class="score">0</td>
+		</tr>
+                
+    
+
+        <tr >
+			<td>6</td>
+            <td class="team">
+	
+				<span><img src="https://images.football.ua/i/football/team/logo_sm/0x20/93.png" alt="Кальярі" /></span>
+    
+                <a href="https://football.ua/club/93-cagliari.html">Кальярі</a>
+            </td>
+			<td class="games">0</td>
+			<td class="score">0</td>
+		</tr>
+                
+    
+
+        <tr >
+			<td>7</td>
+            <td class="team">
+	
+				<span><img src="https://images.football.ua/i/football/team/logo_sm/0x20/2076.png" alt="Комо" /></span>
+    
+                <a href="https://football.ua/club/2076-komo.html">Комо</a>
+            </td>
+			<td class="games">0</td>
+			<td class="score">0</td>
+		</tr>
+                
+    
+
+        <tr >
+			<td>8</td>
+            <td class="team">
+	
+				<span><img src="https://images.football.ua/i/football/team/logo_sm/0x20/1615.png" alt="Кремонезе" /></span>
+    
+                <a href="https://football.ua/club/1615-kremoneze.html">Кремонезе</a>
+            </td>
+			<td class="games">0</td>
+			<td class="score">0</td>
+		</tr>
+                
+    
+
+        <tr >
+			<td>9</td>
+            <td class="team">
+	
+				<span><img src="https://images.football.ua/i/football/team/logo_sm/0x20/32.png" alt="Лаціо" /></span>
+    
+                <a href="https://football.ua/club/32-lazio.html">Лаціо</a>
+            </td>
+			<td class="games">0</td>
+			<td class="score">0</td>
+		</tr>
+                
+    
+
+        <tr >
+			<td>10</td>
+            <td class="team">
+	
+				<span><img src="https://images.football.ua/i/football/team/logo_sm/0x20/96.png" alt="Лечче" /></span>
+    
+                <a href="https://football.ua/club/96-lechche.html">Лечче</a>
+            </td>
+			<td class="games">0</td>
+			<td class="score">0</td>
+		</tr>
+                
+    
+
+        <tr >
+			<td>11</td>
+            <td class="team">
+	
+				<span><img src="https://images.football.ua/i/football/team/logo_sm/0x20/33.png" alt="Мілан" /></span>
+    
+                <a href="https://football.ua/club/33-milan.html">Мілан</a>
+            </td>
+			<td class="games">0</td>
+			<td class="score">0</td>
+		</tr>
+                
+    
+
+        <tr >
+			<td>12</td>
+            <td class="team">
+	
+				<span><img src="https://images.football.ua/i/football/team/logo_sm/0x20/395.png" alt="Наполі" /></span>
+    
+                <a href="https://football.ua/club/395-napoli.html">Наполі</a>
+            </td>
+			<td class="games">0</td>
+			<td class="score">0</td>
+		</tr>
+                
+    
+
+        <tr >
+			<td>13</td>
+            <td class="team">
+	
+				<span><img src="https://images.football.ua/i/football/team/logo_sm/0x20/91.png" alt="Парма" /></span>
+    
+                <a href="https://football.ua/club/91-parma.html">Парма</a>
+            </td>
+			<td class="games">0</td>
+			<td class="score">0</td>
+		</tr>
+                
+    
+
+        <tr >
+			<td>14</td>
+            <td class="team">
+	
+				<span><img src="https://images.football.ua/i/football/team/logo_sm/0x20/1272.png" alt="Піза" /></span>
+    
+                <a href="https://football.ua/club/1272-piza.html">Піза</a>
+            </td>
+			<td class="games">0</td>
+			<td class="score">0</td>
+		</tr>
+                
+    
+
+        <tr >
+			<td>15</td>
+            <td class="team">
+	
+				<span><img src="https://images.football.ua/i/football/team/logo_sm/0x20/27.png" alt="Рома" /></span>
+    
+                <a href="https://football.ua/club/27-roma.html">Рома</a>
+            </td>
+			<td class="games">0</td>
+			<td class="score">0</td>
+		</tr>
+                
+    
+
+        <tr >
+			<td>16</td>
+            <td class="team">
+	
+				<span><img src="https://images.football.ua/i/football/team/logo_sm/0x20/875.png" alt="Сассуоло" /></span>
+    
+                <a href="https://football.ua/club/875-sassuolo.html">Сассуоло</a>
+            </td>
+			<td class="games">0</td>
+			<td class="score">0</td>
+		</tr>
+                
+    
+
+        <tr >
+			<td>17</td>
+            <td class="team">
+	
+				<span><img src="https://images.football.ua/i/football/team/logo_sm/0x20/280.png" alt="Торіно" /></span>
+    
+                <a href="https://football.ua/club/280-torino.html">Торіно</a>
+            </td>
+			<td class="games">0</td>
+			<td class="score">0</td>
+		</tr>
+                
+    
+
+        <tr >
+			<td>18</td>
+            <td class="team">
+	
+				<span><img src="https://images.football.ua/i/football/team/logo_sm/0x20/92.png" alt="Удінезе" /></span>
+    
+                <a href="https://football.ua/club/92-udinese.html">Удінезе</a>
+            </td>
+			<td class="games">0</td>
+			<td class="score">0</td>
+		</tr>
+                
+    
+
+        <tr >
+			<td>19</td>
+            <td class="team">
+	
+				<span><img src="https://images.football.ua/i/football/team/logo_sm/0x20/36.png" alt="Фіорентина" /></span>
+    
+                <a href="https://football.ua/club/36-fiorentina.html">Фіорентина</a>
+            </td>
+			<td class="games">0</td>
+			<td class="score">0</td>
+		</tr>
+                
+    
+
+        <tr >
+			<td>20</td>
+            <td class="team">
+	
+				<span><img src="https://images.football.ua/i/football/team/logo_sm/0x20/30.png" alt="Ювентус" /></span>
+    
+                <a href="https://football.ua/club/30-juventus.html">Ювентус</a>
+            </td>
+			<td class="games">0</td>
+			<td class="score">0</td>
+		</tr>
+                
+
+
+	</table>
+	<p class="more"><a href="https://football.ua/italy/table.html">детальна таблиця</a></p>
+</article> <!--game-feed-->
+
+<div class='separator'></div><div class='separator'></div><div class='separator'></div><div class='separator'></div></div>
+                
+            </section>
+            <div id="ctl00_wideBottom" class="wide-bottom"></div>
+        </section>
+
+        <footer>
+            <div class="footer-wrap">
+            <div class="footer-inner">
+                <ul class="footer-links">
+	<li><a href="https://itunes.apple.com/us/app/football.ua/id494293809?mt=8" target="_blank">🍏&nbsp;<strong>APP STORE</strong></a></li>
+	<li><a href="https://play.google.com/store/apps/details?id=football.ua" target="_blank">🎮&nbsp;<strong>GOOGLE PLAY</strong></a></li>
+	<li><a href="https://t.me/footballuaonline">📨&nbsp;<strong>TELEGRAM</strong></a></li>
+	<li><a href="https://www.youtube.com/@footballuaonline">▶️&nbsp;<strong>YOUTUBE</strong></a></li>
+	<li><a href="https://www.instagram.com/football.ua.ua">📸&nbsp;<strong>INSTAGRAM</strong></a></li>
+	<li><a href="https://www.facebook.com/footballua">📘&nbsp;<strong>FACEBOOK</strong></a></li>
+	<li><a href="https://football.ua">⚽️&nbsp;<strong>FOOTBALL&nbsp;</strong>🇺🇦</a></li>
+</ul>
+
+
+                <nav class="footer-nav">
+                    <div class="col">
+<ul>
+	<li class="list-header"><strong>УКРАЇНА</strong></li>
+	<li><a href="/ukraine.html">Прем&#39;єр-ліга</a></li>
+	<li><a href="/ukraine1league.html">Перша ліга</a></li>
+	<li>Друга<a href="/ukraine2league.html">&nbsp;ліга</a></li>
+</ul>
+
+<ul>
+	<li class="list-header"><strong>СВІТ</strong></li>
+	<li><a href="https://football.ua/countrieselse.html">Інші країни</a></li>
+	<li><a href="https://football.ua/tag/transfers.html">Трансферний ринок</a></li>
+	<li><a href="https://football.ua/futsal.html">Футзал</a></li>
+</ul>
+</div>
+
+<div class="col">
+<ul>
+	<li class="list-header"><strong>ЄВРОПА</strong></li>
+	<li><a href="/england.html">Англія</a></li>
+	<li><a href="/spain.html">Іспанія</a></li>
+	<li><a href="/italy.html">Італія</a></li>
+	<li><a href="/germany.html">Німеччина</a></li>
+	<li><a href="/france.html">Франція</a></li>
+	<li><a href="/netherlands.html">Нідерланди</a></li>
+	<li><a href="/portugal.html">Португалія</a></li>
+	<li><a href="/turkey.html">Туреччина</a></li>
+	<li><a href="/poland.html">Польща</a></li>
+</ul>
+</div>
+
+<div class="col">
+<ul>
+	<li class="list-header"><strong>ЄВРОКУБКИ</strong></li>
+	<li><a href="/champions_league.html">Ліга чемпіонів</a></li>
+	<li><a href="/uefa.html">Ліга Європ</a>и</li>
+	<li><a href="/conferenceleague.html">Ліга конференцій</a></li>
+</ul>
+
+<ul>
+	<li class="list-header"><strong>МІЖНАРОДНІ КУБКИ</strong></li>
+	<li><a href="/worldcup.html">Чемпіонат світу</a></li>
+	<li><a href="/euro.html">ЄВРО</a></li>
+	<li><a href="/nationsleague.html">Ліга націй</a></li>
+	<li><a href="/copaamerica.html">Копа Америка</a></li>
+	<li><a href="/africancup.html">Кубок Африки (КАН)</a></li>
+</ul>
+</div>
+
+<div class="col">
+<ul>
+	<li class="list-header"><strong>РІЗНЕ</strong></li>
+	<li><a href="https://football.ua/fansector.html">Фан-сектор</a></li>
+	<li><a href="https://football.ua/tag/luchshie-kommentarii-chitateley.html">Коментарі тижня</a></li>
+	<li><a href="https://football.ua/footballtest.html">Тести</a></li>
+	<li><a href="https://football.ua/tag/podkasty-footballua.html">Подкасти</a></li>
+	<li><a href="https://football.ua/tag/nashi-video.html">Наші відео</a></li>
+	<li><a href="/default.aspx?menu_id=tvschedule">Футбол на ТБ</a></li>
+	<li><a href="https://football.ua/tips.html">Прогнози</a></li>
+	<li><a href="https://football.ua/bet-casino.html">Новини казино</a></li>
+</ul>
+</div>
+
+<div class="col">
+<ul>
+	<li class="list-header"><strong>СПЕЦПРОЄКТИ</strong></li>
+	<li>Кращі<a href="https://football.ua/tag/luchshie-v-istorii.html">&nbsp;в історії</a></li>
+	<li><a href="https://football.ua/tag/upl-best-xi.html">УПЛ. Best XІ</a></li>
+	<li><a href="https://football.ua/bitva-redaktsiy.html">Битва редакцій</a></li>
+	<li><a href="https://football.ua/life-principles.html">Правила життя</a></li>
+	<li><a href="https://football.ua/fiveoclock.html">Five O&#39;Clock</a></li>
+	<li><a href="https://football.ua/england/bestof_liverpool.html">Кращі моменти Ліверпуля</a></li>
+	<li><a href="https://football.ua/tag/sobytie-dnya.html">Подія дня</a></li>
+</ul>
+</div>
+
+<div class="col">
+<ul>
+	<li class="list-header"><strong>ІНФО</strong></li>
+	<li><a href="https://football.ua/contacts.html">Контакти</a><br />
+	<a href="https://football.ua/redaction.html">Редакція</a><br />
+	<a href="https://football.ua/countrieselse/396483-politika-u-sferi-konfidencijjnosti-i-personalnikh-danikh.html">Privacy policy</a></li>
+	<li><a href="https://football.ua/countrieselse/396484-ugoda-shhodo-koristuvannja.html">Користувацька угода</a></li>
+</ul>
+</div>
+
+                </nav>
+            </div>
+            </div>
+
+            <center>
+<p><strong>З питань реклами звертайтесь:</strong></p>
+
+<p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7a1b1e0c3a1c15150e181b1616540f1b">[email&#160;protected]</a></p>
+
+<p>&nbsp;</p>
+
+<p>E-mail редакції: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3d54535b527d5b5252495f5c515113485c">[email&#160;protected]</a>.</p>
+</center>
+
+<center>&copy; 2025 football Всі права захищені.</center>
+
+<center>&nbsp;</center>
+
+<center><a href="https://football.ua/countrieselse/396484-ugoda-shhodo-koristuvannja.html"><span style="font-family: Arial, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; text-align: -webkit-center;">Правила користування сайтом</span></a></center>
+
+<center><a href="https://football.ua/countrieselse/396483-politika-u-sferi-konfidencijjnosti-i-personalnikh-danikh.html">Політика у сфері конфіденційності та персональних даних</a></center>
+
+<pre>
+&nbsp;</pre>
+
+<center>Матеріали сайту football.ua призначені для осіб старше 21 року (21+). Участь в азартних іграх може викликати ігрову залежність. Дотримуйтесь правил (принципів) відповідальної гри. При виявленні перших ознак залежності негайно зверніться до спеціаліста. Пам&#39;ятайте, що участь в азартних іграх не може бути джерелом доходів або альтернативою роботі. Інформаційний ресурс football.ua не проводить ігри на реальні та/або віртуальні гроші, також сайт не приймає ні в якій формі оплату ставок та інших платежів, які пов&rsquo;язані/можуть бути пов&rsquo;язані з азартними іграми, букмекерами чи тоталізаторами. Будь-які матеріали на інформаційному ресурсі football.ua публікуються виключно в інформаційних цілях.</center>
+
+        </footer>
+
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="https://football.ua/js/bottom.js?v=20160629"></script>
+        
+        
+    </form>
+    
+     
+	
+	<div id="gdpr-disclaimer"></div>
+    <script type="text/javascript" src="//football.ua/disclaimer.min.js" data-rules="https://football.ua/countrieselse/396483-politika-u-sferi-konfidencijjnosti-i-personalnikh-danikh.html"></script>
+    </div>
+    <div id="popup-back"></div> 
+</body>
+</html>
