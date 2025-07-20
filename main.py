@@ -31,7 +31,7 @@ with open('used_post.json', encoding='utf-8') as file:
 #відправлення постів в телеграм канал
 
 # item = data[0]
-# bot.send_photo(channel_id, photo = item['image'], caption=f'<b>{item['title']}</b>\n{item['text'][0:950]}', parse_mode='html')
+bot.send_photo(channel_id, photo = item['image'], caption=f'<b>{item["title"]}</b>\n{item["text"][0:950]}', parse_mode='html')
 @bot.message_handler(commands=['start'])
 def main(message):
     random.shuffle(data)
