@@ -4,7 +4,7 @@ import json
 import datetime
 
 def rewrite_news():
-    genai.configure(api_key='AIzaSyDD4tNo3oBa1i7jdytr6JejX6m_MvdOYgw')
+    genai.configure(api_key='')
 
     model =genai.GenerativeModel(
         model_name='gemini-2.5-pro'
