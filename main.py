@@ -12,7 +12,7 @@ date = f'data{datetime.datetime.now().strftime("%d.%m.%Y")}'
 
 bot_id = os.getenv('TELEGRAM_BOT_TOKEN')
 channel_id = os.getenv('TELEGRAM_CHANNEL_ID')
-print(bot_id, channel_id)
+print('Writing',bot_id, channel_id)
 bot = telebot.TeleBot(bot_id)
 
 #Париснг і скорочення тексту в певний час
