@@ -10,12 +10,12 @@ import datetime
 date = f'data{datetime.datetime.now().strftime('%d.%m.%Y')}'
 # date = 'data07.17.25'
 
-bot_id = ''
-channel_id = os.getenv('')
+bot_id = os.getenv('TELEGRAM_BOT_TOKEN')
+channel_id = os.getenv('TELEGRAM_CHANNEL_ID')
 bot = telebot.TeleBot(bot_id)
 
 #Париснг і скорочення тексту в певний час
-if datetime.datetime.now().strftime('%H:%M') == '09:00':
+if datetime.datetime.now().strftime('%H:%M') == '07:00':
     news_parse()
     # rewrite_news()
 
