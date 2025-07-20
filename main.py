@@ -50,5 +50,4 @@ def main(message):
         json.dump(used_post, file, indent=4, ensure_ascii=False)
     # print(used_post)
 
-bot.polling(none_stop=True)
 
