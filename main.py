@@ -10,8 +10,8 @@ import datetime
 date = f'data{datetime.datetime.now().strftime('%d.%m.%Y')}'
 # date = 'data07.17.25'
 
-bot_id = '8044100780:AAHhu3LMOw_AmUuORgsBw7PDzlDtgwioGJo'
-channel_id = os.getenv('@goals_news')
+bot_id = ''
+channel_id = os.getenv('')
 bot = telebot.TeleBot(bot_id)
 
 #Париснг і скорочення тексту в певний час
