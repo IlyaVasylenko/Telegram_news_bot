@@ -20,7 +20,10 @@ if datetime.datetime.now().strftime('%H:%M') == '07:00':
     # rewrite_news()
 
 #файл з новинами
-with open(f'data{date}/data{date}gemini.json','r', encoding='utf-8') as file:
+base_dir = os.path.dirname(os.path.abspath(__file__))  # путь к папке, где лежит main.py
+json_path = os.path.join(base_dir, date, f"{date}gemini.json")
+
+with open(f'json_path','r', encoding='utf-8') as file:
     data = json.loads(file.read())
 # print(data)
 
