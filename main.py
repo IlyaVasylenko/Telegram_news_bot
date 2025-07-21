@@ -7,8 +7,7 @@ import os
 import datetime
 # import schedule 
 
-date = f'data{datetime.datetime.now().strftime("%d.%m.%Y")}'
-# date = 'data07.17.25'
+date = datetime.datetime.now().strftime("%d.%m.%Y")
 
 bot_id = os.getenv('TELEGRAM_BOT_TOKEN')
 channel_id = os.getenv('TELEGRAM_CHANNEL_ID')
@@ -21,7 +20,7 @@ if datetime.datetime.now().strftime('%H:%M') == '07:00':
     # rewrite_news()
 
 #файл з новинами
-with open(f'{date}/{date}gemini.json','r', encoding='utf-8') as file:
+with open(f'data{date}/data{date}gemini.json','r', encoding='utf-8') as file:
     data = json.loads(file.read())
 # print(data)
 
