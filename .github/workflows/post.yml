@@ -20,6 +20,8 @@ jobs:
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
       GEMINI_API: ${{ secrets.GEMINI_API }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
 
     steps:
       # 1. Клонування репозиторію
@@ -36,8 +38,24 @@ jobs:
       - name: Встановлення залежностей
         run: |
           pip install -r requirements.txt
+      # Добавлення дати
+      - name: Получение текущей даты
+        id: date
+        run: echo "today=$(date +'%d.%m.%Y')" >> $GITHUB_OUTPUT
 
       # 4. Запуск скрипта
       - name: Запуск скрипта
         run: |
           python main.py
+      # 5.  Налаштування git
+      - name: Налаштування git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "@vasilenkoilla898@gmail.com"
+      # 6.Комміт результатів парсингу
+      - name: Комміт результатів парсингу
+        run: |
+          git add data*
+          git commit -m "Добавлены результаты парсинга за ${{ steps.date.outputs.today }}" || echo "Нет изменений"
+          git push
+
