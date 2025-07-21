@@ -15,7 +15,7 @@ print('Writing',bot_id, channel_id)
 bot = telebot.TeleBot(bot_id)
 
 #Париснг і скорочення тексту в певний час
-if datetime.datetime.now().strftime('%H:%M') == '07:00' or datetime.datetime.now().strftime('%H:%M') == '16:21': 
+if datetime.datetime.now().strftime('%H:%M') == '07:00' or datetime.datetime.now().strftime('%H:%M') == '16:27': 
     news_parse()
     # rewrite_news()
 

@@ -21,7 +21,7 @@ jobs:
       TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
       GEMINI_API: ${{ secrets.GEMINI_API }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
+
 
     steps:
       # 1. Клонування репозиторію
@@ -55,7 +55,7 @@ jobs:
       # 6.Комміт результатів парсингу
       - name: Комміт результатів парсингу
         run: |
-          git add data*
+          git add .
           git commit -m "Добавлены результаты парсинга за ${{ steps.date.outputs.today }}" || echo "Нет изменений"
           git push
 
