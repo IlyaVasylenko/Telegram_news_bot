@@ -17,7 +17,7 @@ bot = telebot.TeleBot(bot_id)
 #Париснг і скорочення тексту в певний час
 if datetime.datetime.now().strftime('%H:%M') == '07:00' or datetime.datetime.now().strftime('%H:%M') == '16:27': 
     news_parse()
-    # rewrite_news()
+    rewrite_news()
 
 #файл з новинами
 base_dir = os.path.dirname(os.path.abspath(__file__))  # путь к папке, где лежит main.py
