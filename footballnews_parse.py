@@ -59,16 +59,10 @@ def news_parse():
             print('Folder is already exists')
 
         for site in all_categories_list:
-            url = site.split('/')[-1]
             req = requests.get(site, headers)
             src = req.text
-            with open(f'{folder}/{url}', 'w',encoding='utf-8') as file:
-                file.write(src)
-                # print('done')
-            with open(f'{folder}/{url}', encoding = 'utf-8') as file:
-                file_text = file.read()
                 # print(file_text)
-            soup = BeautifulSoup(file_text, 'lxml')
+            soup = BeautifulSoup(src, 'lxml')
             try:
                 post_title = soup.find('article', class_='author-article').find('h1')
                 # print(post_title.text)
