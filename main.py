@@ -21,7 +21,7 @@ if datetime.datetime.now().strftime('%H:%M') == '07:00':
 
 #файл з новинами
 base_dir = os.path.dirname(os.path.abspath(__file__))  # путь к папке, где лежит main.py
-json_path = os.path.join(base_dir, f'data/{date}', f"data{date}gemini.json")
+json_path = os.path.join(base_dir, f'data{date}', f"data{date}gemini.json")
 
 with open(json_path,'r', encoding='utf-8') as file:
     data = json.loads(file.read())
