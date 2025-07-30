@@ -14,6 +14,7 @@ bot_id = os.getenv('TELEGRAM_BOT_TOKEN')
 channel_id = os.getenv('TELEGRAM_CHANNEL_ID')
 print('Writing',bot_id, channel_id)
 bot = telebot.TeleBot(bot_id)
+match_posted = True
 
 #Париснг і скорочення тексту в певний час
 try:
@@ -50,7 +51,6 @@ if match_posted == False:
 
     bot.send_message(channel_id, text = message_matches)
 
-    match_posted=True
 
 #відправлення постів в телеграм канал
 
