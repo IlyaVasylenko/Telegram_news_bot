@@ -46,7 +46,7 @@ if match_posted == False:
 
     message_matches = 'Сьгоднішні матчі:'
     for match in list_match:
-        message_matches += f'{match['league']}\n{match['home']} vs {match['away']} о {match['time']}'
+        message_matches += f'{match["league"]}\n{match["home"]} vs {match["away"]} о {match["time"]}'
 
     bot.send_message(channel_id, text = message_matches)
 
