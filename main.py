@@ -1,5 +1,6 @@
 from footballnews_parse import news_parse
 from ai import rewrite_news
+from football_api import today_matches
 import telebot
 import json
 import random
@@ -19,8 +20,10 @@ try:
     os.mkdir(f'data{date}')
     news_parse()
     rewrite_news()
+    today_matches()
+    match_posted = False
 except:
-     print('Folder is already exists')
+    print('Folder is already exists')
 
 #файл з новинами
 base_dir = os.path.dirname(os.path.abspath(__file__))  # путь к папке, где лежит main.py
@@ -34,6 +37,21 @@ with open(json_path,'r', encoding='utf-8') as file:
 with open('used_post.json', encoding='utf-8') as file:
     used_post = json.loads(file.read())
 # print(used_post)
+
+#файл з сьогоднішніми матчами
+
+if match_posted == False:
+    with open('today_matches.json', 'r', encoding='utf-8') as file:
+        list_match = json.loads(file.read())
+
+    message_matches = 'Сьгоднішні матчі:'
+    for match in list_match:
+        message_matches += f'{match['league']}\n{match['home']} vs {match['away']} о {match['time']}'
+
+    bot.send_message(channel_id, text = message_matches)
+
+    match_posted=True
+
 #відправлення постів в телеграм канал
 
 

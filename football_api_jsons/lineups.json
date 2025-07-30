@@ -1,0 +1,224 @@
+{
+    "get": "fixtures/lineups",
+    "parameters": {
+        "fixture": "1382430",
+        "team": "554"
+    },
+    "errors": [],
+    "results": 1,
+    "paging": {
+        "current": 1,
+        "total": 1
+    },
+    "response": [
+        {
+            "team": {
+                "id": 554,
+                "name": "Anderlecht",
+                "logo": "https://media.api-sports.io/football/teams/554.png",
+                "colors": {
+                    "player": {
+                        "primary": "452763",
+                        "number": "ffffff",
+                        "border": "452763"
+                    },
+                    "goalkeeper": {
+                        "primary": "f7f7f7",
+                        "number": "0a0a0a",
+                        "border": "f7f7f7"
+                    }
+                }
+            },
+            "formation": "4-2-3-1",
+            "startXI": [
+                {
+                    "player": {
+                        "id": 8469,
+                        "name": "Colin Coosemans",
+                        "number": 26,
+                        "pos": "G",
+                        "grid": "1:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 401367,
+                        "name": "Ali Maamar",
+                        "number": 79,
+                        "pos": "D",
+                        "grid": "2:4"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 315615,
+                        "name": "Lucas Hey",
+                        "number": 3,
+                        "pos": "D",
+                        "grid": "2:3"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 371910,
+                        "name": "Jan-Carlo Simić",
+                        "number": 4,
+                        "pos": "D",
+                        "grid": "2:2"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 2852,
+                        "name": "Ludwig Augustinsson",
+                        "number": 6,
+                        "pos": "D",
+                        "grid": "2:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 453903,
+                        "name": "Nathan De Cat",
+                        "number": 74,
+                        "pos": "M",
+                        "grid": "3:2"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 38745,
+                        "name": "Enric Llansana",
+                        "number": 24,
+                        "pos": "M",
+                        "grid": "3:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 400844,
+                        "name": "Tristan Degreef",
+                        "number": 83,
+                        "pos": "M",
+                        "grid": "4:3"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 2929,
+                        "name": "Thorgan Hazard",
+                        "number": 11,
+                        "pos": "M",
+                        "grid": "4:2"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 311543,
+                        "name": "Nilson Angulo",
+                        "number": 19,
+                        "pos": "M",
+                        "grid": "4:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 6490,
+                        "name": "Luis Vázquez",
+                        "number": 20,
+                        "pos": "F",
+                        "grid": "5:1"
+                    }
+                }
+            ],
+            "substitutes": [
+                {
+                    "player": {
+                        "id": 63931,
+                        "name": "Mads Juhl Kikkenborg",
+                        "number": 16,
+                        "pos": "G",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 175415,
+                        "name": "Moussa N'Diaye",
+                        "number": 5,
+                        "pos": "D",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 1429,
+                        "name": "Yari Verschaeren",
+                        "number": 10,
+                        "pos": "M",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 127417,
+                        "name": "Marco Kana",
+                        "number": 55,
+                        "pos": "D",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 481515,
+                        "name": "Basile Vroninks",
+                        "number": 62,
+                        "pos": "M",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 296455,
+                        "name": "Mario Stroeykens",
+                        "number": 29,
+                        "pos": "M",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 294824,
+                        "name": "Nathan-Dylan Saliba",
+                        "number": 13,
+                        "pos": "M",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 550,
+                        "name": "Kasper Dolberg",
+                        "number": 12,
+                        "pos": "F",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 418189,
+                        "name": "Ibrahim Kanate",
+                        "number": 99,
+                        "pos": "F",
+                        "grid": null
+                    }
+                }
+            ],
+            "coach": {
+                "id": 1168,
+                "name": "Besnik Hasi",
+                "photo": "https://media.api-sports.io/football/coachs/1168.png"
+            }
+        }
+    ]
+}
