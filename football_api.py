@@ -2,10 +2,11 @@ import requests
 import json
 import datetime
 import translators as ts
+import os
 
 def today_matches():
 
-  football_api_key = '18fab6c5615a8f9c5e949136ece86093'
+  football_api_key = os.getenv('FOOTBALL_API')
   url = "https://v3.football.api-sports.io/fixtures"
 
   today_date = datetime.datetime.today().strftime('%Y-%m-%d')

@@ -23,6 +23,7 @@ jobs:
       TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
       GEMINI_API: ${{ secrets.GEMINI_API }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      FOOTBALL_API: ${{ secrets.FOOTBALL_API }}
 
 
     steps:
