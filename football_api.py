@@ -54,4 +54,4 @@ def today_matches():
           })
   with open('today_fixtures.json', 'w', encoding='utf-8') as file:
     json.dump(today_matches_teams, file, indent=4, ensure_ascii=False)
-today_matches()
+

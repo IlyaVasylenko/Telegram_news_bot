@@ -42,7 +42,7 @@ with open('used_post.json', encoding='utf-8') as file:
 #файл з сьогоднішніми матчами
 
 if match_posted == False:
-    with open('today_matches.json', 'r', encoding='utf-8') as file:
+    with open('today_fixtures.json', 'r', encoding='utf-8') as file:
         list_match = json.loads(file.read())
 
     message_matches = 'Сьгоднішні матчі:'
