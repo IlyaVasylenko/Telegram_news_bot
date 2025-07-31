@@ -45,6 +45,8 @@ def today_matches():
           away = ts.translate_text(match['teams']['away']['name'], translator='bing', from_language='en', to_language='uk') 
           time = match['fixture']['date'][11:16]
           league =ts.translate_text(match['league']['name'][5:], translator='bing', from_language='en', to_language='uk') 
+          venue = ts.translate_text(match['fixture']['venue']['name'], translator='bing', from_language='en', to_language='uk') 
+          city = ts.translate_text(match['fixture']['venue']['city'], translator='bing', from_language='en', to_language='uk')
           print(f"{home} vs {away} в {league} о {time}")
           today_matches_teams.append({
              'home':home,
