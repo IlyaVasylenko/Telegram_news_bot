@@ -53,6 +53,9 @@ def today_matches():
              'away':away,
              'league':league,
              'time':time,
+             'venue':venue,
+             'city':city
+
           })
   with open('today_fixtures.json', 'w', encoding='utf-8') as file:
     json.dump(today_matches_teams, file, indent=4, ensure_ascii=False)
