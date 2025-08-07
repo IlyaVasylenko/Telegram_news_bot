@@ -1,6 +1,7 @@
 from footballnews_parse import news_parse
 from ai import rewrite_news
 from football_api import today_matches
+from lineups import team_lineup
 import telebot
 import json
 import random
@@ -47,10 +48,20 @@ if match_posted == False:
 
     message_matches = 'Сьгоднішні матчі:\n'
     for match in list_match:
-        message_matches += f'{match["league"]}\n{match["home"]} vs {match["away"]}\n⏱️{match["time"]}\n🏙️{match["city"]}\n🏟️{match["venue"]}'
+        message_matches += f'{match["league"]}\n{match["home"]} vs {match["away"]}\n⏱️{match["time"]}\n🏙️{match["city"]}\n🏟️{match["venue"]}\n'
 
-    bot.send_message(channel_id, text = message_matches)
+    bot.send_message(channel_id, text = message_matches.strip())
 
+#пости зі складами команд
+
+# time = list_match[0]['']
+with open('today_fixtures.json', 'r', encoding='utf-8') as file:
+        list_match = json.loads(file.read())
+for match in list_match:
+    if match["time"] == datetime.datetime.now().strftime('%H:%M'):
+        fixture = match['id']
+        team_lineup(fixture)
+        bot.send_photo(chat_id= os.getenv('TELEGRAM_CHANNEL_ID'),photo=['images/away_team lineup','images/home_team lineup'])
 
 #відправлення постів в телеграм канал
 

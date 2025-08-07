@@ -47,6 +47,7 @@ def today_matches():
           league =ts.translate_text(match['league']['name'][5:], translator='bing', from_language='en', to_language='uk') 
           venue = ts.translate_text(match['fixture']['venue']['name'], translator='bing', from_language='en', to_language='uk') 
           city = ts.translate_text(match['fixture']['venue']['city'], translator='bing', from_language='en', to_language='uk')
+          id = match['fixture']['id']
           print(f"{home} vs {away} в {league} о {time}")
           today_matches_teams.append({
              'home':home,
@@ -54,8 +55,8 @@ def today_matches():
              'league':league,
              'time':time,
              'venue':venue,
-             'city':city
-
+             'city':city,
+             'id' : id
           })
   with open('today_fixtures.json', 'w', encoding='utf-8') as file:
     json.dump(today_matches_teams, file, indent=4, ensure_ascii=False)
