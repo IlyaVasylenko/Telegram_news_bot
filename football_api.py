@@ -17,7 +17,6 @@ def today_matches():
   }
   params = {
       'date': today_date,
-      'date': '2025-08-07',
       'timezone': 'Europe/Kiev',
   }
 
