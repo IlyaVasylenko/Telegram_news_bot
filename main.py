@@ -62,7 +62,18 @@ for match in list_match:
         print(datetime.datetime.now().strftime('%H:%M'))
         fixture = match['id']
         team_lineup(fixture)
-        bot.send_photo(chat_id= os.getenv('TELEGRAM_CHANNEL_ID'),photo=['images/away_team lineup','images/home_team lineup'])
+        photos = [
+        open('images/away_team_lineup.jpg', 'rb'),
+        open('images/home_team_lineup.jpg', 'rb')
+        ]
+        media = []
+        for photo in photos:
+            media.append(telebot.types.InputMediaPhoto(photo))
+        bot.send_media_group(chat_id=os.getenv('TELEGRAM_CHANNEL_ID'), media=media)
+        for photo in photos:
+            photo.close()
+        # bot.send_photo(chat_id= os.getenv('TELEGRAM_CHANNEL_ID'),photo=['images/away_team lineup','images/home_team lineup'])
+        
 
 #відправлення постів в телеграм канал
 
