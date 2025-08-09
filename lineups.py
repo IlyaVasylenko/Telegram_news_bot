@@ -218,4 +218,3 @@ def team_lineup(fixture):
             football_pitch.save(f'images/away_team lineup.jpg')
         team_count += 1
         football_pitch.show()
-team_lineup(1386557)
