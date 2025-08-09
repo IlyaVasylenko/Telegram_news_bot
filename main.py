@@ -83,7 +83,7 @@ try:
         # while data[0]['title'] in used_post:
         #     random.shuffle(data)
         # item = data[0]
-        if item['title'] not in used_post:
+        if item['title'] in used_post:
             continue
         bot.send_photo(chat_id= os.getenv('TELEGRAM_CHANNEL_ID'), photo = item['image'], caption=f'<b>{item["title"]}</b>\n{item["text"][0:950]}\n@goals_news', parse_mode='html')
         used_post.append(item['title'])
