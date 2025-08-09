@@ -84,5 +84,6 @@ except:
 with open('used_post.json','w', encoding='utf-8') as file:
     json.dump(used_post, file, indent=4, ensure_ascii=False)
 # print(used_post)
+print(datetime.datetime.now().strftime('%H:%M'))
 
 
