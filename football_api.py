@@ -39,8 +39,8 @@ def today_matches():
 
   # print(data)
   for match in data['response']:
-    # if match['league']['name'] in international_competitions:
-        if match['teams']['home']['name'] in popular_clubs or match['teams']['away']['name'] in popular_clubs or match['teams']['away']['name'] == 'Swansea':
+    if match['league']['name'] in international_competitions:
+        if match['teams']['home']['name'] in popular_clubs or match['teams']['away']['name'] in popular_clubs:
           try:
             home = ts.translate_text(match['teams']['home']['name'], translator='bing', from_language='en', to_language='uk') 
             away = ts.translate_text(match['teams']['away']['name'], translator='bing', from_language='en', to_language='uk') 
