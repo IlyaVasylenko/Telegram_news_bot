@@ -44,13 +44,13 @@ with open('used_post.json', encoding='utf-8') as file:
 
 if match_posted == False:
     with open('today_fixtures.json', 'r', encoding='utf-8') as file:
-        list_match = json.loads(file.read())
+            list_match = json.loads(file.read())
+    if list_match != []:
+        message_matches = 'Сьгоднішні матчі:\n'
+        for match in list_match:
+            message_matches += f'{match["league"]}\n{match["home"]} vs {match["away"]}\n⏱️{match["time"]}\n🏙️{match["city"]}\n🏟️{match["venue"]}\n'
 
-    message_matches = 'Сьгоднішні матчі:\n'
-    for match in list_match:
-        message_matches += f'{match["league"]}\n{match["home"]} vs {match["away"]}\n⏱️{match["time"]}\n🏙️{match["city"]}\n🏟️{match["venue"]}\n'
-
-    bot.send_message(channel_id, text = message_matches.strip())
+        bot.send_message(channel_id, text = message_matches.strip())
 
 #пости зі складами команд
 
@@ -59,6 +59,7 @@ with open('today_fixtures.json', 'r', encoding='utf-8') as file:
         list_match = json.loads(file.read())
 for match in list_match:
     if match["time"] == datetime.datetime.now().strftime('%H:%M'):
+        print(datetime.datetime.now().strftime('%H:%M'))
         fixture = match['id']
         team_lineup(fixture)
         bot.send_photo(chat_id= os.getenv('TELEGRAM_CHANNEL_ID'),photo=['images/away_team lineup','images/home_team lineup'])
@@ -66,16 +67,17 @@ for match in list_match:
 #відправлення постів в телеграм канал
 
 try:
-    random.shuffle(data)
-        
-    while data[0]['title'] in used_post:
-        random.shuffle(data)
-    item = data[0]
-    # print(item)
-    # post = f'{item["title"]}\n{item["image"]}\n{item["text"][0:100]}'
-    # bot.send_message(message.chat.id, post, parse_mode='html')
-    bot.send_photo(chat_id= os.getenv('TELEGRAM_CHANNEL_ID'), photo = item['image'], caption=f'<b>{item["title"]}</b>\n{item["text"][0:950]}\n@goals_news', parse_mode='html')
-    used_post.append(item['title'])
+    for item in data:
+        # random.shuffle(data)
+        # while data[0]['title'] in used_post:
+        #     random.shuffle(data)
+        # item = data[0]
+        if item not in used_post:
+            bot.send_photo(chat_id= os.getenv('TELEGRAM_CHANNEL_ID'), photo = item['image'], caption=f'<b>{item["title"]}</b>\n{item["text"][0:950]}\n@goals_news', parse_mode='html')
+            used_post.append(item['title'])
+        # print(item)
+        # post = f'{item["title"]}\n{item["image"]}\n{item["text"][0:100]}'
+        # bot.send_message(message.chat.id, post, parse_mode='html')
 except:
     print("Can't post news")
 #додавання використаних постів в used_post.json
