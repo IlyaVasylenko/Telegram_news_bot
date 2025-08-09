@@ -21,4 +21,4 @@ import datetime
 # with open('used_post.json','w', encoding='utf-8') as file:
 #     json.dump([],file, indent=4, ensure_ascii=False)
 print(datetime.datetime.now().strftime('%d.%m.%Y'))
-print(datetime.datetime.now().strftime('%H:%M'))
+print(datetime.datetime.now().strftime('%H'))

@@ -58,7 +58,7 @@ if match_posted == False:
 with open('today_fixtures.json', 'r', encoding='utf-8') as file:
         list_match = json.loads(file.read())
 for match in list_match:
-    if match["time"] == datetime.datetime.now().strftime('%H:%M'):
+    if match["time"][0:-3] == datetime.datetime.now().strftime('%H'):
         print(datetime.datetime.now().strftime('%H:%M'))
         fixture = match['id']
         team_lineup(fixture)
