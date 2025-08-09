@@ -18,48 +18,48 @@
         "id": 1429827
     },
     {
-        "home": "Middlesbrough",
-        "away": "Swansea",
-        "league": "ionship",
+        "home": "Мідлсбро",
+        "away": "Свонсі",
+        "league": "чемпіонат",
         "time": "17:00",
-        "venue": "Riverside Stadium",
-        "city": "Middlesbrough",
+        "venue": "Стадіон Ріверсайд",
+        "city": "Мідлсбро",
         "id": 1386557
     },
     {
-        "home": "Everton",
-        "away": "AS Roma",
-        "league": "dlies Clubs",
+        "home": "Евертон",
+        "away": "АС Рома",
+        "league": "клуби dlies",
         "time": "17:00",
-        "venue": "Hill Dickinson Stadium",
-        "city": "Liverpool, Merseyside",
+        "venue": "Стадіон Хілл Дікінсон",
+        "city": "Ліверпуль, Мерсісайд",
         "id": 1402830
     },
     {
-        "home": "Newcastle",
-        "away": "Atletico Madrid",
-        "league": "dlies Clubs",
+        "home": "Ньюкасл",
+        "away": "Атлетіко Мадрид",
+        "league": "клуби dlies",
         "time": "18:00",
-        "venue": "St. James' Park",
-        "city": "Newcastle upon Tyne",
+        "venue": "Сент-Джеймс Парк",
+        "city": "Ньюкасл на Тайні",
         "id": 1402832
     },
     {
-        "home": "Arsenal",
-        "away": "Athletic Club",
-        "league": "tes Cup",
+        "home": "Арсенал",
+        "away": "Атлетичний клуб",
+        "league": "кубок Тес",
         "time": "19:00",
-        "venue": "Emirates Stadium",
-        "city": "London",
+        "venue": "Емірейтс Стадіум",
+        "city": "Лондон",
         "id": 1430657
     },
     {
-        "home": "Arsenal",
-        "away": "Athletic Club",
-        "league": "dlies Clubs",
+        "home": "Арсенал",
+        "away": "Атлетичний клуб",
+        "league": "клуби dlies",
         "time": "20:00",
-        "venue": "Emirates Stadium",
-        "city": "London",
+        "venue": "Емірейтс Стадіум",
+        "city": "Лондон",
         "id": 1402833
     },
     {
@@ -72,12 +72,12 @@
         "id": 1429860
     },
     {
-        "home": "Palermo",
-        "away": "Manchester City",
-        "league": "dlies Clubs",
+        "home": "Палермо",
+        "away": "Манчестер Сіті",
+        "league": "клуби dlies",
         "time": "22:00",
-        "venue": "Stadio Renzo Barbera",
-        "city": "Palermo",
+        "venue": "Стадіо Ренцо Барбера",
+        "city": "Палермо",
         "id": 1402834
     }
 ]
