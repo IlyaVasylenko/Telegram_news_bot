@@ -42870,8 +42870,8 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 89,
-                    "extra": null
+                    "elapsed": 90,
+                    "extra": 2
                 }
             },
             "league": {
@@ -49170,7 +49170,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 72,
+                    "elapsed": 74,
                     "extra": null
                 }
             },
@@ -49189,17 +49189,17 @@
                     "id": 11661,
                     "name": "Sylvia",
                     "logo": "https://media.api-sports.io/football/teams/11661.png",
-                    "winner": null
+                    "winner": true
                 },
                 "away": {
                     "id": 11668,
                     "name": "Arameiska / Syrianska",
                     "logo": "https://media.api-sports.io/football/teams/11668.png",
-                    "winner": null
+                    "winner": false
                 }
             },
             "goals": {
-                "home": 1,
+                "home": 2,
                 "away": 1
             },
             "score": {
@@ -49240,7 +49240,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 74,
+                    "elapsed": 76,
                     "extra": null
                 }
             },
@@ -49259,17 +49259,17 @@
                     "id": 4159,
                     "name": "Metta / LU",
                     "logo": "https://media.api-sports.io/football/teams/4159.png",
-                    "winner": false
+                    "winner": null
                 },
                 "away": {
                     "id": 18834,
                     "name": "FS Jelgava",
                     "logo": "https://media.api-sports.io/football/teams/18834.png",
-                    "winner": true
+                    "winner": null
                 }
             },
             "goals": {
-                "home": 1,
+                "home": 2,
                 "away": 2
             },
             "score": {
@@ -49310,7 +49310,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 77,
+                    "elapsed": 79,
                     "extra": null
                 }
             },
@@ -49380,7 +49380,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 74,
+                    "elapsed": 76,
                     "extra": null
                 }
             },
@@ -49450,7 +49450,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 74,
+                    "elapsed": 76,
                     "extra": null
                 }
             },
@@ -49520,7 +49520,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 78,
+                    "elapsed": 80,
                     "extra": null
                 }
             },
@@ -49590,7 +49590,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 74,
+                    "elapsed": 76,
                     "extra": null
                 }
             },
@@ -49660,7 +49660,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 72,
+                    "elapsed": 74,
                     "extra": null
                 }
             },
@@ -49730,7 +49730,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 72,
+                    "elapsed": 75,
                     "extra": null
                 }
             },
@@ -49870,7 +49870,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 71,
+                    "elapsed": 73,
                     "extra": null
                 }
             },
@@ -49940,7 +49940,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 77,
+                    "elapsed": 79,
                     "extra": null
                 }
             },
@@ -50010,7 +50010,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 74,
+                    "elapsed": 76,
                     "extra": null
                 }
             },
@@ -50080,7 +50080,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 71,
+                    "elapsed": 73,
                     "extra": null
                 }
             },
@@ -50150,7 +50150,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 71,
+                    "elapsed": 73,
                     "extra": null
                 }
             },
@@ -50220,7 +50220,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 71,
+                    "elapsed": 73,
                     "extra": null
                 }
             },
@@ -50290,7 +50290,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 70,
+                    "elapsed": 72,
                     "extra": null
                 }
             },
@@ -50360,7 +50360,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 66,
+                    "elapsed": 69,
                     "extra": null
                 }
             },
@@ -50390,7 +50390,7 @@
             },
             "goals": {
                 "home": 2,
-                "away": 0
+                "away": 1
             },
             "score": {
                 "halftime": {
@@ -50430,7 +50430,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 72,
+                    "elapsed": 74,
                     "extra": null
                 }
             },
@@ -50500,7 +50500,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 69,
+                    "elapsed": 71,
                     "extra": null
                 }
             },
@@ -50570,7 +50570,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 77,
+                    "elapsed": 80,
                     "extra": null
                 }
             },
@@ -50640,7 +50640,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 72,
+                    "elapsed": 74,
                     "extra": null
                 }
             },
@@ -50710,7 +50710,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 75,
+                    "elapsed": 77,
                     "extra": null
                 }
             },
@@ -50739,7 +50739,7 @@
                 }
             },
             "goals": {
-                "home": 1,
+                "home": 2,
                 "away": 0
             },
             "score": {
@@ -50780,7 +50780,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 57,
+                    "elapsed": 59,
                     "extra": null
                 }
             },
@@ -50850,7 +50850,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 63,
+                    "elapsed": 66,
                     "extra": null
                 }
             },
@@ -50920,7 +50920,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 69,
+                    "elapsed": 71,
                     "extra": null
                 }
             },
@@ -50990,7 +50990,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 68,
+                    "elapsed": 70,
                     "extra": null
                 }
             },
@@ -51060,7 +51060,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 70,
+                    "elapsed": 72,
                     "extra": null
                 }
             },
@@ -51130,7 +51130,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 70,
+                    "elapsed": 72,
                     "extra": null
                 }
             },
@@ -51200,7 +51200,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 71,
+                    "elapsed": 73,
                     "extra": null
                 }
             },
@@ -51270,7 +51270,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 72,
+                    "elapsed": 74,
                     "extra": null
                 }
             },
@@ -51340,7 +51340,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 73,
+                    "elapsed": 76,
                     "extra": null
                 }
             },
@@ -51410,7 +51410,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 67,
+                    "elapsed": 70,
                     "extra": null
                 }
             },
@@ -51480,7 +51480,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 73,
+                    "elapsed": 75,
                     "extra": null
                 }
             },
@@ -51550,7 +51550,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 74,
+                    "elapsed": 77,
                     "extra": null
                 }
             },
@@ -51690,7 +51690,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 68,
+                    "elapsed": 70,
                     "extra": null
                 }
             },
@@ -51720,7 +51720,7 @@
             },
             "goals": {
                 "home": 2,
-                "away": 0
+                "away": 1
             },
             "score": {
                 "halftime": {
@@ -52180,7 +52180,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 74,
+                    "elapsed": 76,
                     "extra": null
                 }
             },
@@ -52199,18 +52199,18 @@
                     "id": 6817,
                     "name": "Murom",
                     "logo": "https://media.api-sports.io/football/teams/6817.png",
-                    "winner": null
+                    "winner": false
                 },
                 "away": {
                     "id": 6831,
                     "name": "Urozhay",
                     "logo": "https://media.api-sports.io/football/teams/6831.png",
-                    "winner": null
+                    "winner": true
                 }
             },
             "goals": {
                 "home": 0,
-                "away": 0
+                "away": 1
             },
             "score": {
                 "halftime": {
@@ -52250,7 +52250,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 67,
+                    "elapsed": 70,
                     "extra": null
                 }
             },
@@ -52320,7 +52320,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 72,
+                    "elapsed": 74,
                     "extra": null
                 }
             },
@@ -52390,7 +52390,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 72,
+                    "elapsed": 75,
                     "extra": null
                 }
             },
@@ -52460,7 +52460,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 66,
+                    "elapsed": 68,
                     "extra": null
                 }
             },
@@ -52530,7 +52530,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 72,
+                    "elapsed": 74,
                     "extra": null
                 }
             },
@@ -52600,7 +52600,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 73,
+                    "elapsed": 75,
                     "extra": null
                 }
             },
@@ -52740,7 +52740,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 71,
+                    "elapsed": 73,
                     "extra": null
                 }
             },
@@ -52950,7 +52950,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 67,
+                    "elapsed": 70,
                     "extra": null
                 }
             },
@@ -53160,7 +53160,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 74,
+                    "elapsed": 76,
                     "extra": null
                 }
             },
@@ -53179,18 +53179,18 @@
                     "id": 7342,
                     "name": "Slaný",
                     "logo": "https://media.api-sports.io/football/teams/7342.png",
-                    "winner": null
+                    "winner": false
                 },
                 "away": {
                     "id": 19439,
                     "name": "Újezd Praha 4",
                     "logo": "https://media.api-sports.io/football/teams/19439.png",
-                    "winner": null
+                    "winner": true
                 }
             },
             "goals": {
                 "home": 1,
-                "away": 1
+                "away": 2
             },
             "score": {
                 "halftime": {
@@ -53230,7 +53230,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 69,
+                    "elapsed": 71,
                     "extra": null
                 }
             },
@@ -53300,7 +53300,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 71,
+                    "elapsed": 74,
                     "extra": null
                 }
             },
@@ -53510,7 +53510,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 74,
+                    "elapsed": 76,
                     "extra": null
                 }
             },
@@ -53580,7 +53580,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 72,
+                    "elapsed": 74,
                     "extra": null
                 }
             },
@@ -53650,7 +53650,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 67,
+                    "elapsed": 69,
                     "extra": null
                 }
             },
@@ -53720,7 +53720,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 61,
+                    "elapsed": 64,
                     "extra": null
                 }
             },
@@ -53790,7 +53790,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 63,
+                    "elapsed": 66,
                     "extra": null
                 }
             },
@@ -53860,7 +53860,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 62,
+                    "elapsed": 64,
                     "extra": null
                 }
             },
@@ -54560,7 +54560,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 71,
+                    "elapsed": 74,
                     "extra": null
                 }
             },
@@ -54700,7 +54700,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 78,
+                    "elapsed": 81,
                     "extra": null
                 }
             },
@@ -54770,7 +54770,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 71,
+                    "elapsed": 73,
                     "extra": null
                 }
             },
@@ -54840,7 +54840,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 69,
+                    "elapsed": 72,
                     "extra": null
                 }
             },
@@ -55120,7 +55120,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 71,
+                    "elapsed": 73,
                     "extra": null
                 }
             },
@@ -55190,7 +55190,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 71,
+                    "elapsed": 74,
                     "extra": null
                 }
             },
@@ -55209,17 +55209,17 @@
                     "id": 14943,
                     "name": "Baník Prievidza",
                     "logo": "https://media.api-sports.io/football/teams/14943.png",
-                    "winner": false
+                    "winner": null
                 },
                 "away": {
                     "id": 14063,
                     "name": "Slovan Duslo Šaľa",
                     "logo": "https://media.api-sports.io/football/teams/14063.png",
-                    "winner": true
+                    "winner": null
                 }
             },
             "goals": {
-                "home": 0,
+                "home": 1,
                 "away": 1
             },
             "score": {
@@ -55330,7 +55330,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 66,
+                    "elapsed": 68,
                     "extra": null
                 }
             },
@@ -55400,7 +55400,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 69,
+                    "elapsed": 71,
                     "extra": null
                 }
             },
@@ -55470,7 +55470,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 63,
+                    "elapsed": 65,
                     "extra": null
                 }
             },
@@ -55540,7 +55540,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 74,
+                    "elapsed": 76,
                     "extra": null
                 }
             },
@@ -55610,7 +55610,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 71,
+                    "elapsed": 74,
                     "extra": null
                 }
             },
@@ -56030,7 +56030,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 72,
+                    "elapsed": 74,
                     "extra": null
                 }
             },
@@ -56170,7 +56170,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 69,
+                    "elapsed": 72,
                     "extra": null
                 }
             },
@@ -56310,7 +56310,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 70,
+                    "elapsed": 73,
                     "extra": null
                 }
             },
@@ -56380,7 +56380,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 71,
+                    "elapsed": 74,
                     "extra": null
                 }
             },
@@ -56518,9 +56518,9 @@
                     "city": "Chełm"
                 },
                 "status": {
-                    "long": "Halftime",
-                    "short": "HT",
-                    "elapsed": 45,
+                    "long": "Second Half",
+                    "short": "2H",
+                    "elapsed": 49,
                     "extra": null
                 }
             },
@@ -56590,7 +56590,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 54,
+                    "elapsed": 57,
                     "extra": null
                 }
             },
@@ -56650,7 +56650,7 @@
                 "timestamp": 1754753400,
                 "periods": {
                     "first": 1754753400,
-                    "second": null
+                    "second": 1754757000
                 },
                 "venue": {
                     "id": 1512,
@@ -56658,10 +56658,10 @@
                     "city": "Halmstad"
                 },
                 "status": {
-                    "long": "Halftime",
-                    "short": "HT",
-                    "elapsed": 45,
-                    "extra": 2
+                    "long": "Second Half",
+                    "short": "2H",
+                    "elapsed": 46,
+                    "extra": null
                 }
             },
             "league": {
@@ -57140,7 +57140,7 @@
                 "timestamp": 1754753400,
                 "periods": {
                     "first": 1754753400,
-                    "second": null
+                    "second": 1754757000
                 },
                 "venue": {
                     "id": 3342,
@@ -57148,10 +57148,10 @@
                     "city": "Dekani"
                 },
                 "status": {
-                    "long": "Halftime",
-                    "short": "HT",
-                    "elapsed": 45,
-                    "extra": 3
+                    "long": "Second Half",
+                    "short": "2H",
+                    "elapsed": 46,
+                    "extra": null
                 }
             },
             "league": {
@@ -57220,7 +57220,7 @@
                 "status": {
                     "long": "Second Half",
                     "short": "2H",
-                    "elapsed": 46,
+                    "elapsed": 49,
                     "extra": null
                 }
             },
@@ -58330,7 +58330,7 @@
                 "timestamp": 1754753400,
                 "periods": {
                     "first": 1754753400,
-                    "second": null
+                    "second": 1754757000
                 },
                 "venue": {
                     "id": 7855,
@@ -58338,10 +58338,10 @@
                     "city": "Loznica"
                 },
                 "status": {
-                    "long": "Halftime",
-                    "short": "HT",
-                    "elapsed": 45,
-                    "extra": 1
+                    "long": "Second Half",
+                    "short": "2H",
+                    "elapsed": 46,
+                    "extra": null
                 }
             },
             "league": {
@@ -58680,7 +58680,7 @@
                 "timestamp": 1754753400,
                 "periods": {
                     "first": 1754753400,
-                    "second": null
+                    "second": 1754757000
                 },
                 "venue": {
                     "id": null,
@@ -58688,9 +58688,9 @@
                     "city": null
                 },
                 "status": {
-                    "long": "Halftime",
-                    "short": "HT",
-                    "elapsed": 45,
+                    "long": "Second Half",
+                    "short": "2H",
+                    "elapsed": 46,
                     "extra": null
                 }
             },
@@ -58971,7 +58971,7 @@
                     "long": "First Half",
                     "short": "1H",
                     "elapsed": 45,
-                    "extra": 1
+                    "extra": 3
                 }
             },
             "league": {
@@ -59040,7 +59040,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 31,
+                    "elapsed": 33,
                     "extra": null
                 }
             },
@@ -59180,7 +59180,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 20,
+                    "elapsed": 22,
                     "extra": null
                 }
             },
@@ -59250,7 +59250,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 23,
+                    "elapsed": 25,
                     "extra": null
                 }
             },
@@ -59320,7 +59320,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 28,
+                    "elapsed": 30,
                     "extra": null
                 }
             },
@@ -59390,7 +59390,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 27,
+                    "elapsed": 30,
                     "extra": null
                 }
             },
@@ -59460,7 +59460,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 28,
+                    "elapsed": 30,
                     "extra": null
                 }
             },
@@ -59530,7 +59530,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 30,
+                    "elapsed": 32,
                     "extra": null
                 }
             },
@@ -59600,7 +59600,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 31,
+                    "elapsed": 34,
                     "extra": null
                 }
             },
@@ -59670,7 +59670,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 29,
+                    "elapsed": 32,
                     "extra": null
                 }
             },
@@ -59689,23 +59689,23 @@
                     "id": 3528,
                     "name": "Paide",
                     "logo": "https://media.api-sports.io/football/teams/3528.png",
-                    "winner": true
+                    "winner": null
                 },
                 "away": {
                     "id": 3529,
                     "name": "Tallinna Kalev",
                     "logo": "https://media.api-sports.io/football/teams/3529.png",
-                    "winner": false
+                    "winner": null
                 }
             },
             "goals": {
                 "home": 1,
-                "away": 0
+                "away": 1
             },
             "score": {
                 "halftime": {
                     "home": 1,
-                    "away": 0
+                    "away": 1
                 },
                 "fulltime": {
                     "home": null,
@@ -59740,7 +59740,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 30,
+                    "elapsed": 33,
                     "extra": null
                 }
             },
@@ -59810,7 +59810,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 32,
+                    "elapsed": 34,
                     "extra": null
                 }
             },
@@ -59880,7 +59880,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 29,
+                    "elapsed": 32,
                     "extra": null
                 }
             },
@@ -59950,7 +59950,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 29,
+                    "elapsed": 31,
                     "extra": null
                 }
             },
@@ -60020,7 +60020,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 31,
+                    "elapsed": 33,
                     "extra": null
                 }
             },
@@ -60090,7 +60090,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 31,
+                    "elapsed": 34,
                     "extra": null
                 }
             },
@@ -60160,7 +60160,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 30,
+                    "elapsed": 32,
                     "extra": null
                 }
             },
@@ -60230,7 +60230,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 28,
+                    "elapsed": 31,
                     "extra": null
                 }
             },
@@ -60300,7 +60300,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 28,
+                    "elapsed": 30,
                     "extra": null
                 }
             },
@@ -60370,7 +60370,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 29,
+                    "elapsed": 32,
                     "extra": null
                 }
             },
@@ -60440,7 +60440,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 30,
+                    "elapsed": 32,
                     "extra": null
                 }
             },
@@ -60510,7 +60510,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 30,
+                    "elapsed": 32,
                     "extra": null
                 }
             },
@@ -60580,7 +60580,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 27,
+                    "elapsed": 29,
                     "extra": null
                 }
             },
@@ -60650,7 +60650,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 27,
+                    "elapsed": 29,
                     "extra": null
                 }
             },
@@ -60720,7 +60720,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 27,
+                    "elapsed": 29,
                     "extra": null
                 }
             },
@@ -60790,7 +60790,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 29,
+                    "elapsed": 32,
                     "extra": null
                 }
             },
@@ -60860,7 +60860,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 29,
+                    "elapsed": 31,
                     "extra": null
                 }
             },
@@ -60930,7 +60930,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 30,
+                    "elapsed": 33,
                     "extra": null
                 }
             },
@@ -61000,7 +61000,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 28,
+                    "elapsed": 31,
                     "extra": null
                 }
             },
@@ -61070,7 +61070,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 31,
+                    "elapsed": 33,
                     "extra": null
                 }
             },
@@ -61140,7 +61140,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 29,
+                    "elapsed": 31,
                     "extra": null
                 }
             },
@@ -61210,7 +61210,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 31,
+                    "elapsed": 33,
                     "extra": null
                 }
             },
@@ -61239,12 +61239,12 @@
                 }
             },
             "goals": {
-                "home": 2,
+                "home": 3,
                 "away": 0
             },
             "score": {
                 "halftime": {
-                    "home": 2,
+                    "home": 3,
                     "away": 0
                 },
                 "fulltime": {
@@ -61280,7 +61280,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 29,
+                    "elapsed": 32,
                     "extra": null
                 }
             },
@@ -61490,7 +61490,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 29,
+                    "elapsed": 32,
                     "extra": null
                 }
             },
@@ -61560,7 +61560,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 26,
+                    "elapsed": 29,
                     "extra": null
                 }
             },
@@ -61630,7 +61630,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 29,
+                    "elapsed": 31,
                     "extra": null
                 }
             },
@@ -61700,7 +61700,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 29,
+                    "elapsed": 32,
                     "extra": null
                 }
             },
@@ -61770,7 +61770,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 33,
+                    "elapsed": 36,
                     "extra": null
                 }
             },
@@ -61840,7 +61840,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 27,
+                    "elapsed": 29,
                     "extra": null
                 }
             },
@@ -61910,7 +61910,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 30,
+                    "elapsed": 33,
                     "extra": null
                 }
             },
@@ -61980,7 +61980,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 29,
+                    "elapsed": 31,
                     "extra": null
                 }
             },
@@ -62050,7 +62050,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 30,
+                    "elapsed": 33,
                     "extra": null
                 }
             },
@@ -62120,7 +62120,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 30,
+                    "elapsed": 32,
                     "extra": null
                 }
             },
@@ -62260,7 +62260,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 30,
+                    "elapsed": 32,
                     "extra": null
                 }
             },
@@ -62330,7 +62330,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 29,
+                    "elapsed": 31,
                     "extra": null
                 }
             },
@@ -62400,7 +62400,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 31,
+                    "elapsed": 34,
                     "extra": null
                 }
             },
@@ -62470,7 +62470,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 29,
+                    "elapsed": 32,
                     "extra": null
                 }
             },
@@ -62540,7 +62540,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 28,
+                    "elapsed": 31,
                     "extra": null
                 }
             },
@@ -62610,7 +62610,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 31,
+                    "elapsed": 33,
                     "extra": null
                 }
             },
@@ -62680,7 +62680,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 11,
+                    "elapsed": 14,
                     "extra": null
                 }
             },
@@ -62750,7 +62750,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 14,
+                    "elapsed": 16,
                     "extra": null
                 }
             },
@@ -62820,7 +62820,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 17,
+                    "elapsed": 19,
                     "extra": null
                 }
             },
@@ -62890,7 +62890,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 16,
+                    "elapsed": 18,
                     "extra": null
                 }
             },
@@ -62949,7 +62949,7 @@
                 "date": "2025-08-09T19:30:00+03:00",
                 "timestamp": 1754757000,
                 "periods": {
-                    "first": null,
+                    "first": 1754757000,
                     "second": null
                 },
                 "venue": {
@@ -62958,9 +62958,9 @@
                     "city": "Talcahuano"
                 },
                 "status": {
-                    "long": "Not Started",
-                    "short": "NS",
-                    "elapsed": null,
+                    "long": "First Half",
+                    "short": "1H",
+                    "elapsed": 2,
                     "extra": null
                 }
             },
@@ -62989,13 +62989,13 @@
                 }
             },
             "goals": {
-                "home": null,
-                "away": null
+                "home": 0,
+                "away": 0
             },
             "score": {
                 "halftime": {
-                    "home": null,
-                    "away": null
+                    "home": 0,
+                    "away": 0
                 },
                 "fulltime": {
                     "home": null,
@@ -63030,7 +63030,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 2,
+                    "elapsed": 4,
                     "extra": null
                 }
             },
@@ -63100,7 +63100,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 1,
+                    "elapsed": 3,
                     "extra": null
                 }
             },
@@ -63159,7 +63159,7 @@
                 "date": "2025-08-09T19:30:00+03:00",
                 "timestamp": 1754757000,
                 "periods": {
-                    "first": null,
+                    "first": 1754757000,
                     "second": null
                 },
                 "venue": {
@@ -63168,9 +63168,9 @@
                     "city": "Schaffhausen"
                 },
                 "status": {
-                    "long": "Not Started",
-                    "short": "NS",
-                    "elapsed": null,
+                    "long": "First Half",
+                    "short": "1H",
+                    "elapsed": 3,
                     "extra": null
                 }
             },
@@ -63199,13 +63199,13 @@
                 }
             },
             "goals": {
-                "home": null,
-                "away": null
+                "home": 0,
+                "away": 0
             },
             "score": {
                 "halftime": {
-                    "home": null,
-                    "away": null
+                    "home": 0,
+                    "away": 0
                 },
                 "fulltime": {
                     "home": null,
@@ -63509,7 +63509,7 @@
                 "date": "2025-08-09T19:30:00+03:00",
                 "timestamp": 1754757000,
                 "periods": {
-                    "first": null,
+                    "first": 1754757000,
                     "second": null
                 },
                 "venue": {
@@ -63518,9 +63518,9 @@
                     "city": null
                 },
                 "status": {
-                    "long": "Not Started",
-                    "short": "NS",
-                    "elapsed": null,
+                    "long": "First Half",
+                    "short": "1H",
+                    "elapsed": 1,
                     "extra": null
                 }
             },
@@ -63549,13 +63549,13 @@
                 }
             },
             "goals": {
-                "home": null,
-                "away": null
+                "home": 0,
+                "away": 0
             },
             "score": {
                 "halftime": {
-                    "home": null,
-                    "away": null
+                    "home": 0,
+                    "away": 0
                 },
                 "fulltime": {
                     "home": null,
@@ -63590,7 +63590,7 @@
                 "status": {
                     "long": "First Half",
                     "short": "1H",
-                    "elapsed": 1,
+                    "elapsed": 3,
                     "extra": null
                 }
             },
