@@ -1,1 +1,83 @@
-[]
+[
+    {
+        "home": "Manchester United",
+        "away": "Fiorentina",
+        "league": "dlies Clubs",
+        "time": "14:45",
+        "venue": "Old Trafford",
+        "city": null,
+        "id": 1402829
+    },
+    {
+        "home": "1.FC Köln",
+        "away": "Atalanta",
+        "league": "dlies Clubs",
+        "time": "16:30",
+        "venue": null,
+        "city": null,
+        "id": 1429827
+    },
+    {
+        "home": "Мідлсбро",
+        "away": "Свонсі",
+        "league": "чемпіонат",
+        "time": "17:00",
+        "venue": "Стадіон Ріверсайд",
+        "city": "Мідлсбро",
+        "id": 1386557
+    },
+    {
+        "home": "Евертон",
+        "away": "АС Рома",
+        "league": "клуби dlies",
+        "time": "17:00",
+        "venue": "Стадіон Хілл Дікінсон",
+        "city": "Ліверпуль, Мерсісайд",
+        "id": 1402830
+    },
+    {
+        "home": "Ньюкасл",
+        "away": "Атлетіко Мадрид",
+        "league": "клуби dlies",
+        "time": "18:00",
+        "venue": "Сент-Джеймс Парк",
+        "city": "Ньюкасл на Тайні",
+        "id": 1402832
+    },
+    {
+        "home": "Арсенал",
+        "away": "Атлетичний клуб",
+        "league": "тес Куб",
+        "time": "19:00",
+        "venue": "Стадіон Еміратів",
+        "city": "Лондон",
+        "id": 1430657
+    },
+    {
+        "home": "Арсенал",
+        "away": "Атлетичний клуб",
+        "league": "клуби dlies",
+        "time": "20:00",
+        "venue": "Емірейтс Стадіум",
+        "city": "Лондон",
+        "id": 1402833
+    },
+    {
+        "home": "Napoli",
+        "away": "Girona",
+        "league": "dlies Clubs",
+        "time": "20:00",
+        "venue": null,
+        "city": null,
+        "id": 1429860
+    },
+    {
+        "home": "Палермо",
+        "away": "Манчестер Сіті",
+        "league": "клуби dlies",
+        "time": "22:00",
+        "venue": "Стадіо Ренцо Барбера",
+        "city": "Палермо",
+        "id": 1402834
+    }
+]

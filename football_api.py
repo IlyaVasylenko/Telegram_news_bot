@@ -41,12 +41,21 @@ def today_matches():
   for match in data['response']:
     # if match['league']['name'] in international_competitions:
         if match['teams']['home']['name'] in popular_clubs or match['teams']['away']['name'] in popular_clubs or match['teams']['away']['name'] == 'Swansea':
-          home = ts.translate_text(match['teams']['home']['name'], translator='bing', from_language='en', to_language='uk') 
-          away = ts.translate_text(match['teams']['away']['name'], translator='bing', from_language='en', to_language='uk') 
+          try:
+            home = ts.translate_text(match['teams']['home']['name'], translator='bing', from_language='en', to_language='uk') 
+            away = ts.translate_text(match['teams']['away']['name'], translator='bing', from_language='en', to_language='uk') 
+            time = match['fixture']['date'][11:16]
+            league =ts.translate_text(match['league']['name'][5:], translator='bing', from_language='en', to_language='uk') 
+            venue = ts.translate_text(match['fixture']['venue']['name'], translator='bing', from_language='en', to_language='uk') 
+            city = ts.translate_text(match['fixture']['venue']['city'], translator='bing', from_language='en', to_language='uk')
+          except:
+            home = match['teams']['home']['name']
+            away = match['teams']['away']['name']
+            time = match['fixture']['date'][11:16]
+            league = match['league']['name'][5:]
+            venue = match['fixture']['venue']['name']
+            city = match['fixture']['venue']['city']
           time = match['fixture']['date'][11:16]
-          league =ts.translate_text(match['league']['name'][5:], translator='bing', from_language='en', to_language='uk') 
-          venue = ts.translate_text(match['fixture']['venue']['name'], translator='bing', from_language='en', to_language='uk') 
-          city = ts.translate_text(match['fixture']['venue']['city'], translator='bing', from_language='en', to_language='uk')
           id = match['fixture']['id']
           print(f"{home} vs {away} в {league} о {time}")
           today_matches_teams.append({
@@ -61,3 +70,4 @@ def today_matches():
   with open('today_fixtures.json', 'w', encoding='utf-8') as file:
     json.dump(today_matches_teams, file, indent=4, ensure_ascii=False)
 
+today_matches()

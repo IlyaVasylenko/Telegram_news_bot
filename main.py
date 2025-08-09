@@ -75,6 +75,7 @@ try:
         if item not in used_post:
             bot.send_photo(chat_id= os.getenv('TELEGRAM_CHANNEL_ID'), photo = item['image'], caption=f'<b>{item["title"]}</b>\n{item["text"][0:950]}\n@goals_news', parse_mode='html')
             used_post.append(item['title'])
+            break
         # print(item)
         # post = f'{item["title"]}\n{item["image"]}\n{item["text"][0:100]}'
         # bot.send_message(message.chat.id, post, parse_mode='html')
