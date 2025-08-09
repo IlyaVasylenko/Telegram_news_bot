@@ -8,8 +8,8 @@ def team_lineup(fixture):
     with open('today_fixtures.json', 'r', encoding='utf-8') as file: 
         today_match = json.loads(file.read())
 
-    football_api_key = '18fab6c5615a8f9c5e949136ece86093'
-    # football_api_key = os.getenv('FOOTBALL_API')
+    # football_api_key = '18fab6c5615a8f9c5e949136ece86093'
+    football_api_key = os.getenv('FOOTBALL_API')
     url = "https://v3.football.api-sports.io/fixtures/lineups"
 
     headers = {
