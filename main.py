@@ -63,8 +63,8 @@ for match in list_match:
         fixture = match['id']
         team_lineup(fixture)
         photos = [
-        open('images/away_team_lineup.jpg', 'rb'),
-        open('images/home_team_lineup.jpg', 'rb')
+        open('images/away_team lineup.jpg', 'rb'),
+        open('images/home_team lineup.jpg', 'rb')
         ]
         media = []
         for photo in photos:
