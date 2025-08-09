@@ -8,8 +8,8 @@ def team_lineup(fixture):
     with open('today_fixtures.json', 'r', encoding='utf-8') as file: 
         today_match = json.loads(file.read())
 
-    # football_api_key = '18fab6c5615a8f9c5e949136ece86093'
-    football_api_key = os.getenv('FOOTBALL_API')
+    football_api_key = '18fab6c5615a8f9c5e949136ece86093'
+    # football_api_key = os.getenv('FOOTBALL_API')
     url = "https://v3.football.api-sports.io/fixtures/lineups"
 
     headers = {
@@ -217,4 +217,5 @@ def team_lineup(fixture):
         else:
             football_pitch.save(f'images/away_team lineup.jpg')
         team_count += 1
-        # football_pitch.show()
+        football_pitch.show()
+team_lineup(1386557)

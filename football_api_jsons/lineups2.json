@@ -1,13 +1,432 @@
 {
     "get": "fixtures/lineups",
     "parameters": {
-        "fixture": "1402832"
+        "fixture": "1386557"
     },
     "errors": [],
-    "results": 0,
+    "results": 2,
     "paging": {
         "current": 1,
         "total": 1
     },
-    "response": []
+    "response": [
+        {
+            "team": {
+                "id": 70,
+                "name": "Middlesbrough",
+                "logo": "https://media.api-sports.io/football/teams/70.png",
+                "colors": {
+                    "player": {
+                        "primary": "db0000",
+                        "number": "ffffff",
+                        "border": "db0000"
+                    },
+                    "goalkeeper": {
+                        "primary": "0545ff",
+                        "number": "f7f6f8",
+                        "border": "0545ff"
+                    }
+                }
+            },
+            "formation": "3-4-2-1",
+            "startXI": [
+                {
+                    "player": {
+                        "id": 192346,
+                        "name": "Solomon Brynn",
+                        "number": 31,
+                        "pos": "G",
+                        "grid": "1:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 19116,
+                        "name": "Luke Ayling",
+                        "number": 12,
+                        "pos": "D",
+                        "grid": "2:3"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 19239,
+                        "name": "Dael Fry",
+                        "number": 6,
+                        "pos": "D",
+                        "grid": "2:2"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 18938,
+                        "name": "Alfie Jones",
+                        "number": 5,
+                        "pos": "D",
+                        "grid": "2:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 17421,
+                        "name": "Callum Brittain",
+                        "number": 2,
+                        "pos": "M",
+                        "grid": "3:4"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 201714,
+                        "name": "Aidan Morris",
+                        "number": 18,
+                        "pos": "M",
+                        "grid": "3:3"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 179685,
+                        "name": "Hayden Hackney",
+                        "number": 7,
+                        "pos": "M",
+                        "grid": "3:2"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 126872,
+                        "name": "Samuel Silvera",
+                        "number": 22,
+                        "pos": "M",
+                        "grid": "3:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 129709,
+                        "name": "Morgan Whittaker",
+                        "number": 11,
+                        "pos": "F",
+                        "grid": "4:2"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 37242,
+                        "name": "Delano Burgzorg",
+                        "number": 10,
+                        "pos": "F",
+                        "grid": "4:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 282767,
+                        "name": "Tommy Conway",
+                        "number": 9,
+                        "pos": "F",
+                        "grid": "5:1"
+                    }
+                }
+            ],
+            "substitutes": [
+                {
+                    "player": {
+                        "id": 384828,
+                        "name": "Abdoulaye Kanté",
+                        "number": 42,
+                        "pos": "M",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 48236,
+                        "name": "Tom Glover",
+                        "number": 23,
+                        "pos": "G",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 1927,
+                        "name": "Neto Borges",
+                        "number": 30,
+                        "pos": "D",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 329355,
+                        "name": "George McCormick",
+                        "number": 40,
+                        "pos": "D",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 348815,
+                        "name": "Law McCabe",
+                        "number": 28,
+                        "pos": "M",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 20179,
+                        "name": "Daniel Barlaser",
+                        "number": 4,
+                        "pos": "M",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 19363,
+                        "name": "Marcus Forss",
+                        "number": 21,
+                        "pos": "F",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 215873,
+                        "name": "Alexander Gilbert",
+                        "number": 14,
+                        "pos": "F",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 304305,
+                        "name": "Sonny Finch",
+                        "number": 39,
+                        "pos": "F",
+                        "grid": null
+                    }
+                }
+            ],
+            "coach": {
+                "id": 16246,
+                "name": "M. Carrick",
+                "photo": "https://media.api-sports.io/football/coachs/16246.png"
+            }
+        },
+        {
+            "team": {
+                "id": 76,
+                "name": "Swansea",
+                "logo": "https://media.api-sports.io/football/teams/76.png",
+                "colors": {
+                    "player": {
+                        "primary": "ffffff",
+                        "number": "000000",
+                        "border": "ffffff"
+                    },
+                    "goalkeeper": {
+                        "primary": "b0d079",
+                        "number": "244a07",
+                        "border": "b0d079"
+                    }
+                }
+            },
+            "formation": "4-2-3-1",
+            "startXI": [
+                {
+                    "player": {
+                        "id": 2549,
+                        "name": "Lawrence Vigouroux",
+                        "number": 22,
+                        "pos": "G",
+                        "grid": "1:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 17606,
+                        "name": "Josh Key",
+                        "number": 2,
+                        "pos": "D",
+                        "grid": "2:4"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 104041,
+                        "name": "Ben Cabango",
+                        "number": 5,
+                        "pos": "D",
+                        "grid": "2:3"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 20457,
+                        "name": "Cameron Burgess",
+                        "number": 15,
+                        "pos": "D",
+                        "grid": "2:2"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 19499,
+                        "name": "Josh Tymon",
+                        "number": 14,
+                        "pos": "D",
+                        "grid": "2:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 68441,
+                        "name": "Gonçalo Franco",
+                        "number": 17,
+                        "pos": "M",
+                        "grid": "3:2"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 19327,
+                        "name": "Jay Fulton",
+                        "number": 4,
+                        "pos": "M",
+                        "grid": "3:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 70886,
+                        "name": "Ronald",
+                        "number": 35,
+                        "pos": "M",
+                        "grid": "4:3"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 138814,
+                        "name": "Ethan Galbraith",
+                        "number": 30,
+                        "pos": "M",
+                        "grid": "4:2"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 237050,
+                        "name": "Ji-sung Eom",
+                        "number": 10,
+                        "pos": "M",
+                        "grid": "4:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 19335,
+                        "name": "Liam Cullen",
+                        "number": 20,
+                        "pos": "F",
+                        "grid": "5:1"
+                    }
+                }
+            ],
+            "substitutes": [
+                {
+                    "player": {
+                        "id": 162839,
+                        "name": "Žan Vipotnik",
+                        "number": 9,
+                        "pos": "F",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 206478,
+                        "name": "Zeidane Inoussa",
+                        "number": 27,
+                        "pos": "F",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 335098,
+                        "name": "Melker Widell",
+                        "number": 7,
+                        "pos": "M",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 288116,
+                        "name": "Kaelan Casey",
+                        "number": 26,
+                        "pos": "D",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 81996,
+                        "name": "Andrew Fisher",
+                        "number": 1,
+                        "pos": "G",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 401380,
+                        "name": "Samuel Parker",
+                        "number": 41,
+                        "pos": "D",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 169223,
+                        "name": "Oliver Cooper",
+                        "number": 31,
+                        "pos": "M",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 358560,
+                        "name": "Cameron Congreve",
+                        "number": 45,
+                        "pos": "M",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 343583,
+                        "name": "Bobby Wales",
+                        "number": 24,
+                        "pos": "F",
+                        "grid": null
+                    }
+                }
+            ],
+            "coach": {
+                "id": 21599,
+                "name": "A. Sheehan",
+                "photo": "https://media.api-sports.io/football/coachs/21599.png"
+            }
+        }
+    ]
 }

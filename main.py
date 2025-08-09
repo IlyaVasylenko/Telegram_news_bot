@@ -61,7 +61,7 @@ for match in list_match:
     if int(match["time"][0:-3]) == int(datetime.datetime.now().strftime('%H'))+3:
         print(datetime.datetime.now().strftime('%H:%M'))
         fixture = match['id']
-        team_lineup(fixture)
+        team_lineup(match['id'])
         photos = [
         open('images/away_team lineup.jpg', 'rb'),
         open('images/home_team lineup.jpg', 'rb')
@@ -83,10 +83,11 @@ try:
         # while data[0]['title'] in used_post:
         #     random.shuffle(data)
         # item = data[0]
-        if item not in used_post:
-            bot.send_photo(chat_id= os.getenv('TELEGRAM_CHANNEL_ID'), photo = item['image'], caption=f'<b>{item["title"]}</b>\n{item["text"][0:950]}\n@goals_news', parse_mode='html')
-            used_post.append(item['title'])
-            break
+        if item['title'] not in used_post:
+            continue
+        bot.send_photo(chat_id= os.getenv('TELEGRAM_CHANNEL_ID'), photo = item['image'], caption=f'<b>{item["title"]}</b>\n{item["text"][0:950]}\n@goals_news', parse_mode='html')
+        used_post.append(item['title'])
+        break
         # print(item)
         # post = f'{item["title"]}\n{item["image"]}\n{item["text"][0:100]}'
         # bot.send_message(message.chat.id, post, parse_mode='html')
