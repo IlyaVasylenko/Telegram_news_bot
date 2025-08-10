@@ -1,13 +1,432 @@
 {
     "get": "fixtures/lineups",
     "parameters": {
-        "fixture": "1430657"
+        "fixture": "1381189"
     },
     "errors": [],
-    "results": 0,
+    "results": 2,
     "paging": {
         "current": 1,
         "total": 1
     },
-    "response": []
+    "response": [
+        {
+            "team": {
+                "id": 52,
+                "name": "Crystal Palace",
+                "logo": "https://media.api-sports.io/football/teams/52.png",
+                "colors": {
+                    "player": {
+                        "primary": "1017da",
+                        "number": "ffffff",
+                        "border": "1017da"
+                    },
+                    "goalkeeper": {
+                        "primary": "000000",
+                        "number": "ffffff",
+                        "border": "000000"
+                    }
+                }
+            },
+            "formation": "3-4-2-1",
+            "startXI": [
+                {
+                    "player": {
+                        "id": 19088,
+                        "name": "Dean Henderson",
+                        "number": 1,
+                        "pos": "G",
+                        "grid": "1:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 126949,
+                        "name": "Chris Richards",
+                        "number": 26,
+                        "pos": "D",
+                        "grid": "2:3"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 20995,
+                        "name": "Maxence Lacroix",
+                        "number": 5,
+                        "pos": "D",
+                        "grid": "2:2"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 67971,
+                        "name": "Marc Guéhi",
+                        "number": 6,
+                        "pos": "D",
+                        "grid": "2:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 13736,
+                        "name": "Daniel Muñoz",
+                        "number": 2,
+                        "pos": "M",
+                        "grid": "3:4"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 288102,
+                        "name": "Adam Wharton",
+                        "number": 20,
+                        "pos": "M",
+                        "grid": "3:3"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 2601,
+                        "name": "Daichi Kamada",
+                        "number": 18,
+                        "pos": "M",
+                        "grid": "3:2"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 182201,
+                        "name": "Tyrick Mitchell",
+                        "number": 3,
+                        "pos": "M",
+                        "grid": "3:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 2218,
+                        "name": "Ismaïla Sarr",
+                        "number": 7,
+                        "pos": "F",
+                        "grid": "4:2"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 19586,
+                        "name": "Eberechi Eze",
+                        "number": 10,
+                        "pos": "F",
+                        "grid": "4:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 25927,
+                        "name": "Jean-Philippe Mateta",
+                        "number": 14,
+                        "pos": "F",
+                        "grid": "5:1"
+                    }
+                }
+            ],
+            "substitutes": [
+                {
+                    "player": {
+                        "id": 18806,
+                        "name": "Will Hughes",
+                        "number": 19,
+                        "pos": "M",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 22157,
+                        "name": "Walter Benítez",
+                        "number": 44,
+                        "pos": "G",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 18862,
+                        "name": "Nathaniel Clyne",
+                        "number": 17,
+                        "pos": "D",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 26303,
+                        "name": "Borna Sosa",
+                        "number": 24,
+                        "pos": "D",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 380703,
+                        "name": "Rio Cardines",
+                        "number": 59,
+                        "pos": "M",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 2490,
+                        "name": "Jefferson Lerma",
+                        "number": 8,
+                        "pos": "M",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 402640,
+                        "name": "Romain Esse",
+                        "number": 21,
+                        "pos": "M",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 286458,
+                        "name": "Justin Devenny",
+                        "number": 55,
+                        "pos": "M",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 1135,
+                        "name": "Odsonne Édouard",
+                        "number": 22,
+                        "pos": "F",
+                        "grid": null
+                    }
+                }
+            ],
+            "coach": {
+                "id": 1534,
+                "name": "O. Glasner",
+                "photo": "https://media.api-sports.io/football/coachs/1534.png"
+            }
+        },
+        {
+            "team": {
+                "id": 40,
+                "name": "Liverpool",
+                "logo": "https://media.api-sports.io/football/teams/40.png",
+                "colors": {
+                    "player": {
+                        "primary": "e41e2c",
+                        "number": "ffffff",
+                        "border": "e41e2c"
+                    },
+                    "goalkeeper": {
+                        "primary": "18fffb",
+                        "number": "f3f5f0",
+                        "border": "18fffb"
+                    }
+                }
+            },
+            "formation": "4-2-3-1",
+            "startXI": [
+                {
+                    "player": {
+                        "id": 280,
+                        "name": "Alisson",
+                        "number": 1,
+                        "pos": "G",
+                        "grid": "1:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 152654,
+                        "name": "Jeremie Frimpong",
+                        "number": 30,
+                        "pos": "D",
+                        "grid": "2:4"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 1145,
+                        "name": "Ibrahima Konaté",
+                        "number": 5,
+                        "pos": "D",
+                        "grid": "2:3"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 290,
+                        "name": "Virgil van Dijk",
+                        "number": 4,
+                        "pos": "D",
+                        "grid": "2:2"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 206254,
+                        "name": "Miloš Kerkez",
+                        "number": 6,
+                        "pos": "D",
+                        "grid": "2:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 293,
+                        "name": "Curtis Jones",
+                        "number": 17,
+                        "pos": "M",
+                        "grid": "3:2"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 1096,
+                        "name": "Dominik Szoboszlai",
+                        "number": 8,
+                        "pos": "M",
+                        "grid": "3:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 306,
+                        "name": "Mohamed Salah",
+                        "number": 11,
+                        "pos": "M",
+                        "grid": "4:3"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 203224,
+                        "name": "Florian Wirtz",
+                        "number": 7,
+                        "pos": "M",
+                        "grid": "4:2"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 247,
+                        "name": "Cody Gakpo",
+                        "number": 18,
+                        "pos": "M",
+                        "grid": "4:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 174565,
+                        "name": "Hugo Ekitiké",
+                        "number": 22,
+                        "pos": "F",
+                        "grid": "5:1"
+                    }
+                }
+            ],
+            "substitutes": [
+                {
+                    "player": {
+                        "id": 24760,
+                        "name": "Giorgi Mamardashvili",
+                        "number": 25,
+                        "pos": "G",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 289,
+                        "name": "Andrew Robertson",
+                        "number": 26,
+                        "pos": "D",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 8500,
+                        "name": "Wataru Endo",
+                        "number": 3,
+                        "pos": "M",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 6716,
+                        "name": "Alexis Mac Allister",
+                        "number": 10,
+                        "pos": "M",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 19035,
+                        "name": "Harvey Elliott",
+                        "number": 19,
+                        "pos": "M",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 397997,
+                        "name": "Trey Nyoni",
+                        "number": 42,
+                        "pos": "M",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 343576,
+                        "name": "Ben Doak",
+                        "number": 50,
+                        "pos": "F",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 30410,
+                        "name": "Federico Chiesa",
+                        "number": 14,
+                        "pos": "F",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 452685,
+                        "name": "Rio Ngumoha",
+                        "number": 73,
+                        "pos": "F",
+                        "grid": null
+                    }
+                }
+            ],
+            "coach": {
+                "id": 2006,
+                "name": "Arne Slot",
+                "photo": "https://media.api-sports.io/football/coachs/2006.png"
+            }
+        }
+    ]
 }
