@@ -29,7 +29,7 @@ def today_matches():
       json.dump(data, file, indent=4, ensure_ascii=False)
 
   today_matches_teams = []
-  international_competitions = ['UEFA Champions League', 'UEFA Europa Conference League', 'UEFA Europa League', 'UEFA Super Cup']
+  international_competitions = ['UEFA Champions League', 'UEFA Europa Conference League', 'UEFA Europa League', 'UEFA Super Cup', 'Community Shield']
 
   with open('football_api_jsons/popular_clubs.json', 'r+', encoding='utf-8') as file:
     popular_clubs = json.loads(file.read())
@@ -70,4 +70,4 @@ def today_matches():
   with open('today_fixtures.json', 'w', encoding='utf-8') as file:
     json.dump(today_matches_teams, file, indent=4, ensure_ascii=False)
 
-today_matches()
+

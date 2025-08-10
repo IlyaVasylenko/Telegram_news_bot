@@ -1,5 +1,6 @@
 import json
 import datetime
+import cyrtranslit
 with open(f'data09.08.2025/data09.08.2025.json', 'r', encoding='utf-8') as file:
     file1 = json.loads(file.read())
     
@@ -22,3 +23,4 @@ print(count, len(file1), len(file2))
 #     json.dump([],file, indent=4, ensure_ascii=False)
 print(datetime.datetime.now().strftime('%d.%m.%Y'))
 print(datetime.datetime.now().strftime('%H'))
+print(cyrtranslit.to_cyrillic("Liverpool", "ua"))
