@@ -1,7 +1,7 @@
 {
     "get": "fixtures",
     "parameters": {
-        "date": "2025-09-22",
+        "date": "2025-09-23",
         "timezone": "Europe/Kiev"
     },
     "errors": {
