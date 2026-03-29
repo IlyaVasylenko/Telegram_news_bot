@@ -1,7 +1,7 @@
 {
     "get": "fixtures",
     "parameters": {
-        "date": "2026-03-28",
+        "date": "2026-03-29",
         "timezone": "Europe/Kiev"
     },
     "errors": {
